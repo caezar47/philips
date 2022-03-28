@@ -1,0 +1,82 @@
+html {
+	font-family: @site_ff;	
+	font-size: @site_fs;
+	line-height: @site_lh;
+}
+body {
+	font-family: inherit;	
+	font-size: inherit;
+	line-height: inherit;
+}
+h1, h2, h3, h4, h5, h6{
+	margin: 0px;
+}
+p{margin: 0 0 10px;}
+i, em{font-style: italic;}
+b, strong{font-weight: 700;}
+
+h1, .is--h1{
+	.heading1();
+	font-weight: 400;	
+}
+h2, .is--h2{
+	.heading2();
+	font-weight: 400;
+}
+h3, .is--h3{	
+	.heading3();
+	font-weight: 400;
+}
+h4, .is--h4{
+	.heading4();
+	font-weight: 400;
+}
+h5, .is--h5{
+	.heading5();
+	font-weight: 400;
+}
+h6, .is--h6{
+	.heading6();
+	font-weight: 400;
+}
+ol{
+	margin-left: 30px;
+	li{padding-left: 5px;}
+}
+ul{
+	margin-left: 20px;
+	&.ul-site{
+		li{
+			margin-bottom: 10px; 
+			&:last-child{margin-bottom: 0;}			
+		}
+	}
+}
+.font-family--custom{
+	font-family: @site_ff_custom;
+}
+.align--{
+	&left{
+		text-align: left;
+	}
+	&right{
+		text-align: right;
+	}
+	&center{
+		text-align: center;
+	}
+}
+.justify--{
+	&start{
+		justify-content: flex-start;
+	}
+	&end{
+		justify-content: flex-end;
+	}
+	&center{
+		justify-content: center;
+	}
+	&between{
+		justify-content: space-between;
+	}
+}

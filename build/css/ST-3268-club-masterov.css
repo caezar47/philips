@@ -1,0 +1,926 @@
+/* reset */
+.breadcrumbs__wrap {
+  display: none;
+}
+.cms-club-masterov .main-container {
+  margin-top: 0;
+  padding-bottom: 95px;
+}
+@media (min-width: 768px) {
+  .cms-club-masterov .main-container {
+    padding-bottom: 110px;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov .main-container {
+    padding-top: 50px;
+  }
+}
+.cms-club-masterov .main-container #promo ul,
+.cms-club-masterov .main-container #promo ol {
+  padding: 0;
+  list-style: none;
+}
+.cms-club-masterov .main-container #promo ul li,
+.cms-club-masterov .main-container #promo ol li {
+  padding: 0;
+}
+.cms-club-masterov .main-container #promo ul li::before,
+.cms-club-masterov .main-container #promo ol li::before {
+  display: none;
+}
+.cms-club-masterov .main-container #promo a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-club-masterov .main-container #promo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.cms-club-masterov .main-container #promo strong,
+.cms-club-masterov .main-container #promo b {
+  font-weight: 700;
+}
+.cms-club-masterov .main-container #promo svg .path-primary {
+  fill: #E4532C;
+}
+.cms-club-masterov .main-container #promo p {
+  padding-bottom: 0;
+}
+.cms-club-masterov #promo .club-header {
+  position: relative;
+  background-color: #E7E7E7;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.cms-club-masterov #promo .club-header__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 942px;
+}
+.cms-club-masterov #promo .club-header__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.cms-club-masterov #promo .club-header__container {
+  position: relative;
+  z-index: 2;
+  max-width: 1024px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+.cms-club-masterov #promo .club-header__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.cms-club-masterov #promo .club-header__logo {
+  margin-bottom: 30px;
+}
+.cms-club-masterov #promo .club-header__logo-primary {
+  fill: #E4532C;
+}
+.cms-club-masterov #promo .club-header__desc * {
+  color: #fff;
+  padding: 0;
+}
+.cms-club-masterov #promo .club-header__desc p,
+.cms-club-masterov #promo .club-header__desc div {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.cms-club-masterov #promo .club-header__desc *:last-child {
+  margin-bottom: 0;
+}
+.cms-club-masterov #promo .club-header__heading {
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  margin-bottom: 15px;
+  color: #fff;
+  padding: 0;
+}
+.cms-club-masterov #promo .club-header__plus {
+  background-color: #fff;
+  margin: 0 auto;
+  max-width: 850px;
+  border: 1px solid #D6D6D6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 25px 35px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  padding: 50px 15px 35px;
+}
+.cms-club-masterov #promo .club-header__plus-heading {
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.cms-club-masterov #promo .club-header__plus-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.cms-club-masterov #promo .club-header__plus-item {
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+}
+.cms-club-masterov #promo .club-header__plus-icon {
+  margin-bottom: 12px;
+}
+.cms-club-masterov #promo .club-header__plus-icon svg {
+  width: 80px;
+  height: 80px;
+  fill: #E4532C;
+}
+.cms-club-masterov #promo .club-header__plus-name {
+  color: #212121;
+  font-size: 15px;
+  line-height: 22px;
+}
+.cms-club-masterov #promo .club-header__plus-name * {
+  color: inherit;
+}
+@media (min-width: 575px) {
+  .cms-club-masterov #promo .club-header__plus-item {
+    width: 50%;
+    padding: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .cms-club-masterov #promo .club-header {
+    padding: 0 30px;
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+  .cms-club-masterov #promo .club-header__container {
+    padding-top: 90px;
+  }
+  .cms-club-masterov #promo .club-header__bg {
+    height: 595px;
+  }
+  .cms-club-masterov #promo .club-header__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+  .cms-club-masterov #promo .club-header__logo {
+    margin-right: 30px;
+    margin-bottom: 0;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .cms-club-masterov #promo .club-header__plus-heading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov #promo .club-header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cms-club-masterov #promo .club-header__bg {
+    height: 490px;
+  }
+  .cms-club-masterov #promo .club-header__flex {
+    margin-bottom: 67px;
+  }
+  .cms-club-masterov #promo .club-header__logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  .cms-club-masterov #promo .club-header__heading {
+    font-size: 36px;
+    line-height: 36px;
+  }
+  .cms-club-masterov #promo .club-header__plus {
+    padding: 45px 35px 25px;
+  }
+  .cms-club-masterov #promo .club-header__plus-heading {
+    margin-bottom: 22px;
+  }
+  .cms-club-masterov #promo .club-header__plus-item {
+    padding: 25px 15px;
+  }
+  .cms-club-masterov #promo .club-header__plus-icon {
+    margin-bottom: 12px;
+  }
+  .cms-club-masterov #promo .club-header__plus-icon svg {
+    width: 100px;
+    height: 100px;
+  }
+  .cms-club-masterov #promo .club-header__plus-name {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+.cms-club-masterov #promo .club-card__container {
+  padding: 35px 0;
+}
+.cms-club-masterov #promo .club-card__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cms-club-masterov #promo .club-card__item {
+  position: relative;
+  width: 100%;
+  margin: 15px 0;
+}
+.cms-club-masterov #promo .club-card__item:before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  -webkit-box-shadow: 0px 34.1977px 52.3023px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 34.1977px 52.3023px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 53.9521px 73.9344px rgba(0, 0, 0, 0.35);
+          box-shadow: 0px 53.9521px 73.9344px rgba(0, 0, 0, 0.35);
+  border-radius: 20px;
+}
+.cms-club-masterov #promo .club-card__item img {
+  position: relative;
+  z-index: 2;
+}
+@media (min-width: 575px) {
+  .cms-club-masterov #promo .club-card__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .cms-club-masterov #promo .club-card__item {
+    margin: 0 15px;
+    width: calc(33.333% - 10px);
+  }
+}
+@media (min-width: 768px) {
+  .cms-club-masterov #promo .club-card__container {
+    padding: 60px 0;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov #promo .club-card__container {
+    padding: 70px 0;
+  }
+  .cms-club-masterov #promo .club-card__flex {
+    margin-left: -25px;
+    margin-right: -25px;
+  }
+  .cms-club-masterov #promo .club-card__item {
+    margin-left: 25px;
+    margin-right: 25px;
+    width: calc(33.333% - 50px);
+  }
+}
+.cms-club-masterov #promo .club-friend {
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.cms-club-masterov #promo .club-friend__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cms-club-masterov #promo .club-friend__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.cms-club-masterov #promo .club-friend__container {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding: 50px 15px;
+}
+.cms-club-masterov #promo .club-friend__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cms-club-masterov #promo .club-friend__heading {
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  padding-bottom: 0;
+}
+.cms-club-masterov #promo .club-friend__text {
+  font-size: 15px;
+  line-height: 22px;
+  color: #fff;
+  width: 100%;
+}
+.cms-club-masterov #promo .club-friend__text * {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.cms-club-masterov #promo .club-friend__text a:hover {
+  text-decoration: none;
+  color: #E4532C;
+}
+.cms-club-masterov #promo .club-friend__text ol {
+  counter-reset: number;
+}
+.cms-club-masterov #promo .club-friend__text ol li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.cms-club-masterov #promo .club-friend__text ol li:last-child {
+  margin-bottom: 0;
+}
+.cms-club-masterov #promo .club-friend__text ol li::before {
+  display: block;
+  counter-increment: number;
+  content: counter(number);
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+  color: #E4532C;
+  font-size: 64px;
+  line-height: 63px;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  .cms-club-masterov #promo .club-friend {
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+  .cms-club-masterov #promo .club-friend__container {
+    max-width: 72%;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .cms-club-masterov #promo .club-friend__heading {
+    text-align: left;
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 60px;
+  }
+  .cms-club-masterov #promo .club-friend__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .cms-club-masterov #promo .club-friend__text ol li {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  .cms-club-masterov #promo .club-friend__text ol li::before {
+    margin: 0 33px 0 0;
+    min-width: 40px;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov #promo .club-friend {
+    margin: 0 0 33px;
+  }
+  .cms-club-masterov #promo .club-friend__container {
+    max-width: 950px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .cms-club-masterov #promo .club-friend__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cms-club-masterov #promo .club-friend__heading {
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin: 0 26px 0 0;
+    min-width: 342px;
+  }
+}
+.cms-club-masterov #promo .club-bonus__container {
+  padding: 50px 0 10px;
+}
+.cms-club-masterov #promo .club-bonus__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cms-club-masterov #promo .club-bonus__card {
+  color: #212121;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  padding: 25px 0;
+  margin-bottom: 25px;
+}
+.cms-club-masterov #promo .club-bonus__card:last-child {
+  margin-bottom: 0!important;
+}
+.cms-club-masterov #promo .club-bonus__card * {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.cms-club-masterov #promo .club-bonus__card.card-primary {
+  padding: 28px 16px;
+  border-radius: 12px;
+  border: 1px solid #D6D6D6;
+  -webkit-box-shadow: 0 25px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 25px 35px rgba(0, 0, 0, 0.2);
+}
+.cms-club-masterov #promo .club-bonus__card.card-primary .club-bonus__card-item {
+  margin: 0 0 32px 0;
+}
+.cms-club-masterov #promo .club-bonus__card-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 53px;
+}
+.cms-club-masterov #promo .club-bonus__card-item:last-child {
+  margin-bottom: 0!important;
+}
+.cms-club-masterov #promo .club-bonus__card-item-icon {
+  margin: 0 0 10px 0;
+}
+@media (min-width: 768px) {
+  .cms-club-masterov #promo .club-bonus__container {
+    padding: 60px 0 10px;
+  }
+  .cms-club-masterov #promo .club-bonus__card {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 30px 108px;
+    margin-bottom: 25px;
+  }
+  .cms-club-masterov #promo .club-bonus__card.card-primary {
+    padding: 43px 83px;
+  }
+  .cms-club-masterov #promo .club-bonus__card.card-primary .club-bonus__card-item {
+    margin: 0 0 17px 0;
+  }
+  .cms-club-masterov #promo .club-bonus__card-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 0 37px 0;
+  }
+  .cms-club-masterov #promo .club-bonus__card-item-icon {
+    margin: 6px 50px 0 0;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov #promo .club-bonus__container {
+    padding: 35px 0 25px;
+  }
+  .cms-club-masterov #promo .club-bonus__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cms-club-masterov #promo .club-bonus__card {
+    margin-bottom: 0;
+    width: 50%;
+    padding: 53px 10px 43px 70px;
+  }
+  .cms-club-masterov #promo .club-bonus__card.card-primary {
+    width: 53.5%;
+    padding: 43px 48px;
+  }
+  .cms-club-masterov #promo .club-bonus__card.card-primary + * {
+    width: 46.5%;
+  }
+}
+.cms-club-masterov #promo .club-reg {
+  position: relative;
+  margin: 15px -15px 15px;
+}
+.cms-club-masterov #promo .club-reg__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000;
+  overflow: hidden;
+}
+.cms-club-masterov #promo .club-reg__bg-xs {
+  display: block;
+}
+.cms-club-masterov #promo .club-reg__bg-md {
+  display: none;
+}
+.cms-club-masterov #promo .club-reg__bg-lg {
+  display: none;
+}
+.cms-club-masterov #promo .club-reg__bg svg {
+  width: 100%;
+  height: 100%;
+}
+.cms-club-masterov #promo .club-reg__bg svg path {
+  fill: #E4532C;
+}
+.cms-club-masterov #promo .club-reg__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.cms-club-masterov #promo .club-reg__container {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 90px 0;
+}
+.cms-club-masterov #promo .club-reg__btn {
+  color: #fff;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 17px 10px;
+  min-height: 50px;
+  min-width: 266px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  background-color: #E4532C;
+  border-radius: 25px;
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+}
+.cms-club-masterov #promo .club-reg__btn:hover,
+.cms-club-masterov #promo .club-reg__btn:focus {
+  background-color: #bf4015;
+}
+@media (min-width: 575px) {
+  .cms-club-masterov #promo .club-reg {
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 15px 0 25px;
+  }
+  .cms-club-masterov #promo .club-reg__container {
+    padding: 35px;
+  }
+  .cms-club-masterov #promo .club-reg__bg-xs {
+    display: none;
+  }
+  .cms-club-masterov #promo .club-reg__bg-md {
+    display: block;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov #promo .club-reg {
+    margin: 25px 0;
+  }
+  .cms-club-masterov #promo .club-reg__bg-md {
+    display: none;
+  }
+  .cms-club-masterov #promo .club-reg__bg-lg {
+    display: block;
+  }
+}
+.cms-club-masterov #promo .club-subs__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 782px;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 30px 0 52px;
+}
+.cms-club-masterov #promo .club-subs__container * {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.cms-club-masterov #promo .club-subs__icon {
+  margin-bottom: 10px;
+}
+.cms-club-masterov #promo .club-subs__name {
+  color: #000;
+}
+@media (min-width: 768px) {
+  .cms-club-masterov #promo .club-subs__container {
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .cms-club-masterov #promo .club-subs__icon {
+    margin: 0 30px 0 0;
+  }
+  .cms-club-masterov #promo .club-subs__name {
+    margin-bottom: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov #promo .club-subs__container {
+    padding: 25px 0 40px;
+  }
+}
+.cms-club-masterov #promo .club-app {
+  background-color: #000;
+  position: relative;
+  margin-left: -15px;
+  margin-right: -15px;
+  overflow: hidden;
+}
+.cms-club-masterov #promo .club-app__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.cms-club-masterov #promo .club-app__bg-xs {
+  display: block;
+}
+.cms-club-masterov #promo .club-app__bg-md {
+  display: none;
+}
+.cms-club-masterov #promo .club-app__bg-lg {
+  display: none;
+}
+.cms-club-masterov #promo .club-app__bg svg {
+  width: 100%;
+  height: 100%;
+}
+.cms-club-masterov #promo .club-app__container {
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+.cms-club-masterov #promo .club-app__img {
+  display: block;
+  margin: 0 auto;
+  width: 101%;
+  position: relative;
+}
+.cms-club-masterov #promo .club-app__img picture {
+  display: block;
+}
+.cms-club-masterov #promo .club-app__img > img {
+  margin-left: -4px;
+  margin-bottom: 7px;
+}
+.cms-club-masterov #promo .club-app__img-link {
+  display: none;
+}
+.cms-club-masterov #promo .club-app__wrap {
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cms-club-masterov #promo .club-app__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -6px;
+  margin-right: -6px;
+  margin-bottom: 30px;
+}
+.cms-club-masterov #promo .club-app__card {
+  width: 50%;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.cms-club-masterov #promo .club-app__card img {
+  width: 100%;
+}
+.cms-club-masterov #promo .club-app__heading {
+  font-family: 'Gotham Pro';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  margin-bottom: 25px;
+  padding-bottom: 0;
+}
+.cms-club-masterov #promo .club-app__note {
+  color: #fff;
+  font-size: 15px;
+  line-height: 20px;
+}
+.cms-club-masterov #promo .club-app__note * {
+  color: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+.cms-club-masterov #promo .club-app__note ul li {
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.45 3.728a1.5 1.5 0 0 1 .022 2.121L7.847 21.807.567 14.89a1.5 1.5 0 1 1 2.066-2.175l5.138 4.88L21.328 3.751a1.5 1.5 0 0 1 2.122-.023Z' fill='%23E4532C'/%3E%3C/svg%3E");
+  background-position: left top;
+  background-repeat: no-repeat;
+  padding-left: 45px;
+  margin-bottom: 24px;
+}
+.cms-club-masterov #promo .club-app__note ul li:last-child {
+  margin-bottom: 0!important;
+}
+@media (min-width: 768px) {
+  .cms-club-masterov #promo .club-app {
+    margin-left: -45px;
+    margin-right: -45px;
+  }
+  .cms-club-masterov #promo .club-app__bg-xs {
+    display: none;
+  }
+  .cms-club-masterov #promo .club-app__bg-md {
+    display: block;
+  }
+  .cms-club-masterov #promo .club-app__container {
+    padding-top: 18px;
+    padding-bottom: 70px;
+  }
+  .cms-club-masterov #promo .club-app__wrap {
+    max-width: 92%;
+  }
+  .cms-club-masterov #promo .club-app__flex {
+    display: none;
+  }
+  .cms-club-masterov #promo .club-app__img {
+    max-width: 97%;
+  }
+  .cms-club-masterov #promo .club-app__img > img {
+    margin-left: -7px;
+    margin-bottom: -7px;
+  }
+  .cms-club-masterov #promo .club-app__img-link {
+    position: absolute;
+    z-index: 1;
+    top: 60%;
+    left: 12%;
+    right: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .cms-club-masterov #promo .club-app__img-link a {
+    display: block;
+    width: 19%;
+    margin-bottom: 2.3%;
+  }
+  .cms-club-masterov #promo .club-app__img-link a img {
+    width: 100%;
+  }
+  .cms-club-masterov #promo .club-app__heading {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .cms-club-masterov #promo .club-app__note {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .cms-club-masterov #promo .club-app__note ul li {
+    margin-bottom: 27px;
+    background-position: left center;
+  }
+}
+@media (min-width: 992px) {
+  .cms-club-masterov #promo .club-app {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cms-club-masterov #promo .club-app__bg-md {
+    display: none;
+  }
+  .cms-club-masterov #promo .club-app__bg-lg {
+    display: block;
+  }
+  .cms-club-masterov #promo .club-app__container {
+    padding-top: 25px;
+    padding-bottom: 70px;
+  }
+  .cms-club-masterov #promo .club-app__wrap {
+    max-width: 1030px;
+  }
+  .cms-club-masterov #promo .club-app__img > img {
+    margin-left: -10px;
+  }
+  .cms-club-masterov #promo .club-app__heading {
+    font-size: 32px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+  .cms-club-masterov #promo .club-app__note {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .cms-club-masterov #promo .club-app__note ul li {
+    margin-bottom: 20px;
+  }
+}

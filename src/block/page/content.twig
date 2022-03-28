@@ -1,0 +1,31 @@
+<div class="main-container">
+	<div class="main" role="main">
+		<div class="std">
+			<div id="promo">
+				{% for content in content %}
+				{% if content.view == "banner" %}
+				{% include "../common/banner/banner.twig"%}
+				{% endif %}
+				{% if content.view == "feature" %}
+				{% include "../common/feature/feature.twig"%}
+				{% endif %}
+				{% if content.view == "lineup" %}
+				{% include "../common/lineup/lineup.twig"%}
+				{% endif %}
+				{% if content.view == "plus" %}
+				{% include "../common/plus/plus.twig"%}
+				{% endif %}
+				{% if content.view == "reviews" %}
+				{% include "../common/reviews/reviews.twig"%}
+				{% endif %}
+				{% if content.view == "products" %}
+				{% include "../common/products/products.twig"%}
+				{% endif %}
+				{% if content.view == "app" %}
+				{% include "../common/app/app.twig"%}
+				{% endif %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,72 @@
+
+				<section class="{{ content.prefix }}  swiper-section" id="{{ content.id }}">
+					<div class="{{ content.prefix }}__container">
+						{% if content.title %}
+						<h2 class="{{ content.prefix }}__title">{{ content.title }}</h2>
+						{% endif %}
+						{% if content.name %}
+						<div class="{{ content.prefix }}__name-wrap">
+							<h3 class="{{ content.prefix }}__name">{{ content.name }}</h3>
+						</div>
+						{% endif %}
+						<div class="{{ content.prefix }}__slider">
+							<div class="{{ content.prefix }}__slider-container  swiper-container"   data-widget="{{ content.id }}"  {{ content.slider_attr }} >
+								{% if content.widget %}
+									{{ ' {{widget ' }}{{ content.widget }}{{ ' }} ' }}
+								{% endif %}
+								{% if content.list_test %}
+									<style>
+										.swiper-test .swiper-slide{
+											background: red;
+											height: 552px;
+										}
+										@media (min-width: 768px) {
+											.swiper-test .swiper-slide{
+												height: 435px;
+											}
+										}
+										@media (min-width: 1200px) {
+											.swiper-test .swiper-slide{
+												height: 570px;
+											}
+										}
+									</style>
+								<div class="swiper-wrapper swiper-test">
+									{% for list in content.list_test %}
+									<div class="swiper-slide">1</div>
+									{% endfor %}
+								</div>
+								{% endif %}
+								{% if content.list %}
+								<div class="{{ content.prefix }}__slider-wrapper  swiper-wrapper">
+									{% for item in content.list %}
+									<a href="{{ item.link }}" target="_blank" class="{{ content.prefix }}__item  swiper-slide">
+									{% if item.img %}
+										{% set ext = 'jpg' %}
+										{% if item.ext %}
+											{% set ext = item.ext %}
+										{% endif %}
+										{% set pth = path_img %}
+										{% if item.path %}
+											{% set pth = item.path %}
+										{% endif %}
+										<picture class="{{ content.prefix }}__item-img">
+											{% if item.img_xs == "true" %}
+												<source type="image/webp" srcset="{{ path.img }}{{ pth }}/{{ item.img }}-320.webp" media="(max-width: 575px)">
+												<source type="image/jpeg" srcset="{{ path.img }}{{ pth }}/{{ item.img }}-320.{{ ext }}" media="(max-width: 575px)">
+											{% endif %}
+											<source type="image/webp" srcset="{{ path.img }}{{ pth }}/{{ item.img }}.webp">
+											<img src="{{ path.img }}{{ pth }}/{{ item.img }}.{{ ext }}" alt="{{ item.title }}">
+										</picture>
+									{% endif %}
+										<div class="{{ content.prefix }}__item-title">{{ item.title }}</div>
+									</a>
+									{% endfor %}
+								</div>
+								{% endif %}
+							</div>
+							<button type="button" class="{{ content.prefix }}__slider-btn swiper-button-prev slider-btn-prev-{{ content.id }}"></button>
+							<button type="button" class="{{ content.prefix }}__slider-btn  swiper-button-next slider-btn-next-{{ content.id }}"></button>
+						</div>
+					</div>
+				</section>

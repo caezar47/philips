@@ -1,0 +1,150 @@
+<div id="promo" class="promo">
+
+	<section class="banner">
+		<picture>
+			<source media="(max-width: 600px)" srcset="/media/up/promo/2021/P-7384/banner_mobile_v4.jpg" type="image/jpg">
+			<source media="(max-width: 600px)" srcset="/media/up/promo/2021/P-7384/banner_mobile_v4.webp" type="image/webp">
+			<source media="(max-width: 991px)" srcset="/media/up/promo/2021/P-7384/banner_tablet_v4.jpg" type="image/jpg">
+			<source media="(max-width: 991px)" srcset="/media/up/promo/2021/P-7384/banner_tablet_v4.webp" type="image/webp">
+			<source srcset="/media/up/promo/2021/P-7384/banner_desktop_v4.webp" type="image/webp">
+			<img class="banner__img" src="/media/up/promo/2021/P-7384/banner_desktop_v4.jpg" alt="main banner">
+		</picture>
+		<div class="wrapper">
+			<h1 class="banner__title">
+				<span>Дополнительная<br> Cкидка 10%</span> для тех, кто в начале пути, <span>по промокоду START10<span>
+			</h1>
+		</div>
+	</section>
+
+	<div class="promo-content">
+		<!--    <div class="float-banner">
+                <div class='float-banner__promo'>springsale<br>-10%</div>
+            </div> -->
+		<div class="container">
+			<div class="content">
+				<div class="filter">
+					<div class="manage_filters">Выбрать категорию</div>
+					<div class="filter_wrapper">
+
+						<div class="sales">
+							<span class="filter__name">Категории товаров</span>
+							<label class="checkbox__text best_price">
+								<input class="filter__checkbox" id="sale_5000" type="checkbox"> Лидеры продаж
+							</label>
+							<label class="checkbox__text">
+								<input class="filter__checkbox" id="sale_5000_10000" type="checkbox"> Молокоотсосы
+							</label>
+							<label class="checkbox__text">
+								<input class="filter__checkbox" id="sale_10000_20000" type="checkbox"> Радио- и видеоняни
+							</label>
+							<label class="checkbox__text">
+								<input class="filter__checkbox" id="sale_20000" type="checkbox"> Стерилизаторы и подогреватели
+							</label>
+							<label class="checkbox__text">
+								<input class="filter__checkbox" id="sale_30000" type="checkbox"> Наборы
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="goods">
+
+					<!--div class='promocode'>
+                      <div class='promocode__text'>
+                        Используйте промокод <span class='promocode__march'>springsale</span> <br> <br> для получения  дополнительной <span class='promocode__sale'>скидки 10%</span>
+                      </div>
+                      <div class="promocode__copy">
+                        Скопировать промокод
+                      </div>
+                      <div class="promocode__message">
+                        Промокод скопирован
+                      </div>
+                    </div-->
+
+					<div class="container_widgets">
+						<p style="text-align: center; padding: 20px 0; font-size: 18px;">Используйте промокод MOM10 для получения дополнительной скидки 10%</p>
+						<!-- all categories -->
+
+						<div class="sale_5000 all_categories" id="leaders">
+							<div class="category__title"><span class='best_price'>Лидеры продаж</span></div>
+
+							{{widget type="aristos_widgets/widget_base" sku_products="SCF330/40"  limit="60" page_size="60"  col_count="4" custom_value="JL15"
+							visibility="4" availability_status="0"
+							cache_lifetime="86400" sort="final_price DESC" template="catalog/product/list.phtml" discount="0"
+							conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="}}
+						</div>
+						<div class="sale_5000_10000 all_categories" id="home-appliances" data-reduced="true">
+							<div class="category__title">Молокоотсосы</div>
+
+							{{widget type="aristos_widgets/widget_base" sku_products="SCF330/40"  limit="100" page_size="60" col_count="4"
+							custom_value="JL15"  visibility="4"
+							availability_status="0,2" cache_lifetime="86400" sort="final_price DESC" template="catalog/product/list.phtml" discount="0"
+							conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="}}
+							<button class='widget-show__more'>Смотреть все товары категории</button>
+						</div>
+						<div class="sale_10000_20000 all_categories" id="kitchen-appliances" data-reduced="true">
+							<div class="category__title">Радио- и видеоняни</div>
+							{{widget type="aristos_widgets/widget_base" sku_products="SCD831/52, SCD502/52"  limit="60" page_size="60"
+							col_count="4" custom_value="JL15"  visibility="4"
+							availability_status="0,2" cache_lifetime="86400" sort="final_price DESC" template="catalog/product/list.phtml" discount="0"
+							conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="}}
+							<button class='widget-show__more'>Смотреть все товары категории</button>
+						</div>
+						<div class="sale_20000 all_categories" id="beauty-and-health" data-reduced="true">
+							<div class="category__title">Стерилизаторы и подогреватели</div>
+							{{widget type="aristos_widgets/widget_base" sku_products="SCF291/00"  limit="100"
+							page_size="60" col_count="4" custom_value="JL15"
+							visibility="4" availability_status="0,2" cache_lifetime="86400" sort="final_price DESC" template="catalog/product/list.phtml" discount="0"
+							conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="}}
+							<button class='widget-show__more'>Смотреть все товары категории</button>
+						</div>
+						<div class="sale_30000 all_categories" id="sets" data-reduced="true">
+							<div class="category__title">Наборы</div>
+							{{widget type="aristos_widgets/widget_base" sku_products="NABOR-HU4802/01-SCF376/12-SCD502/52"  limit="100"
+							page_size="60" col_count="4" custom_value="JL15"
+							visibility="4" availability_status="0,2" cache_lifetime="86400" sort="final_price DESC" template="catalog/product/list.phtml" discount="0"
+							conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="}}
+							<button class='widget-show__more'>Смотреть все товары категории</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="terms">
+
+				<h3>Условия акции</h3>
+				<br>
+				<ol>
+					<li>Территория проведения Акции: Российская Федерация.</li>
+					<li> Срок действия Акции: с 26.11.2021г. до 29.11.2021 г. (по московскому времени 23:59)
+						включительно.</li>
+					<li>Акционные товары: Представлены на данной странице.</li>
+					<li> Ассортимент и количество товаров в специальном каталоге может меняться. Количество
+						акционного товара по специальным ценовым предложениям ограниченно. Актуальные цены товаров представлены на странице проводимой акции и действительны при нажатии кнопки *купить*</li>
+					<li> Для получения скидки 10% на акционный товар примените промокод в корзине.</li>
+					<li> Данная акция отменяет все действующие в интернет-магазине акции.</li>
+					<li> Цена товара, участвующего в данной акции, может меняться в соответствии с ценами
+						интернет-магазина. Уточняйте актуальную стоимость на сайте интернет-магазина.</li>
+					<li> Скидка по данной акции не может быть предоставлена альтернативными способами, в том
+						числе не возмещается в денежном эквиваленте.</li>
+					<li> Данная акция распространяется только на розничных покупателей. Покупка по данной
+						акции
+						в коммерческих целях для дальнейшей перепродажи не допускается.</li>
+					<li> Розничным покупателем данной Акции является лицо осуществляющее покупку не более 3
+						(трех) единицы товара одного наименования.</li>
+					<li> Акции данного раздела не действительны для категорий клиентов с особыми скидочными
+						предложениями (сотрудников Philips, Партнеров, Дилеров, Корпоративных клиентов), а
+						также
+						юридических лиц.</li>
+					<li> Правила проведения Акции могут быть изменены по решению Организатора. В случае
+						изменений Организатор должен сообщить о них, опубликовав обновленные условия на
+						сайте
+						www.shop.philips.ru.</li>
+					<li> При участии в этой акции сохраняются специальные условия <a href="https://www.shop.philips.ru/faq/shipment_evo/free-delivery-evo.html">"Бесплатной
+						доставки"</a>.</li>
+				</ol>
+				<li> Организатор Акции: ООО «Аристос», юр. адрес: 117218, г. Москва, Дмитрия Ульянова, д.42,
+					стр.2, этаж 1, комната 1, ИНН 7727665963, КПП 772701001, ОГРН 5087746296908</li>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,5 @@
+{% if js %}
+    {% for value in js %}
+        <script src="{{path.js}}/{{value.name}}" ></script>
+    {% endfor %}
+{% endif %}

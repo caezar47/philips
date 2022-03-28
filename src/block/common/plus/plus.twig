@@ -1,0 +1,76 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ content.prefix }}__container">
+						<div class="{{ content.prefix }}__desc">
+							{% if content.title %}
+							<{{ content.title_tag }} class="{{ content.prefix }}__title">
+								{{ content.title }}
+							</{{ content.title_tag }}>
+							{% endif %}
+								{% if content.text %}
+							<div class="{{ content.prefix }}__text  top">
+								{{ content.text }}
+							</div>
+							{% endif %}
+						</div>
+
+						{% if content.img %}
+						{% set ext = 'jpg' %}
+						{% set label_ext = 'jpg' %}
+						{% if content.img_ext %}
+							{% set ext = content.img_ext %}
+						{% endif %}
+						{% if content.label_ext %}
+							{% set label_ext = content.label_ext %}
+						{% endif %}
+						{% set picture_path = path_img %}
+						{% set label_path = path_img %}
+						{% if content.img_path %}
+							{% set picture_path = content.img_path %}
+						{% endif %}
+						{% if content.label_path %}
+							{% set label_path = content.label_path %}
+						{% endif %}
+						<div class="{{ content.prefix }}__img-wrap  {{ content.group }}">
+							<picture class="{{ content.prefix }}__img  {{ content.group }}">
+							{% if content.img_xs == "true" %}
+							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: 575px)">
+							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
+							{% endif %}
+							{% if content.img_md == "true" %}
+							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
+							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
+							{% endif %}
+								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}.webp">
+								<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}.{{ ext }}" alt="{{ content.title }}">
+							</picture>
+							{% if content.label %}
+							<picture class="{{ content.prefix }}__img-label">
+								<source type="image/webp" srcset="{{ path.img }}{{ label_path }}/{{ content.label }}.webp">
+								<img src="{{ path.img }}{{ label_path }}/{{ content.label }}.{{ label_ext }}" alt="">
+							</picture>
+							{% endif %}
+						</div>
+						{% endif %}
+						{% if content.list %}
+						<div class="{{ content.prefix }}__item-wrap  slide-toggle">
+							{% for item in content.list %}
+							<div class="{{ content.prefix }}__item  {{ item.group }}">
+								{% if item.text %}
+								<a class="{{ content.prefix }}__item-title  {{ item.mod }}  slide-toggle__btn">{{ item.title }}</a>
+								<div class="{{ content.prefix }}__item-text  slide-toggle__list" {% if item.mod %}style="display: block;"{% else %}style="display: none;"{% endif %}>{{ item.text }}</div>
+								{% else %}
+								<a class="{{ content.prefix }}__item-title  {{ item.mod }}">{{ item.title }}</a>
+								{% endif %}
+
+							</div>
+							{% endfor %}
+						</div>
+						{% endif %}
+						{% if content.text_bottom %}
+						<div class="{{ content.prefix }}__text  bottom  {{ content.group }}">
+							{{ content.text_bottom }}
+						</div>
+						{% endif %}
+					</div>
+				</section>

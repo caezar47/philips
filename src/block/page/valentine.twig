@@ -1,0 +1,121 @@
+<div class="main-container">
+	<div class="main" role="main">
+		<div class="std">
+			<div id="promo">
+				{% for content in content %}
+				{% if content.view == "banner" %}
+				<section class="{{ content.prefix }}">
+					<div class="{{ content.prefix }}__container">
+						<div class="{{ content.prefix }}__flex">
+							<div class="{{ content.prefix }}__desc">
+								<h1 class="{{ content.prefix }}__heading">
+									{{ content.title }}
+								</h1>
+								<div class="{{ content.prefix }}__note">
+									{{ content.note }}
+								</div>
+							</div>
+							<picture class="{{ content.prefix }}__img">
+								<source type="image/webp" srcset="{{ path.img }}/promo/2022/P-8478/{{ content.img }}-xs.webp" media="(max-width: 600px)">
+								<source type="image/png" srcset="{{ path.img }}/promo/2022/P-8478/{{ content.img }}-xs.png" media="(max-width: 600px)">
+								<source type="image/webp" srcset="{{ path.img }}/promo/2022/P-8478/{{ content.img }}-md.webp" media="(max-width: 1199px)">
+								<source type="image/png" srcset="{{ path.img }}/promo/2022/P-8478/{{ content.img }}-md.png" media="(max-width: 1199px)">
+														<source type="image/webp" srcset="{{ path.img }}/promo/2022/P-8478/{{ content.img }}.webp" media="(min-width: 1200px)">
+								<img src="{{ path.img }}/promo/2022/P-8478/{{ content.img }}.png" alt="">
+							</picture>
+						</div>
+					</div>
+				</section>
+				{% endif %}
+				{% if content.view == "card" %}
+				<section class="{{ content.prefix }}">
+					<div class="{{ content.prefix }}__container">
+						<div class="{{ content.prefix }}__flex">
+							<div class="{{ content.prefix }}__filter-wrap">
+								<div class="{{ content.prefix }}__filter-mob">
+									<div class="{{ content.prefix }}__filter-dropdown filter-outter">
+										<span class="{{ content.prefix }}__filter-dropdown-img  filter-outter-img"></span>
+										<span class="{{ content.prefix }}__filter-dropdown-text  filter-outter-text">Категория</span>
+
+										<div class="{{ content.prefix }}__filter-dropdown-menu filter">
+											<div class="filter_wrapper filter_wrapper_cat">
+
+												<div>
+
+													{% for filter in content.filter %}
+														<label class="{{ content.prefix }}__filter-item">
+															<input class="{{ content.prefix }}__filter-input  filter__checkbox sale mob" for="{{ filter.id }}" type="checkbox" data-sale-link="#{{ filter.id }}" />
+															{{filter.name}}
+															<span class="{{ content.prefix }}__filter-checkbox"></span>
+														</label>
+													{% endfor %}
+
+												</div>
+												<div class="{{ content.prefix }}__filter-btn">
+													<button type="button" class="{{ content.prefix }}__filter-reset  filters__reset2">Сбросить все</button>
+												</div>
+											</div>
+
+										</div>
+									</div>
+								</div>
+
+								<div class="{{ content.prefix }}__filter">
+
+									<div class="{{ content.prefix }}__filter-heading">Категория</div>
+									<div>
+										{% for filter in content.filter %}
+											<label class="{{ content.prefix }}__filter-item">
+												<input class="{{ content.prefix }}__filter-input  filter__checkbox sale" for="{{ filter.id }}" type="checkbox" data-sale-link="#{{ filter.id }}" />
+												{{filter.name}}
+												<span class="{{ content.prefix }}__filter-checkbox"></span>
+											</label>
+										{% endfor %}
+									</div>
+									<div class="{{ content.prefix }}__filter-btn">
+
+										<button type="button" class="{{ content.prefix }}__filter-reset  filters__reset">Сбросить все</button>
+									</div>
+
+								</div>
+							</div>
+							<div>
+								<div class="{{ content.prefix }}__category-wrap">
+									<label class="{{ content.prefix }}__category">
+										<input class="{{ content.prefix }}__category-input filter__checkbox cat  is-active" for="for-woman" type="checkbox" data-link="#for-woman">
+										<span class="{{ content.prefix }}__category-btn">Для нее</span>
+
+									</label>
+									<label class="{{ content.prefix }}__category">
+										<input class="{{ content.prefix }}__category-input  filter__checkbox cat" for="for-men" type="checkbox" data-link="#for-men">
+										<span class="{{ content.prefix }}__category-btn">Для него</span>
+									</label>
+								</div>
+
+
+								<div class="{{ content.prefix }}__category-widgets  container_widgets">
+									{% for sku in content.sku %}
+									<div id="{{ sku.id }}" class="cat-{{ sku.id }} all_categories cat-block  {{ sku.hide }}">
+										<h3 class="{{ content.prefix }}__category-heading">{{ sku.name }}</h3>
+										{% for card in sku.card %}
+										<div class="sale-block all_categories" data-reduced="true" id="{{ card.id }}">
+											<h4 class="{{ content.prefix }}__category-widgets-name">{{ card.name }}</h4>
+											{{  '{{widget type="aristos_widgets/widget_base" sku_products="'}}{{ card.sku }}{{ '" limit="60" page_size="60" col_count="4" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="}} '}}
+											<button class="{{ content.prefix }}__category-show-btn  widget-show__more">
+												{{content.btn}}</button>
+										</div>
+										{% endfor %}
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				{% endif %}
+				{% endfor %}
+				<button type="button" id="to-top">Вернуться к фильтрам</button>
+			</div>
+		</div>
+	</div>
+</section>

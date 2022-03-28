@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+    <head>
+        {% include "../block/common/head/head.twig" with {
+            title:"Клуб Мастеров",
+            style:[
+                {
+                    name: css.trimmery,
+                }
+            ],
+        }  %}
+    </head>
+    <body class="cms-trimmery">
+
+            {% include "../block/page/trimmery.twig" with {
+               content: [
+                    {
+                        view:   'header',
+                        prefix: 'trimmery-header',
+                        bg:     'header-bg',
+                        title:  'Мультитриммеры <br>«Всё в одном»',
+                        note:   'Все, что тебе нужно,<br> в&nbsp;одном устройстве',
+                    },
+                    {
+                        view:   'card',
+                        prefix: 'trimmery-card',
+                        btn:    'Узнать больше о серии',
+                        link:   '#header_block',
+                        card: [
+                            {
+                                img:        'card-bt9810-15',
+                                name:       "BT9810/15",
+                                link:       "/personalnyy-uhod/britvy-i-trimmery/trimmery/trimmer-philips-9000-prestige-bt9810.html",
+                                collection: "#",
+                                note:       "<ul>
+                                                        <li>Премиальный набор для подравнивания 12&nbsp;в 1</li>
+                                                        <li>OneBlade</li>
+                                                        <li>Самозатачивающиеся лезвия</li>
+                                                        <li>Можно использовать в&nbsp;душе</li>
+                                                    </ul>",
+                                cost:       "12 990",
+                                sku:        "BT9810/15",
+                                bay:        '/aristoscheckout/cart/addGroupProduct?p[BT9810/15]=1l',
+                            },
+                            {
+                                img:        'card-mg9710-90',
+                                name:       "MG9710/90",
+                                link:       "/personalnyy-uhod/britvy-i-trimmery/trimmery/premialnyy-nabor-dlya-podravnivaniya-philips-mg9710-12-v-1-dlya-volos-na-golove-litse-i-tele.html",
+                                collection: "#",
+                                note:       "<ul>
+                                                        <li>Премиальный набор для подравнивания 12&nbsp;в 1</li>
+                                                        <li>OneBlade</li>
+                                                        <li>Самозатачивающиеся лезвия</li>
+                                                        <li>Можно использовать в&nbsp;душе</li>
+                                                    </ul>",
+                                cost:       "7 490",
+                                cost_old:   "9 990",
+                                sku:        "MG9710/90",
+                                bay:        '/aristoscheckout/cart/addGroupProduct?p[MG9710/90]=1l',
+                            },
+                            {
+                                img:        'card-mg7745-15',
+                                name:       "MG7745/15",
+                                link:       "/personalnyy-uhod/britvy-i-trimmery/trimmery/trimmer-philips-mg7745-14-v-1-dlya-volos-na-golove-litse-i-tele.html",
+                                collection: "#",
+                                note:       "<ul>
+                                                        <li>16&nbsp;в 1&nbsp;для лица, волос и&nbsp;тела*</li>
+                                                        <li>До&nbsp;180 минут работы</li>
+                                                        <li>Самозатачивающиеся лезвия</li>
+                                                        <li>Можно использовать в&nbsp;душе</li>
+                                                    </ul>",
+                                cost:       "5 990",
+                                cost_old:   "8 990",
+                                sku:        "MG7745/15",
+                                bay:        '/aristoscheckout/cart/addGroupProduct?p[MG7745/15]=1l',
+                            },
+                            {
+                                img:        'card-mg5730-15',
+                                name:       "MG5730/15",
+                                link:       "/personalnyy-uhod/britvy-i-trimmery/trimmery/trimmer-philips-mg5730-11-v-1-dlja-volos-na-golove-lice-i-tele.html",
+                                collection: "#",
+                                note:       "<ul>
+                                                        <li>9&nbsp;в 1&nbsp;для лица, волос и&nbsp;тела* </li>
+                                                        <li>До&nbsp;80&nbsp;минут работы</li>
+                                                        <li>Самозатачивающиеся лезвия</li>
+                                                        <li>Водонепроницаемая</li>
+                                                    </ul>",
+                                cost:       "3 590",
+                                cost_old:   "5 990",
+                                sku:        "MG5730/15",
+                                bay:        '/aristoscheckout/cart/addGroupProduct?p[MG5730/15]=1l',
+                            },
+                            {
+                                img:        'card-mg3710-15',
+                                name:       "MG3710/15",
+                                link:       "/personalnyy-uhod/britvy-i-trimmery/trimmery/trimmer-philips-mg3710-6-v-1-dlja-lica.html",
+                                collection: "#",
+                                note:       "<ul>
+                                                        <li>9&nbsp;в 1&nbsp;для лица, волос и&nbsp;тела* </li>
+                                                        <li>До&nbsp;80&nbsp;минут работы</li>
+                                                        <li>Самозатачивающиеся лезвия</li>
+                                                        <li>Насадки можно мыть</li>
+                                                    </ul>",
+                                cost:       "2 990",
+                                cost_old:   "3 290",
+                                sku:        "MG3710/15",
+                                bay:        '/aristoscheckout/cart/addGroupProduct?p[MG3710/15]=1l',
+                            },
+                        ],
+                    },
+                    {
+                        view:   'friend',
+                        prefix: 'club-friend',
+                        bg:     'friend-bg',
+                        title:  'Мало бонусов?<br> Приведите друга!',
+                        note:   '<ol>
+                                            <li><span><strong>Зарегистрируйтесь</strong> на&nbsp;одном из&nbsp;наших сайтов (DeWALT, STANLEY, BLACK+DECKER и&nbsp;LENOX) или в&nbsp;мобильном приложении Клуб Мастеров</span></li>
+                                            <li><span><strong>Порекомендуйте Клуб Мастеров вашим друзьям:</strong> скопируйте уникальную ссылку в&nbsp;<a href="/customer/account/login">Личном кабинете</a> и&nbsp;поделитесь ей&nbsp;в&nbsp;социальных сетях или в&nbsp;личных сообщениях</span></li>
+                                        </ol>',
+                    },
+                    {
+                        view:   'features',
+                        prefix: 'trimmery-features',
+                        card: [
+                            {
+                                bg:  'features-item1',
+                                note: '<h5>Надежность</h5>
+                                                <h3>Острые, как в день покупки</h3>
+                                                <p>Оцените максимальную точность металлических лезвий. Стальные лезвия всегда остаются такими же острыми, как и в первый день использования, даже после 5 лет работы: они затачиваются самостоятельно, слегка касаясь друг друга во время работы.</p>
+                                                <ul>
+                                                    <li>Максимальная точность</li>
+                                                    <li>В 2 раза больше лезвий</li>
+                                                    <li>Самозатачивающиеся лезвия</li>
+                                                </ul>',
+                            },
+                            {
+                                mod:  'note-right',
+                                bg:  'features-item2',
+                                note: '<h5>Универсальность</h5>
+                                                <h3>Специальные насадки<br> для волос<br>
+                                                на голове, лице и теле</h3>
+                                                <p>Наши мультитриммеры поставляются с ударопрочными гребнями для равномерного подравнивания волос на лице и теле.</p>
+                                                <ul>
+                                                    <li class="marker-beard">Для подравнивания</li>
+                                                    <li class="marker-hair">Для стайлинга</li>
+                                                    <li class="marker-body">Уход за телом</li>
+                                                </ul>',
+                            },
+
+                            {
+                                mod:  'note-icon',
+                                bg:  'features-item3',
+                                icon: 'features-item3-icon',
+                                note: '<h5>Водонепроницаемый корпус</h5>
+                                                <h3>Легко пользоваться.<br>
+                                                Легко&nbsp;обслуживать.</h3>
+                                                <p>Наши мультитриммеры полностью водонепроницаемы, так что просто промойте насадку под краном для удобной очистки.</p>',
+                            },
+                        ],
+                    },
+                    {
+                        view:       'description',
+                        prefix:     'trimmery-description',
+                        name:       'Beard trimmer 9000 Prestige',
+                        title:      'Триммер для бороды BT9810/15',
+                        reviews:    '/personalnyy-uhod/britvy-i-trimmery/trimmery/trimmer-philips-9000-prestige-bt9810.html#box-product_review_data',
+                        sku:        'BT9810/15',
+                        cost:       "00 000",
+                        cost_old:   "12 990",
+                        img:        'desc-item-bt9810-15',
+                        bay:        '/aristoscheckout/cart/addGroupProduct?p[BT9810/15]=1l',
+                        link:       '/personalnyy-uhod/britvy-i-trimmery/trimmery/trimmer-philips-9000-prestige-bt9810.html',
+                        card: [
+                            {
+                                name:   'Абсолютная точность с уникальной технологией SteelPrecision',
+                                note:   'Новая технология SteelPrecision включает в себя встроенный металлический гребень и мощный режущий блок. Эта система не гнется, как пластиковый гребень, и выдержит любое усилие.',
+                                img:    'desc-item1',
+                            },
+                            {
+                                name:   'Простое подравнивание даже густой и длинной бороды',
+                                note:   'Датчик PowerAdapt проверяет густоту волос 125 раз в секунду и автоматически настраивает мотор для поддержания стабильной мощности. Таким образом точное подравнивание достигается вне зависимости от густоты и длины волос.',
+                                img:    'desc-item2',
+                            },
+                            {
+                                name:   'Триммер повторяет контуры кожи для равномерного подравнивания',
+                                note:   'Триммер повторяет контуры кожи и всегда располагается под нужным углом для достижения оптимальных результатов. Он также оснащен покрытием для гладкого скольжения триммера по коже лица.',
+                                img:    'desc-item3',
+                            },
+                            {
+                                name:   'До 120 минут автономной работы без подзарядки + функция быстрой зарядки',
+                                note:   'Современный литий-ионный аккумулятор обеспечивает до 120 минут автономной работы после зарядки в течение 1 часа. Вы также можете оценить функцию быстрой зарядки: в течение 5 минут она гарантирует один полноценный сеанс подравнивания.',
+                                img:    'desc-item4',
+                            },
+                            {
+                                name:   'Острые металлические лезвия точно сбривают волоски без выдергивания',
+                                note:   'Наши металлические лезвия всегда будут острыми. Их специальная форма всегда будет обеспечивать точное сбривание даже самых густых волос без выдергивания.',
+                                img:    'desc-item5',
+                            },
+                            {
+                                name:   'Корпус из нержавеющей стали высокого качества для долговечности устройства и дорожный футляр премиум класса',
+                                note:   'Бритва BT9000 Prestige создана для использования на протяжении многих лет. Высококачественный корпус из нержавеющей стали проходит этап ручной проверки, чтобы вы могли оценить премиальный уровень и внимание к деталям.',
+                                img:    'desc-item6',
+                            },
+                            {
+                                name:   '30 разных установок длины с шагом точности 0,2 мм',
+                                note:   'Моделируйте максимально четкие линии бороды, выбирая длину волосков с точностью до 0,2 мм. Используйте регулятор для выбора из 30 установок длины и фиксации желаемой длины — от 0,4 до 10 мм.',
+                                img:    'desc-item7',
+                            },
+                            {
+                                name:   'Откидная головка для простой очистки под струей воды',
+                                note:   'Просто откройте головку и промойте под струей воды.',
+                                img:    'desc-item8',
+                            },
+                        ]
+                    },
+                    {
+                        view:       'reviews',
+                        status:     'js-toggled',
+                        title:      'Отзывы о триммере BT9810/15',
+                        link:       '/personalnyy-uhod/britvy-i-trimmery/trimmery/trimmer-philips-9000-prestige-bt9810.html#box-product_review_data',
+                    },
+                    {
+                        view:       'app',
+                        prefix:     'trimmery-app',
+                        img:        'app',
+                        name:       'Персонализация через приложение',
+                        title:      'Используйте приложение Groomtribe для выбора вашего образа',
+                        note:       '<p>Данные о&nbsp;ваших сеансах бритья всегда синхронизируются, чтобы вы&nbsp;могли в&nbsp;любое время пользоваться интеллектуальными функциями бритвы.</p>
+                                    <ul>
+                                        <li>Получайте статьи, советы по&nbsp;уходу за&nbsp;собой</li>
+                                        <li>Рекомендации по&nbsp;созданию индивидуального стиля</li>
+                                        <li>Применяйте различные образы с&nbsp;бородой в&nbsp;режиме реального&nbsp;времени</li>
+                                    </ul>',
+                        app:    [
+                            {
+                                link:   'https://play.google.com/store/apps/details?id=com.philips.vitaskin.male',
+                                img:    'app-google-play',
+                            },
+                            {
+                                link:   '//apps.apple.com/app/id1260946476',
+                                img:    'app-apple-store',
+                            },
+                        ],
+                    },
+
+                    {
+                        view:       'sku',
+                        prefix:     'trimmery-sku',
+                        title:      'Какой универсальный триммер <span>лучше всего подойдет именно вам?</span>',
+                    },
+                ],
+            } %}
+
+    {% include "../block/common/script/script.twig" with {
+        js:[
+            {
+                name: js.trimmery,
+            }
+        ],
+    }
+    %}
+    </body>
+</html>

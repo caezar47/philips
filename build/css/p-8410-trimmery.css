@@ -1,0 +1,1629 @@
+/* reset */
+.breadcrumbs__wrap {
+  display: none;
+}
+.cms-trimmery .website-features__wrapper {
+  display: none;
+}
+.cms-trimmery .footer__slider__wrapper {
+  display: none;
+}
+.cms-trimmery .main-container #promo * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Centrale Sans';
+}
+.cms-trimmery .main-container #promo ul,
+.cms-trimmery .main-container #promo ol {
+  padding: 0;
+  list-style: none;
+}
+.cms-trimmery .main-container #promo ul li::before,
+.cms-trimmery .main-container #promo ol li::before {
+  display: none;
+}
+.cms-trimmery .main-container #promo a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-trimmery .main-container #promo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.cms-trimmery .main-container #promo strong,
+.cms-trimmery .main-container #promo b {
+  font-weight: 700;
+}
+.cms-trimmery .main-container #promo svg .path-primary {
+  fill: #E98300;
+}
+.cms-trimmery .main-container #promo p {
+  padding-bottom: 0;
+}
+.cms-trimmery .main-container #promo .visible-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .cms-trimmery .main-container #promo .hidden-md {
+    display: none;
+  }
+  .cms-trimmery .main-container #promo .visible-md {
+    display: block;
+  }
+}
+.cms-trimmery #promo .trimmery-header {
+  position: relative;
+}
+.cms-trimmery #promo .trimmery-header__bg {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 340px;
+}
+.cms-trimmery #promo .trimmery-header__bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.cms-trimmery #promo .trimmery-header__container {
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 185px;
+  text-align: center;
+  max-width: 550px;
+  min-height: 340px;
+}
+.cms-trimmery #promo .trimmery-header__heading {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 40px;
+  color: #fff;
+  padding: 0;
+  margin: 0 0 10px;
+}
+.cms-trimmery #promo .trimmery-header__note {
+  color: #fff;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 300;
+}
+@media (min-width: 768px) {
+  .cms-trimmery #promo .trimmery-header {
+    padding: 0 30px;
+  }
+  .cms-trimmery #promo .trimmery-header__container {
+    padding-top: 200px;
+    min-height: 340px;
+  }
+  .cms-trimmery #promo .trimmery-header__bg {
+    height: 340px;
+  }
+  .cms-trimmery #promo .trimmery-header__heading {
+    font-size: 40px;
+    line-height: 45px;
+    margin-bottom: 0;
+  }
+  .cms-trimmery #promo .trimmery-header__note {
+    font-size: 17px;
+    line-height: 32px;
+  }
+  .cms-trimmery #promo .trimmery-header__note br {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .cms-trimmery #promo .trimmery-header__bg {
+    height: 540px;
+  }
+  .cms-trimmery #promo .trimmery-header__container {
+    padding-top: 304px;
+    padding-bottom: 54px;
+    min-height: 540px;
+  }
+  .cms-trimmery #promo .trimmery-header__heading {
+    font-size: 55px;
+    line-height: 65px;
+    margin-bottom: 20px;
+  }
+  .cms-trimmery #promo .trimmery-header__note {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+.cms-trimmery #promo .trimmery-card__container {
+  position: relative;
+  padding-top: 21px;
+  padding-bottom: 32px;
+  max-width: 1235px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cms-trimmery #promo .trimmery-card__slider-btn {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 33%;
+  margin: 0;
+  border: 0;
+  outline: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #576E89;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px auto;
+  border-radius: 2px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-trimmery #promo .trimmery-card__slider-btn:hover {
+  background-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-card__slider-btn:after {
+  display: none;
+}
+.cms-trimmery #promo .trimmery-card__slider-btn.swiper-button-prev {
+  left: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m3.776 9.334 7.917 7.612-1.386 1.442L.891 9.334 10.307.279l1.386 1.442-7.917 7.613Z' fill='%23fff'/%3E%3C/svg%3E");
+}
+.cms-trimmery #promo .trimmery-card__slider-btn.swiper-button-next {
+  right: 15px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.224 9.333.307 1.721 1.693.279l9.416 9.054-9.416 9.054-1.386-1.441 7.917-7.613Z' fill='%23fff'/%3E%3C/svg%3E");
+}
+.cms-trimmery #promo .trimmery-card__item {
+  z-index: 1;
+  position: relative;
+  padding: 0 15px 22px;
+}
+.cms-trimmery #promo .trimmery-card__item::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 110px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4A607A), color-stop(77.77%, #19242E));
+  background: linear-gradient(180deg, #4A607A 0%, #19242E 77.77%);
+  border-radius: 4px;
+}
+.cms-trimmery #promo .trimmery-card__item-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.cms-trimmery #promo .trimmery-card__item-wrap > * {
+  width: 100%;
+}
+.cms-trimmery #promo .trimmery-card__item-img {
+  display: block;
+  max-width: 162px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.cms-trimmery #promo .trimmery-card__item-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.cms-trimmery #promo .trimmery-card__item-name {
+  font-size: 17px;
+  line-height: 18px;
+  margin: 0 0 17px;
+  font-weight: 700;
+}
+.cms-trimmery #promo .trimmery-card__item-name a {
+  color: #fff;
+  text-decoration: none;
+}
+.cms-trimmery #promo .trimmery-card__item-note {
+  color: #fff;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.cms-trimmery #promo .trimmery-card__item-note ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.cms-trimmery #promo .trimmery-card__item-note ul li {
+  padding: 0 0 0 10px;
+  margin: 0 0 8px;
+  background-image: url("data:image/svg+xml,%3Csvg width='5' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.293 4 .646 1.354l.708-.708 3 3a.5.5 0 0 1 0 .708l-3 3-.708-.708L3.293 4Z' fill='%23fff'/%3E%3C/svg%3E");
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+}
+.cms-trimmery #promo .trimmery-card__item-note ul li:last-child {
+  margin-bottom: 0!important;
+}
+.cms-trimmery #promo .trimmery-card__item-group {
+  margin-top: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cms-trimmery #promo .trimmery-card__item-price .price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.cms-trimmery #promo .trimmery-card__item-price .price-box > .price,
+.cms-trimmery #promo .trimmery-card__item-price .special-price {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  font-size: 17px;
+  line-height: 15px;
+}
+.cms-trimmery #promo .trimmery-card__item-price .old-price {
+  color: #69839A;
+  margin: 5px 0 0;
+  font-size: 15px;
+  line-height: 15px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.cms-trimmery #promo .trimmery-card__item-btn {
+  margin-left: auto;
+}
+.cms-trimmery #promo .trimmery-card__item-btn > * {
+  margin-bottom: 10px;
+}
+.cms-trimmery #promo .trimmery-card__item-btn > *:last-child {
+  margin-bottom: 0!important;
+}
+.cms-trimmery #promo .trimmery-card__item-btn .button {
+  display: block;
+  text-align: center;
+  padding: 5px;
+  width: 100%;
+  border-radius: 3px;
+  color: #fff;
+  min-width: 166px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 300;
+  border: 1px solid #5C7286;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-trimmery #promo .trimmery-card__item-btn .button:hover {
+  border-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-card__item-btn .button.button_in-stock {
+  background: #E98300;
+  border: 1px solid #E98300;
+}
+.cms-trimmery #promo .trimmery-card__item-btn .button.button_in-stock:hover {
+  background: #FFA40D;
+  border-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-card__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 5px;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  background-color: #00629F;
+  min-height: 30px;
+  min-width: 240px;
+}
+.cms-trimmery #promo .trimmery-card__btn-wrap {
+  text-align: center;
+  padding-top: 17px;
+}
+.cms-trimmery #promo .trimmery-card__btn:hover {
+  background-color: #FFA40D;
+}
+@media (min-width: 768px) {
+  .cms-trimmery #promo .trimmery-card__container {
+    padding-top: 25px;
+    padding-right: 33px;
+    padding-left: 33px;
+    padding-bottom: 33px;
+  }
+  .cms-trimmery #promo .trimmery-card__slider-btn {
+    background-color: #113961;
+    top: 46%;
+  }
+  .cms-trimmery #promo .trimmery-card__slider-btn.swiper-button-prev {
+    left: 0px;
+  }
+  .cms-trimmery #promo .trimmery-card__slider-btn.swiper-button-next {
+    right: 0px;
+  }
+  .cms-trimmery #promo .trimmery-card__item {
+    padding: 0 12px 14px;
+  }
+  .cms-trimmery #promo .trimmery-card__item::before {
+    top: 85px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-wrap {
+    min-height: 508px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-img {
+    max-width: 91%;
+  }
+  .cms-trimmery #promo .trimmery-card__item-name {
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 10px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-note {
+    font-size: 9.5px;
+    line-height: 12px;
+    margin-right: -5px;
+    margin-bottom: 15px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-note ul li {
+    padding: 0 0 0 8px;
+    margin: 0 0 6px;
+    background-size: 4px auto;
+  }
+  .cms-trimmery #promo .trimmery-card__item-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+  .cms-trimmery #promo .trimmery-card__item-price {
+    min-height: 29px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-price .price-box > .price,
+  .cms-trimmery #promo .trimmery-card__item-price .special-price {
+    font-size: 13px;
+    line-height: 12px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-price .old-price {
+    font-size: 12px;
+    line-height: 12px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-btn {
+    margin: 0;
+    padding-top: 13px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-btn > * {
+    margin-bottom: 6px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-btn .button {
+    min-width: auto;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .cms-trimmery #promo .trimmery-card__btn {
+    min-width: 225px;
+  }
+  .cms-trimmery #promo .trimmery-card__btn-wrap {
+    padding-top: 28px;
+  }
+}
+@media (min-width: 1024px) {
+  .cms-trimmery #promo .trimmery-card__container {
+    padding-top: 35px;
+    padding-bottom: 70px;
+  }
+  .cms-trimmery #promo .trimmery-card__item {
+    padding: 0 16px 23px;
+  }
+  .cms-trimmery #promo .trimmery-card__item::before {
+    top: 118px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-wrap {
+    min-height: 705px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-name {
+    font-size: 18px;
+    line-height: 19px;
+    margin-bottom: 18px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-note {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-note ul li {
+    padding: 0 0 0 10px;
+    margin: 0 0 9px;
+    background-size: 5px auto;
+  }
+  .cms-trimmery #promo .trimmery-card__item-price {
+    min-height: 37px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-price .price-box > .price,
+  .cms-trimmery #promo .trimmery-card__item-price .special-price {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-price .old-price {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-btn {
+    padding-top: 20px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-btn > * {
+    margin-bottom: 9px;
+  }
+  .cms-trimmery #promo .trimmery-card__item-btn .button {
+    padding: 6px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .cms-trimmery #promo .trimmery-card__btn {
+    font-size: 17px;
+    line-height: 30px;
+    min-height: 40px;
+    min-width: 307px;
+  }
+  .cms-trimmery #promo .trimmery-card__btn-wrap {
+    padding-top: 38px;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-trimmery #promo .trimmery-card__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .cms-trimmery #promo .trimmery-card__slider-btn {
+    display: none;
+  }
+  .cms-trimmery #promo .trimmery-card__item-wrap {
+    min-height: 696px;
+  }
+}
+.cms-trimmery #promo .trimmery-features {
+  background: #15212D;
+  position: relative;
+}
+.cms-trimmery #promo .trimmery-features__btn {
+  position: absolute;
+  z-index: 2;
+  top: 26%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  background-color: #405060;
+  border-radius: 3px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 12px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-trimmery #promo .trimmery-features__btn::after {
+  display: none;
+}
+.cms-trimmery #promo .trimmery-features__btn:hover {
+  background-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-features__btn.swiper-button-prev {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m3.776 9.334 7.917 7.612-1.386 1.442L.891 9.334 10.307.279l1.386 1.442-7.917 7.613Z' fill='%23fff'/%3E%3C/svg%3E");
+  left: 0;
+  background-position: 13px center;
+}
+.cms-trimmery #promo .trimmery-features__btn.swiper-button-next {
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.224 9.333.307 1.721 1.693.279l9.416 9.054-9.416 9.054-1.386-1.441 7.917-7.613Z' fill='%23fff'/%3E%3C/svg%3E");
+  right: 0;
+  background-position: 15px center;
+}
+.cms-trimmery #promo .trimmery-features__item-bg {
+  display: block;
+  height: 250px;
+}
+.cms-trimmery #promo .trimmery-features__item-bg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.cms-trimmery #promo .trimmery-features__item-wrap {
+  background: #16222E;
+  position: relative;
+  z-index: 2;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 23px 20px;
+}
+.cms-trimmery #promo .trimmery-features__item-note {
+  position: relative;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 300;
+}
+.cms-trimmery #promo .trimmery-features__item-note * {
+  color: #fff;
+}
+.cms-trimmery #promo .trimmery-features__item-note h5 {
+  margin: 0 0 15px;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 700;
+}
+.cms-trimmery #promo .trimmery-features__item-note h3 {
+  margin: 0 -10px 10px 0;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+}
+.cms-trimmery #promo .trimmery-features__item-note h3 br {
+  display: none;
+}
+.cms-trimmery #promo .trimmery-features__item-note p,
+.cms-trimmery #promo .trimmery-features__item-note div {
+  margin: 0;
+  font-size: inherit;
+  line-height: inherit;
+}
+.cms-trimmery #promo .trimmery-features__item-note ul {
+  margin: 17px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.cms-trimmery #promo .trimmery-features__item-note ul li {
+  line-height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 30c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14Zm0 2c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Z M23.707 11.207 14 20.914l-5.707-5.707 1.414-1.414L14 18.086l8.293-8.293 1.414 1.414Z' fill='%238C9CAC'/%3E%3C/svg%3E");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: 14px auto;
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+.cms-trimmery #promo .trimmery-features__item-note ul li:last-child {
+  margin-bottom: 0!important;
+}
+.cms-trimmery #promo .trimmery-features__item-note ul li.marker-beard {
+  background-image: url('/media/up/promo/2022/P-8410/marker-beard.png');
+  line-height: 27px;
+  background-size: auto 27px;
+  margin-bottom: 12px;
+  padding-left: 35px;
+}
+.cms-trimmery #promo .trimmery-features__item-note ul li.marker-hair {
+  background-image: url('/media/up/promo/2022/P-8410/marker-hair.png');
+  line-height: 27px;
+  background-size: auto 27px;
+  margin-bottom: 12px;
+  padding-left: 35px;
+}
+.cms-trimmery #promo .trimmery-features__item-note ul li.marker-body {
+  background-image: url('/media/up/promo/2022/P-8410/marker-body.png');
+  line-height: 27px;
+  background-size: auto 27px;
+  margin-bottom: 12px;
+  padding-left: 35px;
+}
+.cms-trimmery #promo .trimmery-features__item-icon {
+  display: block;
+  max-width: 50px;
+  position: absolute;
+  top: -13px;
+  right: 0px;
+}
+.cms-trimmery #promo .trimmery-features__item-icon img {
+  width: auto;
+}
+@media (min-width: 575px) {
+  .cms-trimmery #promo .trimmery-features__item-bg {
+    height: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .cms-trimmery #promo .trimmery-features__btn {
+    top: 56%;
+  }
+  .cms-trimmery #promo .trimmery-features__item.note-right .trimmery-features__item-note {
+    margin-left: auto;
+  }
+  .cms-trimmery #promo .trimmery-features__item.note-icon .trimmery-features__item-bg {
+    width: 270px;
+    height: 300px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: inherit;
+    right: 9%;
+  }
+  .cms-trimmery #promo .trimmery-features__item-bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  .cms-trimmery #promo .trimmery-features__item-bg img {
+    -o-object-position: center;
+       object-position: center;
+  }
+  .cms-trimmery #promo .trimmery-features__item-wrap {
+    background: none;
+    min-height: 384px;
+    padding-left: 52px;
+    padding-right: 52px;
+    padding-top: 52px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note {
+    max-width: 300px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note h3 {
+    margin-right: 0;
+  }
+  .cms-trimmery #promo .trimmery-features__item-icon {
+    position: static;
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .cms-trimmery #promo .trimmery-features__item-wrap {
+    background: none;
+    min-height: 500px;
+    padding-top: 72px;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-trimmery #promo .trimmery-features__item.note-right .trimmery-features__item-wrap {
+    max-width: 1065px;
+  }
+  .cms-trimmery #promo .trimmery-features__item.note-right .trimmery-features__item-note {
+    max-width: 390px;
+  }
+  .cms-trimmery #promo .trimmery-features__item.note-icon .trimmery-features__item-note {
+    max-width: 460px;
+  }
+  .cms-trimmery #promo .trimmery-features__item.note-icon .trimmery-features__item-bg {
+    width: 540px;
+    height: 612px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-wrap {
+    max-width: 1235px;
+    min-height: 700px;
+    padding-top: 92px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note {
+    font-size: 17px;
+    line-height: 26px;
+    max-width: 510px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note br {
+    display: block;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note h5 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 44px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note h3 {
+    font-size: 34px;
+    line-height: 41px;
+    margin-bottom: 42px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note ul {
+    margin-top: 60px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note ul li {
+    line-height: 32px;
+    background-size: 32px auto;
+    padding-left: 40px;
+    margin-bottom: 20px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note ul li.marker-beard {
+    line-height: 37px;
+    background-size: auto 37px;
+    margin-bottom: 15px;
+    padding-left: 45px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note ul li.marker-hair {
+    line-height: 37px;
+    background-size: auto 37px;
+    margin-bottom: 15px;
+    padding-left: 45px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-note ul li.marker-body {
+    line-height: 37px;
+    background-size: auto 37px;
+    margin-bottom: 15px;
+    padding-left: 45px;
+  }
+  .cms-trimmery #promo .trimmery-features__item-icon {
+    max-width: 80px;
+    margin-bottom: 30px;
+  }
+}
+@media (min-width: 1600px) {
+  .cms-trimmery #promo .trimmery-features__btn {
+    width: 60px;
+    height: 60px;
+    top: 55%;
+    background-size: 18px auto;
+  }
+  .cms-trimmery #promo .trimmery-features__btn.swiper-button-prev {
+    left: 4%;
+    background-position: 18px center;
+  }
+  .cms-trimmery #promo .trimmery-features__btn.swiper-button-next {
+    right: 4%;
+    background-position: 24px center;
+  }
+  .cms-trimmery #promo .trimmery-features__item.note-icon .trimmery-features__item-bg {
+    width: 640px;
+    height: 712px;
+    right: 18%;
+  }
+  .cms-trimmery #promo .trimmery-features__item-wrap {
+    max-width: 1660px;
+    min-height: 900px;
+    padding-top: 186px;
+  }
+}
+.cms-trimmery #promo .trimmery-description {
+  border-bottom: 1px solid #DCDCE2;
+}
+.cms-trimmery #promo .trimmery-description__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 13px 15px 23px 15px;
+  max-width: 1600px;
+}
+.cms-trimmery #promo .trimmery-description__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cms-trimmery #promo .trimmery-description__flex > *:nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cms-trimmery #promo .trimmery-description__name {
+  margin: 0 0 8px 0;
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  color: #323232;
+}
+.cms-trimmery #promo .trimmery-description__title {
+  margin: 0 0 10px;
+  font-size: 20px;
+  line-height: 24px;
+  color: #323232;
+  font-weight: 800;
+}
+.cms-trimmery #promo .trimmery-description__reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 16px;
+}
+.cms-trimmery #promo .trimmery-description__reviews img {
+  width: auto;
+  max-width: 86px;
+  margin-right: 10px;
+}
+.cms-trimmery #promo .trimmery-description__reviews-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #00629F;
+  border: 1px solid #00629F;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 5px;
+  min-width: 52px;
+  height: 20px;
+  font-size: 7px;
+  line-height: 13px;
+  font-weight: 700;
+}
+.cms-trimmery #promo .trimmery-description__reviews-btn:hover {
+  color: #fff;
+  background-color: #FFA40D;
+  border-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-description__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  margin-bottom: 4px;
+}
+@media (max-width: 1199.98px) {
+  .cms-trimmery #promo .trimmery-description__card.card-visible .trimmery-description__card-note {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-trimmery #promo .trimmery-description__card:hover .trimmery-description__card-note {
+    opacity: 1;
+    visibility: visible;
+    z-index: 1;
+  }
+}
+.cms-trimmery #promo .trimmery-description__card-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+.cms-trimmery #promo .trimmery-description__card-img {
+  min-width: 39px;
+  width: 39px;
+  margin-right: 10px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+.cms-trimmery #promo .trimmery-description__card-img img {
+  width: auto;
+}
+.cms-trimmery #promo .trimmery-description__card-desc {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.cms-trimmery #promo .trimmery-description__card-name {
+  margin: 0;
+  font-size: 11px;
+  line-height: 15px;
+  color: #000;
+  font-weight: 300;
+}
+.cms-trimmery #promo .trimmery-description__card-name::after {
+  content: '';
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 2.5a7.5 7.5 0 1 0 0 15 7.5 7.5 0 0 0 0-15ZM.835 10a9.167 9.167 0 1 1 18.333 0A9.167 9.167 0 0 1 .834 10Z M10 9.166c.46 0 .834.373.834.834v3.333a.833.833 0 0 1-1.667 0V10c0-.46.373-.834.834-.834Z' fill='%2300629F'/%3E%3Cpath d='M10.834 6.666a.833.833 0 1 1-1.667 0 .833.833 0 0 1 1.667 0Z' fill='%2300629F'/%3E%3C/svg%3E");
+  width: 9px;
+  height: 9px;
+  margin-left: 2px;
+  background-size: 9px 9px;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+}
+.cms-trimmery #promo .trimmery-description__card-note {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: -5px;
+  font-size: 9px;
+  line-height: 13px;
+  font-weight: 300;
+  padding: 10px 14px 10px 10px;
+  color: #000;
+  background-color: #F5F5F5;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-trimmery #promo .trimmery-description__card-btn {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.471 3.529c.26.26.26.682 0 .943l-8 8a.667.667 0 0 1-.943-.943l8-8c.26-.26.683-.26.943 0Z M3.528 3.529c.26-.26.683-.26.943 0l8 8a.667.667 0 0 1-.943.943l-8-8a.667.667 0 0 1 0-.943Z' fill='%23A2A4AA'/%3E%3C/svg%3E");
+}
+.cms-trimmery #promo .trimmery-description__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+.cms-trimmery #promo .trimmery-description__price .price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 38px;
+}
+.cms-trimmery #promo .trimmery-description__price .price-box > .price,
+.cms-trimmery #promo .trimmery-description__price .special-price {
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  color: #000;
+  font-weight: 800;
+  margin: 0;
+  font-size: 14px;
+  line-height: 10px;
+}
+.cms-trimmery #promo .trimmery-description__price .old-price {
+  color: #7B7E85;
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 10px;
+  -webkit-text-decoration-line: line-through;
+          text-decoration-line: line-through;
+}
+.cms-trimmery #promo .trimmery-description__price .button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  padding: 5px 14px;
+  border-radius: 3px;
+  margin-right: 5px;
+  color: #474747;
+  font-weight: 700;
+  min-width: 69px;
+  font-size: 10px;
+  line-height: 13px;
+  border: 1px solid #5C7286;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-trimmery #promo .trimmery-description__price .button:hover {
+  border-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-description__price .button.button_in-stock {
+  color: #fff;
+  background: #E98300;
+  border: 1px solid #E98300;
+}
+.cms-trimmery #promo .trimmery-description__price .button.button_in-stock:hover {
+  background: #FFA40D;
+  border-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-description__img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  margin-bottom: 20px;
+}
+.cms-trimmery #promo .trimmery-description__img img {
+  width: auto;
+}
+.cms-trimmery #promo .trimmery-description__img-sku {
+  text-align: center;
+  display: none;
+  font-size: 11px;
+  line-height: 13px;
+  color: #323232;
+}
+@media (max-width: 767.98px) {
+  .cms-trimmery #promo .trimmery-description__card:nth-child(1) {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .cms-trimmery #promo .trimmery-description__card:nth-child(2) {
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
+  }
+  .cms-trimmery #promo .trimmery-description__card:nth-child(3) {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .cms-trimmery #promo .trimmery-description__card:nth-child(4) {
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
+  }
+  .cms-trimmery #promo .trimmery-description__card:nth-child(5) {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .cms-trimmery #promo .trimmery-description__card:nth-child(6) {
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
+  }
+  .cms-trimmery #promo .trimmery-description__card:nth-child(7) {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+  }
+  .cms-trimmery #promo .trimmery-description__card:nth-child(8) {
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
+  }
+}
+@media (min-width: 768px) {
+  .cms-trimmery #promo .trimmery-description__container {
+    padding: 20px 20px 52px 20px;
+  }
+  .cms-trimmery #promo .trimmery-description__flex {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .cms-trimmery #promo .trimmery-description__flex > *:nth-child(1) {
+    display: block;
+    width: 65.5%;
+    margin-right: 2%;
+  }
+  .cms-trimmery #promo .trimmery-description__flex > *:nth-child(2) {
+    width: 32.5%;
+    margin-top: 12px;
+  }
+  .cms-trimmery #promo .trimmery-description__title {
+    margin-bottom: 12px;
+  }
+  .cms-trimmery #promo .trimmery-description__reviews {
+    margin-bottom: 5px;
+  }
+  .cms-trimmery #promo .trimmery-description__card {
+    width: calc(50% - 12px);
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-bottom: 9px;
+  }
+  .cms-trimmery #promo .trimmery-description__card-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: -6px;
+    margin-right: -6px;
+    margin-bottom: 25px;
+  }
+  .cms-trimmery #promo .trimmery-description__price {
+    margin-bottom: 0;
+  }
+  .cms-trimmery #promo .trimmery-description__img {
+    margin-bottom: 7px;
+    max-width: 100%;
+  }
+  .cms-trimmery #promo .trimmery-description__img-sku {
+    display: block;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-trimmery #promo .trimmery-description__container {
+    padding-top: 40px;
+    padding-bottom: 77px;
+  }
+  .cms-trimmery #promo .trimmery-description__flex > *:nth-child(1) {
+    width: 59%;
+    margin-right: 4.5%;
+  }
+  .cms-trimmery #promo .trimmery-description__flex > *:nth-child(2) {
+    width: 35%;
+    margin-bottom: 0;
+  }
+  .cms-trimmery #promo .trimmery-description__name {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .cms-trimmery #promo .trimmery-description__title {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 27px;
+  }
+  .cms-trimmery #promo .trimmery-description__reviews {
+    margin-bottom: 25px;
+  }
+  .cms-trimmery #promo .trimmery-description__reviews img {
+    margin-right: 25px;
+    max-width: 100%;
+  }
+  .cms-trimmery #promo .trimmery-description__reviews-btn {
+    min-width: 106px;
+    height: 40px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .cms-trimmery #promo .trimmery-description__card {
+    width: calc(50% - 16px);
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 4px;
+  }
+  .cms-trimmery #promo .trimmery-description__card-wrap {
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: 63px;
+  }
+  .cms-trimmery #promo .trimmery-description__card-img {
+    min-width: 80px;
+    width: 80px;
+    margin-right: 10px;
+  }
+  .cms-trimmery #promo .trimmery-description__card-name {
+    font-size: 16px;
+    line-height: 25px;
+    padding-top: 8px;
+  }
+  .cms-trimmery #promo .trimmery-description__card-name::after {
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    margin-bottom: -5px;
+  }
+  .cms-trimmery #promo .trimmery-description__card-note {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 14px 22px;
+  }
+  .cms-trimmery #promo .trimmery-description__card-btn {
+    top: 5px;
+    right: 13px;
+    display: none;
+  }
+  .cms-trimmery #promo .trimmery-description__price .price-box {
+    margin-right: 60px;
+  }
+  .cms-trimmery #promo .trimmery-description__price .price-box > .price,
+  .cms-trimmery #promo .trimmery-description__price .special-price {
+    font-size: 22px;
+    line-height: 16px;
+  }
+  .cms-trimmery #promo .trimmery-description__price .old-price {
+    font-size: 18px;
+    line-height: 16px;
+  }
+  .cms-trimmery #promo .trimmery-description__price .button {
+    font-size: 15px;
+    line-height: 27px;
+    min-width: 103px;
+    margin-right: 10px;
+    padding: 5px 20px;
+  }
+  .cms-trimmery #promo .trimmery-description__img {
+    max-width: 470px;
+    margin-bottom: 20px;
+  }
+  .cms-trimmery #promo .trimmery-description__img-sku {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+.cms-trimmery #promo .trimmery-app {
+  background: #ECFBFF;
+  position: relative;
+  overflow: hidden;
+}
+.cms-trimmery #promo .trimmery-app__container {
+  margin: 0 auto;
+  padding: 15px 15px 0px;
+}
+.cms-trimmery #promo .trimmery-app__wrap {
+  position: relative;
+  z-index: 2;
+}
+.cms-trimmery #promo .trimmery-app__name {
+  color: #005A9B;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 20px;
+  margin: 0 0 10px;
+}
+.cms-trimmery #promo .trimmery-app__heading {
+  margin: 0 0 15px;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 800;
+  color: #323232;
+}
+.cms-trimmery #promo .trimmery-app__note {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.cms-trimmery #promo .trimmery-app__note p,
+.cms-trimmery #promo .trimmery-app__note div {
+  margin: 0 0 18px;
+  font-size: inherit;
+  line-height: inherit;
+}
+.cms-trimmery #promo .trimmery-app__note ul {
+  margin: 0;
+}
+.cms-trimmery #promo .trimmery-app__note ul li {
+  background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M16 30c7.732 0 14-6.268 14-14S23.732 2 16 2 2 8.268 2 16s6.268 14 14 14Zm0 2c8.837 0 16-7.163 16-16S24.837 0 16 0 0 7.163 0 16s7.163 16 16 16Z M23.707 11.207 14 20.914l-5.707-5.707 1.414-1.414L14 18.086l8.293-8.293 1.414 1.414Z' fill='%238C9CAC'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 22px;
+  background-size: 22px 22px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  padding-left: 30px;
+  margin-bottom: 13px;
+}
+.cms-trimmery #promo .trimmery-app__note ul li:last-child {
+  margin-bottom: 0!important;
+}
+.cms-trimmery #promo .trimmery-app__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 235px;
+  margin-left: -7px;
+  margin-right: -7px;
+  margin-bottom: 5px;
+}
+.cms-trimmery #promo .trimmery-app__link > * {
+  margin-left: 7px;
+  margin-right: 7px;
+  width: calc(50% - 14px);
+}
+.cms-trimmery #promo .trimmery-app__img {
+  display: block;
+  margin-left: -35px;
+  margin-right: 10px;
+}
+.cms-trimmery #promo .trimmery-app__img img {
+  width: auto;
+}
+@media (min-width: 768px) {
+  .cms-trimmery #promo .trimmery-app__container {
+    padding: 25px 20px 70px;
+  }
+  .cms-trimmery #promo .trimmery-app__wrap {
+    max-width: 420px;
+  }
+  .cms-trimmery #promo .trimmery-app__heading {
+    margin-bottom: 18px;
+  }
+  .cms-trimmery #promo .trimmery-app__note {
+    font-size: 11px;
+    line-height: 16px;
+    margin-bottom: 30px;
+  }
+  .cms-trimmery #promo .trimmery-app__note p,
+  .cms-trimmery #promo .trimmery-app__note div {
+    margin-bottom: 15px;
+  }
+  .cms-trimmery #promo .trimmery-app__note ul li {
+    font-size: 11px;
+    line-height: 15px;
+    margin-bottom: 8px;
+  }
+  .cms-trimmery #promo .trimmery-app__link {
+    max-width: 235px;
+    margin-bottom: 0;
+  }
+  .cms-trimmery #promo .trimmery-app__img {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    right: 1%;
+    max-width: 515px;
+    margin: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-trimmery #promo .trimmery-app__container {
+    max-width: 1600px;
+    padding-top: 40px;
+    padding-bottom: 110px;
+  }
+  .cms-trimmery #promo .trimmery-app__wrap {
+    max-width: 610px;
+  }
+  .cms-trimmery #promo .trimmery-app__name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .cms-trimmery #promo .trimmery-app__heading {
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 27px;
+  }
+  .cms-trimmery #promo .trimmery-app__note {
+    color: #000;
+    font-size: 16px;
+    line-height: 25px;
+    margin-bottom: 50px;
+  }
+  .cms-trimmery #promo .trimmery-app__note p,
+  .cms-trimmery #promo .trimmery-app__note div {
+    margin-bottom: 24px;
+  }
+  .cms-trimmery #promo .trimmery-app__note ul li {
+    font-size: 17px;
+    line-height: 21px;
+    padding-left: 45px;
+    min-height: 32px;
+    margin-bottom: 13px;
+    background-size: 32px 32px;
+  }
+  .cms-trimmery #promo .trimmery-app__link {
+    margin-left: -10px;
+    margin-right: -10px;
+    max-width: 345px;
+  }
+  .cms-trimmery #promo .trimmery-app__link > * {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: calc(50% - 20px);
+  }
+  .cms-trimmery #promo .trimmery-app__img {
+    right: 7.5%;
+    max-width: 780px;
+  }
+}
+@media (min-width: 1600px) {
+  .cms-trimmery #promo .trimmery-app__img {
+    right: 17.5%;
+  }
+}
+.cms-trimmery #promo .trimmery-sku {
+  position: relative;
+}
+.cms-trimmery #promo .trimmery-sku__container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 33px;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.cms-trimmery #promo .trimmery-sku__heading {
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 24px;
+  margin: 0;
+  color: #323232;
+  margin-bottom: 20px;
+}
+.cms-trimmery #promo .trimmery-sku__heading span {
+  font-weight: 800;
+  display: block;
+}
+.cms-trimmery #promo .trimmery-sku__slider {
+  position: static;
+}
+.cms-trimmery #promo .trimmery-sku__slider-btn {
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: 40px;
+  top: 44%;
+  border: 0;
+  outline: none;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #113961;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3px;
+  margin: 0;
+  background-size: 12px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-trimmery #promo .trimmery-sku__slider-btn::after {
+  display: none;
+}
+.cms-trimmery #promo .trimmery-sku__slider-btn:hover {
+  background-color: #FFA40D;
+}
+.cms-trimmery #promo .trimmery-sku__slider-btn.swiper-button-prev {
+  left: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='m3.776 9.334 7.917 7.612-1.386 1.442L.891 9.334 10.307.279l1.386 1.442-7.917 7.613Z' fill='%23fff'/%3E%3C/svg%3E");
+}
+.cms-trimmery #promo .trimmery-sku__slider-btn.swiper-button-next {
+  right: 0px;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M8.224 9.333.307 1.721 1.693.279l9.416 9.054-9.416 9.054-1.386-1.441 7.917-7.613Z' fill='%23fff'/%3E%3C/svg%3E");
+}
+.cms-trimmery #promo .trimmery-sku__slider .product-cont {
+  width: 100%;
+  margin: 0;
+}
+@media (min-width: 768px) {
+  .cms-trimmery #promo .trimmery-sku__container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .cms-trimmery #promo .trimmery-sku__heading {
+    font-size: 26px;
+    line-height: 34px;
+    margin-bottom: 30px;
+  }
+  .cms-trimmery #promo .trimmery-sku__slider-btn {
+    top: 48.5%;
+    width: 35px;
+    height: 35px;
+    background-size: 10px auto;
+  }
+}
+@media (min-width: 1024px) {
+  .cms-trimmery #promo .trimmery-sku__slider .product-cont {
+    min-height: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-trimmery #promo .trimmery-sku__container {
+    padding-top: 75px;
+  }
+  .cms-trimmery #promo .trimmery-sku__heading {
+    font-size: 45px;
+    line-height: 57px;
+    margin-bottom: 45px;
+  }
+  .cms-trimmery #promo .trimmery-sku__slider .product-cont {
+    min-height: 670px;
+  }
+  .cms-trimmery #promo .trimmery-sku__slider-btn {
+    top: 53.5%;
+    width: 60px;
+    height: 60px;
+    background-size: 17px auto;
+  }
+  .cms-trimmery #promo .trimmery-sku__slider-btn.swiper-button-prev {
+    left: 4%;
+  }
+  .cms-trimmery #promo .trimmery-sku__slider-btn.swiper-button-next {
+    right: 4%;
+  }
+}
+.cms-trimmery #promo .box-collateral {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+.cms-trimmery #promo .box-wrap {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.cms-trimmery #promo .customer-review-more {
+  margin-top: 38px;
+}
+.cms-trimmery #promo .box-collateral__title {
+  padding-right: 40px;
+}
+@media (min-width: 768px) {
+  .cms-trimmery #promo .box-wrap {
+    padding-top: 30px;
+    padding-bottom: 43px;
+  }
+  .cms-trimmery #promo .customer-review-more {
+    margin-top: 34px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199.98px) {
+  .cms-trimmery #promo .category-products__item__price .price,
+  .cms-trimmery #promo .category-products__item__price .price .special {
+    font-size: 16px;
+    line-height: 16px;
+  }
+  .cms-trimmery #promo .category-products__item__price .price .old {
+    font-size: 14px;
+    line-height: 12px;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-trimmery #promo .box-wrap {
+    padding-top: 50px;
+    padding-bottom: 65px;
+  }
+  .cms-trimmery #promo .box-reviews__title {
+    margin-bottom: 90px;
+  }
+  .cms-trimmery #promo .review-item__container *:last-child {
+    margin-bottom: 0;
+  }
+  .cms-trimmery #promo .customer-review-more {
+    margin-top: 47px;
+  }
+}

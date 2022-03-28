@@ -1,0 +1,601 @@
+/* reset */
+.breadcrumbs__wrap {
+  display: none;
+}
+.cms-page-view .website-features__wrapper {
+  display: none;
+}
+.cms-page-view .footer__slider__wrapper {
+  display: none;
+}
+.cms-page-view .main-container #promo * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Centrale Sans', 'Arial', sans-serif;
+}
+.cms-page-view .main-container #promo ul,
+.cms-page-view .main-container #promo ol {
+  padding: 0;
+  list-style: none;
+}
+.cms-page-view .main-container #promo ul li::before,
+.cms-page-view .main-container #promo ol li::before {
+  display: none;
+}
+.cms-page-view .main-container #promo a {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-page-view .main-container #promo img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.cms-page-view .main-container #promo strong,
+.cms-page-view .main-container #promo b {
+  font-weight: 700;
+}
+.cms-page-view .main-container #promo svg .path-primary {
+  fill: #E98300;
+}
+.cms-page-view .main-container #promo p {
+  padding-bottom: 0;
+}
+.cms-page-view .main-container #promo .visible-md {
+  display: none;
+}
+@media (min-width: 768px) {
+  .cms-page-view .main-container #promo .hidden-md {
+    display: none;
+  }
+  .cms-page-view .main-container #promo .visible-md {
+    display: block;
+  }
+}
+.cms-page-view #promo .hide {
+  display: none !important;
+}
+.cms-page-view #promo .show {
+  display: block !important;
+}
+.cms-page-view #promo #to-top {
+  position: fixed;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+  width: 222px;
+  height: 44px;
+  right: 20px;
+  bottom: 80px;
+  border: 1px solid #DCDCE2;
+  border-radius: 3px;
+  background: #fff;
+  cursor: pointer;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-page-view #promo #to-top::after {
+  content: '';
+  margin-left: 12px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 13a1 1 0 0 1 1 1v7a1 1 0 1 1-2 0v-7a1 1 0 0 1 1-1ZM4 2a1 1 0 0 1 1 1v7a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1ZM12 11a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0v-9a1 1 0 0 1 1-1ZM12 2a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1ZM20 15a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1ZM20 2a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Z' fill='%2300629F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 14a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1ZM8 8a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1ZM16 16a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1Z' fill='%2300629F'/%3E%3C/svg%3E");
+}
+.cms-page-view #promo #to-top:hover {
+  border-color: #00629F;
+}
+.cms-page-view #promo #to-top.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+@media (min-width: 768px) {
+  .cms-page-view #promo #to-top {
+    bottom: 140px;
+  }
+}
+.cms-page-view #promo .valentine-banner {
+  position: relative;
+  background: linear-gradient(118.25deg, #9C0268 35.99%, #FFA112 83.77%);
+  overflow: hidden;
+}
+.cms-page-view #promo .valentine-banner__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1590px;
+  padding-top: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cms-page-view #promo .valentine-banner__desc {
+  position: relative;
+  z-index: 2;
+}
+.cms-page-view #promo .valentine-banner__heading {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 40px;
+}
+.cms-page-view #promo .valentine-banner__note {
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 200px;
+}
+.cms-page-view #promo .valentine-banner__img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  margin-top: -97px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+@media (min-width: 768px) {
+  .cms-page-view #promo .valentine-banner__container {
+    padding: 58px 25px 98px;
+  }
+  .cms-page-view #promo .valentine-banner__heading {
+    font-size: 40px;
+    line-height: 50px;
+    max-width: 380px;
+  }
+  .cms-page-view #promo .valentine-banner__note {
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 245px;
+  }
+  .cms-page-view #promo .valentine-banner__img {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    margin: 0;
+    max-width: 490px;
+    width: 100%;
+  }
+  .cms-page-view #promo .valentine-banner__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    -o-object-position: bottom;
+       object-position: bottom;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-page-view #promo .valentine-banner__container {
+    padding-top: 8vw;
+    padding-bottom: 10.5vw;
+    padding: 155px 15px 200px;
+  }
+  .cms-page-view #promo .valentine-banner__img {
+    top: -115px;
+    bottom: -10px;
+    max-width: 700px;
+  }
+  .cms-page-view #promo .valentine-banner__heading {
+    font-size: 55px;
+    line-height: 65px;
+    margin-bottom: 35px;
+    max-width: 100%;
+  }
+  .cms-page-view #promo .valentine-banner__note {
+    font-size: 28px;
+    line-height: 42px;
+    max-width: 460px;
+  }
+}
+@media (min-width: 1600px) {
+  .cms-page-view #promo .valentine-banner__img {
+    max-width: 1000px;
+  }
+}
+.cms-page-view #promo .valentine-card__container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1590px;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cms-page-view #promo .valentine-card__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cms-page-view #promo .valentine-card__filter {
+  display: none;
+}
+.cms-page-view #promo .valentine-card__filter-mob {
+  margin-bottom: 20px;
+}
+.cms-page-view #promo .valentine-card__filter-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin-bottom: 17px;
+}
+.cms-page-view #promo .valentine-card__filter-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.cms-page-view #promo .valentine-card__filter-item:last-child {
+  margin-bottom: 0!important;
+}
+.cms-page-view #promo .valentine-card__filter-input {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.cms-page-view #promo .valentine-card__filter-input:checked ~ .valentine-card__filter-checkbox {
+  background-color: #2B659D;
+  border-color: #2B659D;
+}
+.cms-page-view #promo .valentine-card__filter-input:checked ~ .valentine-card__filter-checkbox::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 5px;
+  width: 3px;
+  height: 7px;
+  border: solid #FFFFFF;
+  border-width: 0 1.5px 1.5px 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.cms-page-view #promo .valentine-card__filter-checkbox {
+  position: relative;
+  -webkit-box-ordinal-group: 0;
+      -ms-flex-order: -1;
+          order: -1;
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin-right: 15px;
+  border: 1px solid #C8C9CF;
+  background-color: #FFFFFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.cms-page-view #promo .valentine-card__filter-btn {
+  max-width: 245px;
+  padding-top: 15px;
+}
+.cms-page-view #promo .valentine-card__filter-reset {
+  font-size: 14px;
+  line-height: 17px;
+  width: 100%;
+  height: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  letter-spacing: 0.02em;
+  border: 1px solid #DCDCE2;
+  font-weight: 700;
+  border-radius: 3px;
+  color: #000;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.cms-page-view #promo .valentine-card__filter-reset:hover {
+  background: #E98300;
+  color: #fff;
+  border-color: #E98300;
+}
+.cms-page-view #promo .valentine-card__filter-dropdown {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #00629F;
+  border-radius: 3px;
+  cursor: pointer;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.cms-page-view #promo .valentine-card__filter-dropdown-text {
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  color: #00629F;
+  font-weight: 700;
+  padding-right: 20px;
+}
+.cms-page-view #promo .valentine-card__filter-dropdown-img {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4 13a1 1 0 0 1 1 1v7a1 1 0 1 1-2 0v-7a1 1 0 0 1 1-1ZM4 2a1 1 0 0 1 1 1v7a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1ZM12 11a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0v-9a1 1 0 0 1 1-1ZM12 2a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1ZM20 15a1 1 0 0 1 1 1v5a1 1 0 1 1-2 0v-5a1 1 0 0 1 1-1ZM20 2a1 1 0 0 1 1 1v9a1 1 0 1 1-2 0V3a1 1 0 0 1 1-1Z' fill='%2300629F'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 14a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1ZM8 8a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2H9a1 1 0 0 1-1-1ZM16 16a1 1 0 0 1 1-1h6a1 1 0 1 1 0 2h-6a1 1 0 0 1-1-1Z' fill='%2300629F'/%3E%3C/svg%3E");
+}
+.cms-page-view #promo .valentine-card__filter-dropdown-menu {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 243px;
+  border: 1px solid #E1E1E1;
+  border-radius: 3px;
+  margin: 0;
+  padding: 15px 10px;
+  position: absolute;
+  z-index: 1000;
+  background: #fff;
+  right: 0;
+  left: 0;
+  top: 40px;
+  border-top: none;
+  color: #323232;
+}
+.cms-page-view #promo .valentine-card__filter-dropdown-menu.block {
+  display: -webkit-box!important;
+  display: -ms-flexbox!important;
+  display: flex!important;
+}
+.cms-page-view #promo .valentine-card__filter-dropdown-menu.block ~ .valentine-card__filter-dropdown-img {
+  -webkit-transform: translateY(-50%) scale(1, 1);
+          transform: translateY(-50%) scale(1, 1);
+}
+.cms-page-view #promo .valentine-card__category {
+  margin: 15px 10px;
+}
+.cms-page-view #promo .valentine-card__category-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+}
+.cms-page-view #promo .valentine-card__category-input {
+  position: absolute;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  clip: rect(0 0 0 0);
+}
+.cms-page-view #promo .valentine-card__category-input[data-link="#for-men"] ~ .valentine-card__category-btn {
+  background: #017CC2;
+}
+.cms-page-view #promo .valentine-card__category-input[data-link="#for-men"]:checked ~ .valentine-card__category-btn,
+.cms-page-view #promo .valentine-card__category-input[data-link="#for-men"].is-active ~ .valentine-card__category-btn {
+  -webkit-box-shadow: 0 0 0 6px #caecff;
+          box-shadow: 0 0 0 6px #caecff;
+}
+.cms-page-view #promo .valentine-card__category-input[data-link="#for-woman"] ~ .valentine-card__category-btn {
+  background: #C20180;
+}
+.cms-page-view #promo .valentine-card__category-input[data-link="#for-woman"]:checked ~ .valentine-card__category-btn,
+.cms-page-view #promo .valentine-card__category-input[data-link="#for-woman"].is-active ~ .valentine-card__category-btn {
+  -webkit-box-shadow: 0 0 0 6px #FFCFEF;
+          box-shadow: 0 0 0 6px #FFCFEF;
+}
+.cms-page-view #promo .valentine-card__category-btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 215px;
+  height: 40px;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}
+.cms-page-view #promo .valentine-card__category-heading {
+  margin: 0 0 35px;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #9D0369;
+}
+.cms-page-view #promo .valentine-card__category-widgets .category-products {
+  margin: 0;
+}
+.cms-page-view #promo .valentine-card__category-widgets .all_categories {
+  margin-bottom: 45px;
+}
+.cms-page-view #promo .valentine-card__category-widgets .all_categories[data-reduced='true'] .widget-show__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.cms-page-view #promo .valentine-card__category-widgets-name {
+  text-align: center;
+  margin: 0 0 15px;
+  color: #00629F;
+}
+.cms-page-view #promo .valentine-card__category-show-btn {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+  background-color: #E98300;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  margin: 0 auto;
+  max-width: 330px;
+  width: 100%;
+  padding: 13px 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.cms-page-view #promo .valentine-card__category-show-btn:hover {
+  background-color: #00629F;
+}
+@media (min-width: 768px) {
+  .cms-page-view #promo .valentine-card__container {
+    padding-top: 30px;
+  }
+  .cms-page-view #promo .valentine-card__category {
+    margin: 15px 20px;
+  }
+  .cms-page-view #promo .valentine-card__category-wrap {
+    margin-bottom: 35px;
+  }
+  .cms-page-view #promo .valentine-card__category-btn {
+    font-size: 18px;
+    line-height: 22px;
+    width: 235px;
+    height: 46px;
+    border-radius: 24px;
+  }
+}
+@media (min-width: 1200px) {
+  .cms-page-view #promo .valentine-card__container {
+    padding-top: 45px;
+  }
+  .cms-page-view #promo .valentine-card__flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .cms-page-view #promo .valentine-card__flex > *:nth-child(1) {
+    display: block;
+    width: 20%;
+    margin-right: 15px;
+  }
+  .cms-page-view #promo .valentine-card__flex > *:nth-child(2) {
+    padding-top: 20px;
+    width: calc(80% - 15px);
+  }
+  .cms-page-view #promo .valentine-card__category {
+    margin: 10px 25px;
+  }
+  .cms-page-view #promo .valentine-card__category-wrap {
+    margin-bottom: 50px;
+  }
+  .cms-page-view #promo .valentine-card__category-input[data-link="#for-men"]:checked ~ .valentine-card__category-btn,
+  .cms-page-view #promo .valentine-card__category-input[data-link="#for-men"].is-active ~ .valentine-card__category-btn {
+    -webkit-box-shadow: 0 0 0 10px #caecff;
+            box-shadow: 0 0 0 10px #caecff;
+  }
+  .cms-page-view #promo .valentine-card__category-input[data-link="#for-woman"]:checked ~ .valentine-card__category-btn,
+  .cms-page-view #promo .valentine-card__category-input[data-link="#for-woman"].is-active ~ .valentine-card__category-btn {
+    -webkit-box-shadow: 0 0 0 10px #FFCFEF;
+            box-shadow: 0 0 0 10px #FFCFEF;
+  }
+  .cms-page-view #promo .valentine-card__category-btn {
+    width: 310px;
+    height: 60px;
+    border-radius: 30px;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .cms-page-view #promo .valentine-card__category-heading {
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .cms-page-view #promo .valentine-card__filter {
+    display: block;
+  }
+  .cms-page-view #promo .valentine-card__filter-mob {
+    display: none;
+  }
+  .cms-page-view #promo .valentine-card__filter-btn {
+    padding-top: 30px;
+    padding-bottom: 0px;
+  }
+  .cms-page-view #promo .valentine-card__filter-reset {
+    font-size: 15px;
+    line-height: 18px;
+    width: 100%;
+    height: 48px;
+  }
+}
+/* widget fix */
+.category-products.has-widget .swiper-container:not(.swiper-container-initialized) {
+  margin-bottom: 15px;
+}
+.all_categories[data-reduced='true'] .product-cont {
+  display: none;
+}
+.all_categories[data-reduced='true'] .product-cont:nth-child(-n+8) {
+  display: block;
+}

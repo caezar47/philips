@@ -1,0 +1,54 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ content.prefix }}__container">
+						<div class="{{ content.prefix }}__desc">
+							{% if content.pretitle %}
+							<div class="{{ content.prefix }}__pretitle">
+								{{ content.pretitle }}
+							</div>
+							{% endif %}
+							{% if content.title %}
+							<{{ content.title_tag }} class="{{ content.prefix }}__title">
+								{{ content.title }}
+							</{{ content.title_tag }}>
+							{% endif %}
+							{% if content.text %}
+							<div class="{{ content.prefix }}__text">
+								{{ content.text }}
+							</div>
+							{% endif %}
+							{% if content.app %}
+							<div class="{{ content.prefix }}__link">
+								{% for app in content.app %}
+								<a href="{{ app.link }}" target="_blank" >
+									<img src="{{ path.img }}{{ path_img }}/{{ app.img }}.svg" alt="">
+								</a>
+								{% endfor %}
+							</div>
+							{% endif %}
+						</div>
+
+						{% if content.img %}
+						{% set ext = 'jpg' %}
+						{% if content.img_ext %}
+							{% set ext = content.img_ext %}
+						{% endif %}
+						{% set picture_path = path_img %}
+						{% if content.img_path %}
+							{% set picture_path = content.img_path %}
+						{% endif %}
+						<picture class="{{ content.prefix }}__img ">
+							{% if content.img_xs == "true" %}
+							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: 575px)">
+							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
+							{% endif %}
+							{% if content.img_md == "true" %}
+							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
+							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
+							{% endif %}
+								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}.webp">
+								<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}.{{ ext }}" alt="{{ content.title }}">
+						</picture>
+						{% endif %}
+					</div>
+				</section>

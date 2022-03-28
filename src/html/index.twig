@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+	<head>
+		{% include "../block/common/head/head.twig" with {
+			title:"Главная",
+			style:[
+				{
+					name: 'index',
+				}
+			],
+		}  %}
+	</head>
+	<body>
+		{% set menu = [
+			{
+				name: 'P-8410 :: Мультитриммеры «Всё в одном»',
+				link: page.trimmery,
+			},
+			{
+				name: 'P-8478 :: День святого валентина',
+				link: page.valentine,
+			},
+			{
+				name: 'P-8647 :: Пустышки Philips Avent',
+				link: page.pustyshki,
+			},
+		] %}
+		<div style="max-width: 800px; margin: 20px auto; color: #000; font-weight: 300;">
+			<ul>
+				{% for m in menu %}
+					<li>
+						<a href="{{ m.link }}">{{m.name}}</a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</body>
+</html>

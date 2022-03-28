@@ -1,0 +1,57 @@
+.include-custom-font(
+	@family: @calibri, 
+	@src-name: @calibri, 
+	@weight: normal, 
+	@style: normal
+	){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{src-name}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{src-name}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;		
+	}
+} 
+.include-custom-icon(@family: @icon, @weight: normal, @style: normal){
+	@font-face{			
+		font-family: "@{family}";			
+		src: url('@{url-path-fonts}/@{family}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;	
+		font-display: swap;	
+	}
+}
+.include-custom-font-unicode(
+	@family: @calibri, 
+	@src-name: @roboto, 
+	@weight: normal, 
+	@style: normal,
+	@unicode: U+0400-04FF
+	){
+	@font-face{			
+		font-family: "@{family}";			
+		src:	url('@{url-path-fonts}/@{src-name}.woff2') format('woff2'),
+				url('@{url-path-fonts}/@{src-name}.woff') format('woff');
+		font-weight: @weight;
+		font-style: @style;	
+		unicode-range: @unicode;	
+	}
+}
+.include-custom-font(
+	@family: @rubik,
+	@src-name: @rubik,
+	@weight: 400, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @rubik,
+	@src-name: @rubik-300,
+	@weight: 300, 
+	@style: normal
+	);
+.include-custom-font(
+	@family: @rubik,
+	@src-name: @rubik-500,
+	@weight: 500, 
+	@style: normal
+	);

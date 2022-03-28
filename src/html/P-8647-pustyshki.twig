@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+    <head>
+        {% include "../block/common/head/head.twig" with {
+            title:"P-8647 :: Пустышки Philips Avent",
+            style:[
+                {name: css.pustyshki}
+            ],
+        }  %}
+    </head>
+    <body class="cms-page-view">
+        {% include "../block/page/content.twig" with {
+            path_img:   img.pustyshki,
+            mod:        '',
+            content: [
+                {
+                    view:       'banner',
+                    prefix:     prefix.banner,
+                    title_tag:  'h1',
+                    title:      'Пустышки<br> Philips Avent',
+                    text:       'Комфорт на каждом этапе',
+                    img:        'main-banner',
+                    label:      'main-banner-label',
+                    label_ext:  'png',
+                },
+                {
+                    view:       'feature',
+                    prefix:     prefix.feature,
+                    title_tag:  'h2',
+                    title:      'Все о наших пустышках:',
+                    list:       [
+                        {
+                            title:  'В 98 %<sup>1</sup> случаев ребенок хорошо принимает пустышку',
+                            ext:    'png',
+                            img:    'feature-item1',
+                            img_xs: 'true',
+                        },
+                        {
+                            title:  'Мягкая силиконовая соска для комфортного сосания<sup>2</sup>',
+                            ext:    'png',
+                            img:    'feature-item2',
+                            img_xs: 'true',
+                        },
+                        {
+                            title:  'Ортодонтическая, без бисфенола-А, без вкуса и запаха',
+                            ext:    'png',
+                            img:    'feature-item3',
+                            img_xs: 'true',
+                        },
+                        {
+                            title:  'Легко стерилизовать, можно мыть в посудомоечной машине<sup>3</sup>',
+                            ext:    'png',
+                            img:    'feature-item4',
+                            img_xs: 'true',
+                        },
+                    ],
+                },
+                {
+                    view:       'lineup',
+                    prefix:     prefix.lineup,
+                    title_tag:  'h2',
+                    title:      'Наши пустышки помогут успокоить вашего малыша даже в самые трудные дни',
+                    text:      'В самом начале знакомства с миром даже небольшая забота творит чудеса.<br>Наши ортодонтические пустышки созданы для того, чтобы успокаивать малыша естественным образом на любом этапе развития.',
+                    list:           [
+                        {
+                            title:      '0—6 месяцев',
+                            img:        'lineup-item1',
+                            link:       '#lineup-item1',
+                            link_name:  'Весь модельный ряд',
+                            link_attr:  'data-scrollto',
+                            list:       [
+                                {
+                                    title:      'ultra soft',
+                                    text:       'Без раздражения и следов на коже',
+                                    img:        'lineup-item1-1',
+                                    img_ext:    'png',
+                                },
+                                {
+                                    title:      'ultra air',
+                                    text:       'Для чувствительной кожи',
+                                    img:        'lineup-item1-2',
+                                    img_ext:    'png',
+                                },
+                                {
+                                    title:      'Classic',
+                                    text:       'Для комфортного ежедневного использования',
+                                    img:        'lineup-item1-3',
+                                    img_ext:    'png',
+                                },
+                                {
+                                    title:      'ultra air “ночная”',
+                                    text:       'Легко найти в темноте',
+                                    img:        'lineup-item1-4',
+                                    img_ext:    'png',
+                                },
+                                {
+                                    title:      'Soothie',
+                                    text:       'Способствует более тесной связи с малышом',
+                                    img:        'lineup-item1-5',
+                                    img_ext:    'png',
+                                },
+                            ]
+                        },
+                        {
+                            title:      '6—18 месяцев',
+                            img:        'lineup-item2',
+                            link:       '#lineup-item2',
+                            link_name:  'Весь модельный ряд',
+                            link_attr:  'data-scrollto',
+                            list:       [
+                                {
+                                    title:      'ultra soft',
+                                    text:       'Без раздражения и следов на коже',
+                                    img:        'lineup-item2-1',
+                                    img_ext:    'png',
+                                },
+                                {
+                                    title:      'ultra air',
+                                    text:       'Для чувствительной кожи',
+                                    img:        'lineup-item2-2',
+                                    img_ext:    'png',
+                                },
+                                {
+                                    title:      'Classic',
+                                    text:       'Для комфортного ежедневного использования',
+                                    img:        'lineup-item2-3',
+                                    img_ext:    'png',
+                                },
+                                {
+                                    title:      'ultra air “ночная”',
+                                    text:       'Легко найти в темноте',
+                                    img:        'lineup-item2-4',
+                                    img_ext:    'png',
+                                },
+                            ]
+                        },
+                        {
+                            title:      '18 мес. +',
+                            img:        'lineup-item3',
+                            link:       '#lineup-item3',
+                            link_name:  'Весь модельный ряд',
+                            link_attr:  'data-scrollto',
+                            list:       [
+                                {
+                                    title:      'ultra air',
+                                    text:       'Идеально для растущих зубов и десен',
+                                    img:        'lineup-item3-1',
+                                    img_ext:    'png',
+                                },
+                            ]
+                        },
+                    ],
+                    text_bottom:      'У каждого ребенка свои потребности, поэтому у нас есть множество вариантов на любой случай. В линейке Philips Avent вы точно найдете решение для своего малыша.',
+                },
+                {
+                    view:           'plus',
+                    group:          'item1',
+                    prefix:         prefix.plus,
+                    title_tag:      'h2',
+                    title:          'Преимущества пустышек серии ultra soft',
+                    img:            'plus-item1',
+                    label:          'plus-item1-label',
+                    label_ext:      'png',
+                    img_xs:         'true',
+                    list:           [
+                        {
+                            group:  'nth1-1',
+                            mod:    '',
+                            title:  'Ультрамягкая текстура нагубника',
+                            text:   'для нежной кожи малыша',
+                        },
+                        {
+                            group:  'nth1-2',
+                            mod:    '',
+                            title:  'Мягкая бархатистая соска',
+                            text:   'Принимают 96% детей*',
+                        },
+                        {
+                            group:  'nth1-3',
+                            mod:    '',
+                            title:  'Гибкий нагубник',
+                            text:   'для большего комфорта',
+                        },
+                        {
+                            group:  'nth1-4',
+                            mod:    '',
+                            title:  'Дополнительный приток воздуха',
+                            text:   'для еще большего комфорта',
+                        },
+                        {
+                            group:  'nth1-5',
+                            mod:    '',
+                            title:  'Удобное кольцо-держатель',
+                            text:   '',
+                        },
+                        {
+                            group:  'nth1-6',
+                            mod:    '',
+                            title:  'Футляр для хранения и стерилизации в комплекте',
+                            text:   '',
+                        },
+                    ],
+                    text_bottom:    '*В соответствии с потребительским тестом с 112 мамами, проведенным в США в 2016 году.',
+                },
+                {
+                    view:           'plus',
+                    group:          'item2',
+                    prefix:         prefix.plus,
+                    title_tag:      'h2',
+                    title:          'Преимущества пустышек серии ultra air',
+                    img:            'plus-item2',
+                    img_xs:         'true',
+                    list:           [
+                        {
+                            group:  'nth2-1',
+                            mod:    '',
+                            title:  'Нагубник с 4 увеличенными отверстиями',
+                            text:   'обеспечивает дополнительный приток воздуха, благодаря чему кожа малыша под нагубником остается сухой и меньше раздражений на коже малыша',
+                        },
+                        {
+                            group:  'nth2-2',
+                            mod:    '',
+                            title:  'Уникальная разработка',
+                            text:   'Разработана в сотрудничестве с медицинскими специалистами и мамами специально для детей с чувствительной кожей',
+                        },
+                        {
+                            group:  'nth2-3',
+                            mod:    '',
+                            title:  'Мягкая бархатистая соска',
+                            text:   'Принимают 96% детей*',
+                        },
+                        {
+                            group:  'nth2-4',
+                            mod:    '',
+                            title:  'Серия ultr air night time. Удобно&nbsp;найти ночью',
+                            text:   'Кнопка нагубника светится в темноте благодаря безопасному флуоресцентному веществу',
+                        },
+                        {
+                            group:  'nth2-5',
+                            mod:    '',
+                            title:  'Специальный футляр',
+                            text:   'обеспечивает удобство хранения и стерилизации',
+                        },
+                    ],
+                    text_bottom:    '*В соответствии с потребительским тестом с 112 мамами, проведенным в США в 2016 году.',
+                },
+                {
+                    view:           'plus',
+                    group:          'item3',
+                    prefix:         prefix.plus,
+                    title_tag:      'h2',
+                    title:          'Преимущества пустышек серии Soothie',
+                    img:            'plus-item3',
+                    img_md:         'true',
+                    img_xs:         'true',
+                    list:           [
+                        {
+                            group:  'nth3-1',
+                            mod:    '',
+                            title:  'Ортодонтическая соска',
+                            text:   'Силиконовая соска симметричной формы учитывает естественное развитие неба, зубов и десен младенца',
+                        },
+                        {
+                            group:  'nth3-2',
+                            mod:    '',
+                            title:  'Используется в больницах',
+                            text:   'Распространяется в больницах США, где ими пользуются врачи, чтобы успокоить новорожденных* ',
+                        },
+                        {
+                            group:  'nth3-3',
+                            mod:    '',
+                            title:  'Силикон высокого уровня качества',
+                            text:   'Пустышка изготовлена из прочного медицинского силикона без бисфенола-А',
+                        },
+                        {
+                            group:  'nth3-4',
+                            mod:    '',
+                            title:  'Уникальная форма',
+                            text:   'Благодаря форме и специальному отверстию вы еще больше сблизитесь с малышом: ребенок сможет обхватить губами ваш палец',
+                        },
+                        {
+                            group:  'nth3-5',
+                            mod:    '',
+                            title:  'Удобная стерилизация',
+                            text:   'Очень просто очистить, поместив в стерилизатор или погрузив в кипящую воду',
+                        },
+                    ],
+                    text_bottom:    '*Данная пустышка обладает соской той же формы и изготовлена из того же материала, что и модель для США, - отличие заключается только в форме нагубника.',
+                },
+                {
+                    view:       'reviews',
+                    toggle:     '',
+                    status:     'js-toggled',
+                    title:      'Отзывы о пустышках Philips Avent',
+                    link:       '/dlya-materi-i-rebenka-1/pustyshki/pustyshka-6-18-mesyatsev-philips-avent-ultra-soft-scf223-01.html#box-product_review_data',
+                    list:       [
+                        {
+                            date:       '24.03.2022',
+                            name:       'Николай',
+                            detail:     'Пустышка стала незаменимой частью жизни малыша. Если с аналогами ребенок никак не мог успокоиться, хотя мы не знаем почему, то попробовав пустышку Philips остановили выбор именно на ней. Малыш сразу успокаивается, а в доме и на душе становится спокойно',
+                            link:       '/dlya-materi-i-rebenka-1/pustyshki/pustyshka-6-18-mesyatsev-philips-avent-ultra-soft-scf223-01.html#box-product_review_data',
+                            link_attr:  'target="_blank"',
+                            link_name:  'Читать дальше',
+                        },
+                        {
+                            date:       '24.03.2022',
+                            name:       'Татьяна',
+                            detail:     'Пустышку SCF223/02 мы полюбили сразу, ребенку она очень нравится. Основание соски очень удобное, не большое и не маленькое. Сам материал соски очень мягкий, дочка спокойна)С каждым разом убеждаюсь, что Avent=качество и комфорт моей дочки! Рекомендую!',
+                            link:       '/dlya-materi-i-rebenka-1/pustyshki/pustyshka-6-18-mesyatsev-2-sht-philips-avent-ultra-soft-scf223-02.html#box-product_review_data',
+                            link_attr:  'target="_blank"',
+                            link_name:  'Читать дальше',
+                        },
+                    ]
+                },
+                {
+                    view:       'products',
+                    id:         'lineup-item1',
+                    prefix:     prefix.products,
+                    title:      'Наши пустышки <span>для вашего малыша</span>',
+                    name:       '0—6 месяцев',
+                    slider_attr:     'data-slides-qty="4" data-theme="" data-desktop-loop="false" data-autoplay="false" data-disable-slider="false"',
+                    widget:     'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="true" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                    widget:     '',
+                    list_test:       '',
+                    list_test:       [
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                    ]
+                },
+                {
+                    view:       'products',
+                    id:         'lineup-item2',
+                    prefix:     prefix.products,
+                    name:       '6—18 месяцев',
+                    slider_attr:     'data-slides-qty="4" data-theme="" data-desktop-loop="false" data-autoplay="false" data-disable-slider="false"',
+                    widget:     'type="aristos_widgets/widget_base" sku_products="SCF223/01, SCF223/03, SCF223/02, SCF213/22, SCF085/04, SCF080/16, SCF080/15, SCF080/08, SCF080/07, SCF345/22, SCF343/22, SCF528/01, SCF529/01, SCF546/12, SCF542/12, SCF342/22, SCF344/22,SCF227/22, SCF223/04, SCF227/22" limit="60" page_size="60" col_count="5" slider="true" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                    widget:     '',
+                    list_test:  '',
+                    list_test:       [
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                    ]
+                },
+                {
+                    view:       'products',
+                    id:         'lineup-item3',
+                    prefix:     prefix.products,
+                    name:       '18 месяцев +',
+                    slider_attr:     'data-slides-qty="4" data-theme="" data-desktop-loop="false" data-autoplay="false" data-disable-slider="false"',
+                    widget:     'type="aristos_widgets/widget_base" sku_products="SCF349/21, SCF349/11, " limit="60" page_size="60" col_count="5" slider="true" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                    widget:     '',
+                    list_test:       '',
+                    list_test:       [
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                        {
+                            name: '1'
+                        },
+                    ]
+                },
+                {
+                    view:           'app',
+                    group:          '',
+                    prefix:         prefix.app,
+                    title_tag:      'h2',
+                    pretitle:       'Pregnancy+ app',
+                    title:          'Представляем приложение Беременность+',
+                    text:           'Хотите получать яркие и интерактивные изображение каждую неделю беременности? Присоединяйтесь к более чем 50 млн пользователей, которые уже используют это приложение для беременных для отслеживания прогресса каждую неделю. ',
+                    img:            'app',
+                    img_md:         '',
+                    img_xs:         '',
+                    app:    [
+                        {
+                            link:   '//apps.apple.com/ru/app/pregnancy/id505864483',
+                            img:    'app-apple-store',
+                        },
+                        {
+                            img:    'app-google-play',
+                            link:   '//play.google.com/store/apps/details?id=com.hp.pregnancy.lite',
+                        },
+                    ],
+                },
+                {
+                    view:       'products',
+                    id:         'limited',
+                    prefix:     prefix.limited,
+                    title:      'Вам также могут пригодиться',
+                    slider_attr:     'data-slides-qty="6" data-mobile-width="767" data-theme="limited" data-desktop-loop="false" data-autoplay="false" data-disable-slider="false"',
+                    list:       [
+                        {
+                            title:  'Молокоотсосы',
+                            img:    'limited-item1',
+                            link:   '/molokootsosy.html',
+                        },
+                        {
+                            title:  'Бутылочки',
+                            img:    'limited-item2',
+                            link:   '/dlya-materi-i-rebenka-1/kormlenie-iz-butylochki/butylochki.html',
+                        },
+                        {
+                            title:  'Соски',
+                            img:    'limited-item3',
+                            link:   '/dlya-materi-i-rebenka-1/kormlenie-iz-butylochki/soski.html',
+                        },
+                        {
+                            title:  'Подогреватели',
+                            img:    'limited-item4',
+                            link:   '/dlya-materi-i-rebenka-1/kormlenie-iz-butylochki/podogrevateli.html',
+                        },
+                        {
+                            title:  'Стерилизаторы',
+                            img:    'limited-item5',
+                            link:   '/sterilizers.html',
+                        },
+                        {
+                            title:  'Радионяни',
+                            img:    'limited-item6',
+                            link:   '/dlya-materi-i-rebenka-1/bezopasnost-i-komfort-malysha/radionyani.html',
+                        },
+                    ]
+                },
+            ],
+        } %}
+
+        {% include "../block/common/script/script.twig" with {
+            js:[
+                {name: js.slider},
+                {name: js.slide_toggle},
+                {name: js.scrollto}
+            ],
+        }
+        %}
+
+    </body>
+</html>
