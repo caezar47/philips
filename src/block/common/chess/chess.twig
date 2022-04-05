@@ -1,0 +1,45 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ prefix.page }}__container  {{ content.prefix }}__container">
+						{% for card in content.card %}
+						<div class="{{ content.prefix }}__card">
+							{% if card.img %}
+								{% set img_ext = 'jpg' %}
+								{% if card.img_ext %}
+									{% set img_ext = card.img_ext %}
+								{% endif %}
+								{% set picture_path = path_img %}
+								{% if card.img_path %}
+									{% set picture_path = card.img_path %}
+								{% endif %}
+							<div class="{{ content.prefix }}__card-img-wrap">
+								<picture class="{{ content.prefix }}__card-img">
+									{% if card.img_xs == "true" %}
+									<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ card.img }}-320.webp" media="(max-width: 575px)">
+									<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ card.img }}-320.{{ img_ext }}" media="(max-width: 575px)">
+									{% endif %}
+									{% if card.img_md == "true" %}
+									<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ card.img }}-768.webp" media="(max-width: 1024px)">
+									<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ card.img }}-768.{{ img_ext }}" media="(max-width: 1024px)">
+									{% endif %}
+									<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ card.img }}.webp">
+									<img src="{{ path.img }}{{ picture_path }}/{{ card.img }}.{{ img_ext }}" alt="{{ card.title }}">
+								</picture>
+							</div>
+							{% endif %}
+							<div class="{{ content.prefix }}__card-desc">
+								{% if card.title %}
+								<h3 class="{{ content.prefix }}__card-title">
+									{{ card.title }}
+								</h3>
+								{% endif %}
+								{% if card.text %}
+								<div class="{{ content.prefix }}__card-text">
+									{{ card.text }}
+								</div>
+								{% endif %}
+							</div>
+						</div>
+						{% endfor %}
+					</div>
+				</section>

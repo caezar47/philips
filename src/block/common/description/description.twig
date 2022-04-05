@@ -1,0 +1,104 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ prefix.page }}__container  {{ content.prefix }}__container">
+						<div class="{{ content.prefix }}__flex">
+							<div class="{{ content.prefix }}__desc">
+								{% if content.pretitle %}
+								<p class="{{ content.prefix }}__pretitle">{{ content.pretitle }}</p>
+								{% endif %}
+								{% if content.title %}
+								<{{ content.title_tag }} class="{{ content.prefix }}__title">
+									{{ content.title }}
+								</{{ content.title_tag }}>
+								{% endif %}
+								{% if content.reviews %}
+								<div class="{{ content.prefix }}__reviews">
+									<ul class="{{ content.prefix }}__reviews-star">
+										{% for star in content.reviews %}
+										<li class="{{ content.prefix }}__reviews-star-item"></li>
+										{% endfor %}
+									</ul>
+									{% if content.reviews_qty %}
+									<p class="{{ content.prefix }}__reviews-qty">{{ content.reviews_qty }}</p>
+									{% endif %}
+									{% if content.reviews_btn %}
+									<a href="{{ content.reviews_btn_link }}" class="page__btn  {{ content.reviews_btn_mod }}" {{ content.reviews_btn_attr }}>{{ content.reviews_btn }}</a>
+									{% endif %}
+								</div>
+								{% endif %}
+								<div class="{{ content.prefix }}__img-wrap  hidden-md">
+									{% set ext = 'jpg' %}
+									{% if content.img_ext %}
+										{% set ext = content.img_ext %}
+									{% endif %}
+									{% set picture_path = path_img %}
+									{% if content.img_path %}
+										{% set picture_path = content.img_path %}
+									{% endif %}
+									<picture class="{{ content.prefix }}__img">
+										{% if content.img_xs == "true" %}
+											<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: 575px)">
+											<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
+										{% endif %}
+										{% if content.img_md == "true" %}
+											<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
+											<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
+										{% endif %}
+										<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}.webp">
+										<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}.{{ ext }}" alt="{{ content.title }}">
+									</picture>
+
+									<div class="{{ content.prefix }}__img-sku">{{ content.sku }}</div>
+								</div>
+								{% if content.text %}
+								<div class="{{ content.prefix }}__text">
+									{{ content.text }}
+								</div>
+								{% endif %}
+								<div class="{{ content.prefix }}__price">
+									{% if content.widget_price %}
+										{{  '{{widget '}}{{ content.widget_price }}{{ ' }} '}}
+									{% else %}
+									<div class="price-box">
+										<p class="old-price">
+											<span class="price">00 000 ₽</span>
+										</p>
+										<p class="special-price">
+											<span class="price">00 000 ₽</span>
+										</p>
+									</div>
+									{% endif %}
+
+									<div class="{{ content.prefix }}__price-btn">
+										{% if content.widget_addToCart %}
+										{{  '{{widget '}}{{ content.widget_addToCart }}{{ ' }} '}}
+										{% else %}
+										<a href="{{ content.bay }}" target="_blank" class="button button_in-stock">Купить</a>
+										{% endif %}
+										{% if content.link %}
+										<a href="{{ content.link }}" {{ content.link_attr}} class="button">{{ content.link_name }}</a>
+										{% endif %}
+									</div>
+								</div>
+							</div>
+							{% if content.img %}
+							<div class="{{ content.prefix }}__img-wrap  visible-md">
+								<picture class="{{ content.prefix }}__img">
+										{% if content.img_xs == "true" %}
+											<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: 575px)">
+											<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
+										{% endif %}
+										{% if content.img_md == "true" %}
+											<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
+											<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
+										{% endif %}
+										<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}.webp">
+										<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}.{{ ext }}" alt="{{ content.title }}">
+									</picture>
+
+								<div class="{{ content.prefix }}__img-sku">{{ content.sku }}</div>
+							</div>
+							{% endif %}
+						</div>
+					</div>
+				</section>

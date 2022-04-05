@@ -9,6 +9,12 @@
 				{% if content.view == "feature" %}
 				{% include "../common/feature/feature.twig"%}
 				{% endif %}
+				{% if content.view == "description" %}
+				{% include "../common/description/description.twig"%}
+				{% endif %}
+				{% if content.view == "tech" %}
+				{% include "../common/tech/tech.twig"%}
+				{% endif %}
 				{% if content.view == "lineup" %}
 				{% include "../common/lineup/lineup.twig"%}
 				{% endif %}
@@ -23,6 +29,12 @@
 				{% endif %}
 				{% if content.view == "app" %}
 				{% include "../common/app/app.twig"%}
+				{% endif %}
+				{% if content.view == "chess" %}
+				{% include "../common/chess/chess.twig"%}
+				{% endif %}
+				{% if content.view == "footnotes" %}
+				{% include "../common/footnotes/footnotes.twig"%}
 				{% endif %}
 				{% endfor %}
 			</div>

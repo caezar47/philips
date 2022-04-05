@@ -1,6 +1,6 @@
 
 				<section class="{{ content.prefix }}">
-					<div class="{{ content.prefix }}__container">
+					<div class="{{ prefix.page }}__container  {{ content.prefix }}__container">
 						<div class="{{ content.prefix }}__desc">
 							{% if content.title %}
 							<{{ content.title_tag }} class="{{ content.prefix }}__title">
@@ -12,7 +12,30 @@
 								{{ content.text }}
 							</div>
 							{% endif %}
+							{% if content.btn %}
+							<a href="{{ content.btn_link }}" class="page__btn  {{ content.btn_mod }}" {{ content.btn_attr }}>{{ content.btn }}</a>
+							{% endif %}
 						</div>
+						{% if content.img and content.img_pos == 'wrap' %}
+						<div class="{{ content.prefix }}__img-wrap">
+							{% set ext = 'jpg' %}
+							{% if content.img_ext %}
+								{% set ext = content.img_ext %}
+							{% endif %}
+							{% set picture_path = path_img %}
+							{% if content.img_path %}
+								{% set picture_path = content.img_path %}
+							{% endif %}
+							<picture class="{{ content.prefix }}__img">
+								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: 575px)">
+								<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
+								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
+								<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
+								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-1024.webp">
+								<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}-1024.{{ ext }}" alt="{{ content.title }}">
+							</picture>
+						</div>
+						{% endif %}
 						{% if content.label %}
 						{% set label_ext = 'jpg' %}
 						{% if content.label_ext %}
@@ -28,7 +51,7 @@
 						</picture>
 						{% endif %}
 					</div>
-					{% if content.img %}
+					{% if content.img and content.img_pos == 'unwrap' %}
 					{% set ext = 'jpg' %}
 					{% if content.img_ext %}
 						{% set ext = content.img_ext %}
@@ -42,7 +65,7 @@
 						<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
 						<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
 						<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
-						<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-1024.webp" media="(min-width: 1025px)">
+						<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-1024.webp">
 						<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}-1024.{{ ext }}" alt="{{ content.title }}">
 					</picture>
 					{% endif %}

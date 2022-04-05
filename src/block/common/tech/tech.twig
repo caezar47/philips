@@ -1,0 +1,49 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ prefix.page }}__container  {{ content.prefix }}__container">
+						<div class="{{ content.prefix }}__flex">
+							<div class="{{ content.prefix }}__desc">
+								{% if content.title %}
+								<{{ content.title_tag }} class="{{ content.prefix }}__title">
+									{{ content.title }}
+								</{{ content.title_tag }}>
+								{% endif %}
+								{% if content.text %}
+								<div class="{{ content.prefix }}__text">
+									{{ content.text }}
+								</div>
+								{% endif %}
+							</div>
+							{% if content.img %}
+								{% set img_ext = 'jpg' %}
+								{% if content.img_ext %}
+									{% set img_ext = content.img_ext %}
+								{% endif %}
+								{% set picture_path = path_img %}
+								{% if content.img_path %}
+									{% set picture_path = content.img_path %}
+								{% endif %}
+							<div class="{{ content.prefix }}__img-wrap">
+								<picture class="{{ content.prefix }}__img">
+									<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}.webp">
+									<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}.{{ img_ext }}" alt="{{ content.title }}">
+								</picture>
+							</div>
+							{% endif %}
+							{% if content.bg %}
+								{% set bg_ext = 'jpg' %}
+								{% if content.bg_ext %}
+									{% set bg_ext = content.bg_ext %}
+								{% endif %}
+								{% set bg_path = path_img %}
+								{% if content.bg_path %}
+									{% set bg_path = content.bg_path %}
+								{% endif %}
+							<picture class="{{ content.prefix }}__bg">
+								<source type="image/webp" srcset="{{ path.img }}{{ bg_path }}/{{ content.bg }}.webp">
+								<img src="{{ path.img }}{{ bg_path }}/{{ content.bg }}.{{ bg_ext }}" alt="">
+							</picture>
+							{% endif %}
+						</div>
+					</div>
+				</section>

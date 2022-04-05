@@ -5,24 +5,27 @@
 		"rev":"dev"
 	},
 	"contacts":{
-		"name":"shop.blackanddecker.ru",
-		"domain":"shop.blackanddecker.ru",
-		"domain_link":"//shop.blackanddecker.ru/"
+		"name":"www.shop.philips.ru",
+		"domain":"www.shop.philips.ru",
+		"domain_link":"//www.shop.philips.ru/"
 	},
 	"page":{
 		"trimmery":"./p-8410-trimmery.html",
 		"valentine":"./P-8478-valentine.html",
-		"pustyshki":"./P-8647-pustyshki.html"
+		"pustyshki":"./P-8647-pustyshki.html",
+		"sanitizer":"./P-8766-sanitizer.html"
 	},
 	"css":{
 		"trimmery":"p-8410-trimmery.css",
 		"valentine":"P-8478-valentine.css",
-		"pustyshki":"P-8647-pustyshki.css"
+		"pustyshki":"P-8647-pustyshki.css",
+		"sanitizer":"P-8766-sanitizer.css"
 	},
 	"js":{
 		"scrollto":"scrollto.js",
 		"slide_toggle":"slide-toggle.js",
 		"slider":"slider.js",
+		"button":"button.js",
 		"trimmery":"p-8410-trimmery.js",
 		"valentine":"P-8478-valentine.js",
 		"pustyshki":"P-8647-pustyshki.js"
@@ -30,23 +33,30 @@
 	"img":{
 		"trimmery":"/promo/2022/P-8410",
 		"valentine":"/promo/2022/P-8478",
-		"pustyshki":"/promo/2022/P-8647"
+		"pustyshki":"/promo/2022/P-8647",
+		"sanitizer":"/promo/2022/P-8766"
 	},
 	"prefix":{
+		"page":"page",
 		"banner":"main-banner",
 		"feature":"feature",
 		"app":"app",
 		"plus":"plus",
 		"limited":"limited",
 		"lineup":"lineup",
+		"description":"description",
+		"tech":"tech",
+		"chess":"chess",
 		"trimmery":"trimmery",
 		"products":"catalog-products",
+		"products_card":"products",
+		"footnotes":"footnotes",
 		"valentine":"valentine"
 	},
 	"path":{
 		"css":"./css",
-		"img":"/media/up",
 		"img":"./img",
+		"img":"/media/up",
 		"js":"./js",
 		"favicon":"./favicon",
 		"docs":"./docs" 

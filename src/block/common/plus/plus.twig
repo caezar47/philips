@@ -7,7 +7,7 @@
 								{{ content.title }}
 							</{{ content.title_tag }}>
 							{% endif %}
-								{% if content.text %}
+							{% if content.text %}
 							<div class="{{ content.prefix }}__text  top">
 								{{ content.text }}
 							</div>
@@ -33,14 +33,14 @@
 						{% endif %}
 						<div class="{{ content.prefix }}__img-wrap  {{ content.group }}">
 							<picture class="{{ content.prefix }}__img  {{ content.group }}">
-							{% if content.img_xs == "true" %}
-							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: 575px)">
-							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
-							{% endif %}
-							{% if content.img_md == "true" %}
-							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
-							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
-							{% endif %}
+								{% if content.img_xs == "true" %}
+								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: 575px)">
+								<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: 575px)">
+								{% endif %}
+								{% if content.img_md == "true" %}
+								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: 1024px)">
+								<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: 1024px)">
+								{% endif %}
 								<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}.webp">
 								<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}.{{ ext }}" alt="{{ content.title }}">
 							</picture>

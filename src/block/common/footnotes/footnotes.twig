@@ -1,0 +1,15 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ prefix.page }}__container  {{ content.prefix }}__container">
+						{% if content.title %}
+						<{{ content.title_tag }} class="{{ content.prefix }}__title">
+							{{ content.title }}
+						</{{ content.title_tag }}>
+						{% endif %}
+						{% if content.text %}
+						<div class="{{ content.prefix }}__text">
+							{{ content.text }}
+						</div>
+						{% endif %}
+					</div>
+				</section>

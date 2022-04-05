@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+    <head>
+        {% include "../block/common/head/head.twig" with {
+            title:"P-8647 :: Ультрафиолетовый дезинфектор HX6907/01",
+            style:[
+                {name: css.sanitizer}
+            ],
+        }  %}
+    </head>
+    <body class="cms-page-view">
+        {% include "../block/page/content.twig" with {
+            path_img:   img.sanitizer,
+            mod:        '',
+            content: [
+                {
+                    view:       'banner',
+                    prefix:     prefix.banner,
+                    title_tag:  'h1',
+                    title:      'Ультрафиолетовый дезинфектор Philips&nbsp;Sonicare',
+                    text:       'Эффективная очистка насадок от&nbsp;бактерий и&nbsp;вирусов',
+                    img:        'main-banner',
+                    img_pos:    'unwrap',
+                    label_ext:  'png',
+                },
+                {
+                    view:       'description',
+                    prefix:     prefix.description,
+                    link:       '/personalnyy-uhod/zubnye-shchetki-i-irrigatory/dezinfektory/ultrafioletovyy-dezinfektor-philips-hx6907-01.html',
+                    link_attr:  'target="_blank"',
+                    link_name:  'Подробнее',
+                    sku:        'HX6907/01',
+                    pretitle:   'UV Sanitizer',
+                    title_tag:  'h2',
+                    title:      'Ультрафиолетовый дезинфектор HX6907/01',
+                    text:       '<h3>Помогает убивать бактерии и вирусы на сменных чистящих насадках*</h3><ul><li>Убивает до&nbsp;99% бактерий и&nbsp;вирусов*</li><li>Технология Ультрафиолетового очищения</li><li>Комфортное управление одной кнопкой;</li><li>Подходит для всех насадок Philips Sonicare**</li><li>Встроенный блок питания для заряда щетки***</li></ul>',
+                    img:        'description',
+                    reviews:    [{name: '1'},{name: '2'},{name: '3'},{name: '4'},{name: '5'},],
+                    reviews_qty:        '15',
+                    reviews_btn:        'Отзывы',
+                    reviews_btn_mod:    'blue  reviews',
+                    reviews_btn_attr:    'data-scrollto',
+                    reviews_btn_link:    '#reviews-block',
+                    widget_price:        'type="aristos_widgets/widget_price" sku="HX6907/01" old_price="1" cache_lifetime="86400"',
+                    widget_addToCart:    'type="aristos_widgets/widget_addToCart" sku="HX6907/01" cache_lifetime="86400"',
+                },
+                {
+                    view:       'tech',
+                    prefix:     prefix.tech,
+                    title_tag:  'h2',
+                    title:      'Технология Ультрафиолетового очищения',
+                    text:       '<p>УФ-дезинфектор&nbsp;— это безопасный и&nbsp;эффективный метод удаления вирусов и&nbsp;бактерий.</p><p>Отражатель УФ-дезинфектора распределяет дезинфицирующий свет вокруг всей поверхности чистящих насадок для оптимального результата.</p><p><strong>Поможет избавиться от&nbsp;99% вирусов и&nbsp;бактерий.</strong></p>',
+                    img:        'tech',
+                    img_ext:    'png',
+                    bg:         'tech-bg',
+                },
+                {
+                    view:       'chess',
+                    prefix:     prefix.chess,
+                    card:       [
+                        {
+                            title:  'Комфортное управление',
+                            text:   'Управление одной кнопкой. Нажмите кнопку один раз для запуска УФ-дезинфектора. УФ-дезинфектор автоматически отключается после завершения 10-минутной процедуры очистки',
+                            img:    'chess-item1',
+                            img_xs: 'true',
+                            img_md: 'true',
+                        },
+                        {
+                            title:  'Походит для всех насадок Philips&nbsp;Sonicare',
+                            text:   'Подходит для всех насадок Philips Sonicare**. Одновременная очистка 2 насадок.',
+                            img:    'chess-item2',
+                            img_xs: 'true',
+                            img_md: 'true',
+                        },
+                    ]
+                },
+                {
+                    view:       'description',
+                    prefix:     prefix.products_card,
+                    title_tag:  'h2',
+                    title:      'Ультрафиолетовый дезинфектор HX6907/01',
+                    img:        'description',
+                    widget_price:        'type="aristos_widgets/widget_price" sku="HX6907/01" old_price="1" cache_lifetime="86400"',
+                    widget_addToCart:    'type="aristos_widgets/widget_addToCart" sku="HX6907/01" cache_lifetime="86400"',
+                    link:       '/personalnyy-uhod/zubnye-shchetki-i-irrigatory/dezinfektory/ultrafioletovyy-dezinfektor-philips-hx6907-01.html',
+                    link_attr:  'target="_blank"',
+                    link_name:  'Подробнее',
+                },
+                {
+                    view:       'banner',
+                    prefix:     "banner-blue",
+                    title_tag:  'h2',
+                    title:      'Подберите свою идеальную насадку для здоровой и&nbsp;красивой улыбки',
+                    btn:        'Подобрать',
+                    btn_mod:    'blue-bg  banner',
+                    btn_attr:   'target="_blank"',
+                    btn_link:   '/personalnyy-uhod/zubnye-shchetki-i-irrigatory/smennye-nasadki.html',
+                    img:        'banner-blue',
+                    img_pos:    'wrap',
+                },
+                {
+                    view:       'reviews',
+                    id:         'reviews-block',
+                    toggle:     '',
+                    status:     'js-toggled',
+                    title:      'Отзывы о ультрафиолетовом дезинфекторе HX6907/01',
+                    link:       '/personalnyy-uhod/zubnye-shchetki-i-irrigatory/dezinfektory/ultrafioletovyy-dezinfektor-philips-hx6907-01.html#box-product_review_data',
+                    list:       [
+                        {
+                            date:       '13.03.2022',
+                            name:       'Екатерина',
+                            detail:     'Очень стильное устройство, 2 в одном и очищает и заряжает. У нас в семье две щётки, круто, что стерилизатор рассчитан на 2 насадки, также большой плюс - наличие зарядки. Можно поочерёдно заряжать электрические щетки. Мега стильный, не занимает много места, стерилизует всего за 10 мин, а время в наше время - дорогое удовольствие. Товаром довольны',
+                            plus:       'микробов не останется',
+                        },
+                        {
+                            date:       '06.03.2022',
+                            name:       'Николь',
+                            detail:     'Само устройство очень компактное, можно стерилизовать сразу две насадки и одновременно заряжать щетку. (Удобно, заряжается щетка мужа, его станция для зарядки мешается на полке зеркала, на мою Sonicare 9900 стоит рядом). После стерилизации заметила, что спало покраснение и раздражение дёсен. <br>Супер прост в использовании, нажала на кнопочку и забыла, стерилизатор сам отключается через 10 минут.',
+                        },
+                    ]
+                },
+                {
+                    view:       'footnotes',
+                    prefix:     prefix.footnotes,
+                    text:      '<p>* H.A., E-Coli, S&nbsp;Mutans; HSV-1. Для использования с&nbsp;InterCare (i), DiamondClean (W2), Sensitive (S), ProResults (C1) и&nbsp;Premium Plaque Control (C3)).</p><p>** Не&nbsp;подходит для детских насадок HX6032, HX6034, HX6042, HX6044</p><p>*** Зарядное устройство совместимо со&nbsp;всеми моделями щеток Philips Sonicare кроме линеек DiamondClean 9000, DiamondClean Smart, Prestige 9900</p>',
+                },
+            ],
+        } %}
+
+        {% include "../block/common/script/script.twig" with {
+            js:[
+                {name: js.scrollto},
+                {name: js.button}
+            ],
+        }
+        %}
+
+    </body>
+</html>
