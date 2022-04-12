@@ -382,6 +382,7 @@
         }
         &__slider{
           &-btn{
+            display: none;
             background-color: #113961;
             top: 46%;
             &.swiper-button-prev{
@@ -465,8 +466,13 @@
           padding-top: 35px;
           padding-bottom: 70px;
         }
+        &__slider{
+          .swiper-wrapper{
+            justify-content: center;
+          }
+        }
         &__item{
-          //max-width: 225px;
+          max-width: 225px;
           padding: 0 16px 23px;
           &::before{
             top: 118px;
@@ -531,11 +537,6 @@
         &__container{
           padding-left: 15px;
           padding-right: 15px;
-        }
-        &__slider{
-          &-btn{
-            display: none;
-          }
         }
         &__item{
           &-wrap{

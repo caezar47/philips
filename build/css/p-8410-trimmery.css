@@ -381,6 +381,7 @@
     padding-bottom: 33px;
   }
   .cms-trimmery #promo .trimmery-card__slider-btn {
+    display: none;
     background-color: #113961;
     top: 46%;
   }
@@ -463,7 +464,13 @@
     padding-top: 35px;
     padding-bottom: 70px;
   }
+  .cms-trimmery #promo .trimmery-card__slider .swiper-wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   .cms-trimmery #promo .trimmery-card__item {
+    max-width: 225px;
     padding: 0 16px 23px;
   }
   .cms-trimmery #promo .trimmery-card__item::before {
@@ -524,9 +531,6 @@
   .cms-trimmery #promo .trimmery-card__container {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .cms-trimmery #promo .trimmery-card__slider-btn {
-    display: none;
   }
   .cms-trimmery #promo .trimmery-card__item-wrap {
     min-height: 696px;
