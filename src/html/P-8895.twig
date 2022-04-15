@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+    <head>
+        {% include "../block/common/head/head.twig" with {
+            title:"P-8895",
+            style:[
+                {name: css.senseiq}
+            ],
+        }  %}
+    </head>
+    <body class="cms-page-view">
+        {% include "../block/page/content.twig" with {
+            path_img:   img.sanitizer,
+            mod:        '',
+            content: [
+                {
+                    view:       'test',
+                    view_page:  'P-8895',
+                }
+            ],
+        } %}
+
+        {% include "../block/common/script/script.twig" with {
+            js:[
+                {name: js.senseiq}
+            ],
+        }
+        %}
+
+    </body>
+</html>

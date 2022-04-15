@@ -1,0 +1,5739 @@
+@font-face {
+  font-family: "centrale_sans_light";
+  src: url(https://cdn.aristosgroup.ru/fonts/centrale-sans/centrale-sans-light.woff2) format("woff2"), url(https://cdn.aristosgroup.ru/fonts/centrale-sans/centrale-sans-light.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+#promo .features {
+  padding: 0;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.profiler_section {
+  display: none;
+}
+
+.cms-page-view .header .container.title {
+  display: none;
+}
+
+.cms-page-view .main-container {
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+.cms-page-view .main-container>.container {
+  width: 100%;
+  padding: 0;
+}
+
+.cms-page-view .header-container .header {
+  background-image: none;
+  background-color: #fff;
+}
+
+.cms-page-view .price-box p {
+  margin: 0;
+}
+
+.page-wrapper .header-container .header:before {
+  z-index: 190;
+}
+
+.breadcrumb .cms_page {
+  color: #fff;
+}
+
+#promo {
+  position: relative;
+  z-index: 100;
+}
+
+#promo .banner {
+  position: relative;
+  height: 540px;
+  background-image: url("/media/up/promo/sense-iq/P-8638/bg-desktop-min.jpg");
+  background-color: #dac1b3;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (max-width: 991px) {
+  #promo .banner {
+    height: 350px;
+    background-image: url("/media/up/promo/sense-iq/P-8638/bg-tablet-min.jpg");
+    /* background-position: right center; */
+  }
+}
+
+/* @media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+    #promo .banner {
+        background-image: url("/media/up/promo/sense-iq/banner-bg-tablet@2x.jpg");
+        background-size: auto 350px;
+    }
+} */
+
+@media (max-width: 640px) {
+  #promo .banner {
+    height: 344px;
+    background-image: url("/media/up/promo/sense-iq/P-8638/bg-mobile-min.jpg");
+    /* background-position: left center; */
+  }
+}
+
+/* @media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+    #promo .banner {
+        background-image: url("/media/up/promo/sense-iq/banner-bg-mobile@2x.jpg");
+        background-size: auto 344px;
+    }
+} */
+
+#promo .banner__inner {
+  max-width: 1540px;
+  margin: 0 auto;
+}
+
+#promo .banner__title {
+  margin: 0 0 26px;
+  padding: 143px 20px 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 55px;
+  line-height: 65px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .banner__title {
+    padding-top: 77px;
+    margin-bottom: 10px;
+    font-size: 34px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .banner__title {
+    padding: 15px 15px 0;
+    font-family: "Centrale Sans XBold", arial, sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+}
+
+#promo .banner__caption {
+  margin: 0;
+  padding: 0 20px;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 32px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .banner__caption {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .banner__caption {
+    padding: 0 15px;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 300;
+  }
+}
+
+#promo .banner__tab-links {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media (max-width: 640px) {
+  #promo .banner__tab-links {
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+#promo .tab-links {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 640px) {
+  #promo .tab-links__item {
+    width: 50%;
+  }
+}
+
+
+#promo .tab-links__item:nth-child(2) {
+  margin: 0 24px;
+}
+
+@media (max-width: 991px) {
+  #promo .tab-links__item:nth-child(2) {
+    margin: 0 12px;
+  }
+}
+
+
+@media (max-width: 640px) {
+  #promo .tab-links__item:nth-child(2) {
+    margin: 1px;
+  }
+}
+
+#promo .tab-links__tab {
+  width: 365px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 28px;
+  color: #421460;
+  text-decoration: none;
+  background-color: #efe6e7;
+  cursor: auto;
+}
+
+@media (max-width: 991px) {
+  #promo .tab-links__tab {
+    width: 292px;
+    font-size: 17px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .tab-links__tab {
+    width: 100%;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+#promo .tab-links__tab:not([aria-selected="true"]) {
+  background-color: rgba(239, 193, 217, 0.8);
+}
+
+#promo .tab-links__tab:not([aria-selected="true"]):hover {
+  background-color: rgba(239, 193, 217, 0.9);
+  cursor: pointer;
+}
+
+#promo .tab-links__tab-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 110px;
+  padding: 0 0 0 120px;
+  background-image: url("/media/up/promo/sense-iq/tab-icon-hairdryer-desktop.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .tab-links__tab-text {
+    background-image: url("/media/up/promo/sense-iq/tab-icon-hairdryer-desktop@2x.png");
+    background-size: 87px auto;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .tab-links__tab-text {
+    height: 90px;
+    padding-left: 100px;
+    background-image: url("/media/up/promo/sense-iq/tab-icon-hairdryer-tablet.png");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .tab-links__tab-text {
+    background-image: url("/media/up/promo/sense-iq/tab-icon-hairdryer-tablet@2x.png");
+    background-size: 71px auto;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .tab-links__tab-text {
+    height: 78px;
+    padding-left: 75px;
+    background-image: url("/media/up/promo/sense-iq/tab-icon-hairdryer-mobile.png");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .tab-links__tab-text {
+    background-image: url("/media/up/promo/sense-iq/tab-icon-hairdryer-mobile@2x.png");
+    background-size: 61px auto;
+  }
+}
+
+#promo .tab-links__tab-text--rectifier {
+  background-image: url("/media/up/promo/sense-iq/tab-icon-rectifier-desktop.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .tab-links__tab-text--rectifier {
+    background-image: url("/media/up/promo/sense-iq/tab-icon-rectifier-desktop@2x.png");
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .tab-links__tab-text--rectifier {
+    background-image: url("/media/up/promo/sense-iq/tab-icon-rectifier-tablet.png");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .tab-links__tab-text--rectifier {
+    background-image: url("/media/up/promo/sense-iq/tab-icon-rectifier-tablet@2x.png");
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .tab-links__tab-text--rectifier {
+    padding-left: 30px;
+    background-image: url("/media/up/promo/sense-iq/tab-icon-rectifier-mobile.png");
+    background-position: left -23px bottom;
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .tab-links__tab-text--rectifier {
+    background-image: url("/media/up/promo/sense-iq/tab-icon-rectifier-mobile@2x.png");
+  }
+}
+
+#promo .tab-links__tab-text--styler {
+  background-image: url("/media/up/promo/sense-iq/P-8638/styler-mini.png");
+  background-size: 87px auto;
+}
+
+#promo .intro {
+  position: relative;
+  padding: 47px 0 97px;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: #e2cde4;
+}
+
+@media (max-width: 1024px) {
+  #promo .intro {
+    position: unset;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .intro {
+    padding: 27px 0 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro {
+    padding: 290px 0 0;
+  }
+}
+
+#promo .intro--hairdryer {
+  position: relative;
+  min-height: 880px;
+  background-image: url("/media/up/promo/sense-iq/intro-hairdryer-bg-desktop.jpg");
+  background-size: cover;
+  background-color: #efe6e7;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro--hairdryer {
+    background-image: url("/media/up/promo/sense-iq/intro-hairdryer-bg-desktop@2x.jpg");
+    background-size: auto 880px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .intro--hairdryer {
+    min-height: 798px;
+    background-image: url("/media/up/promo/sense-iq/intro-hairdryer-bg-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .intro--hairdryer {
+    background-image: url("/media/up/promo/sense-iq/intro-hairdryer-bg-tablet@2x.jpg");
+    background-size: auto 798px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro--hairdryer {
+    background-position: top center;
+    background-image: url("/media/up/promo/sense-iq/intro-hairdryer-bg-mobile.jpg");
+    background-size: auto 275px;
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .intro--hairdryer {
+    background-image: url("/media/up/promo/sense-iq/intro-hairdryer-bg-mobile@2x.jpg");
+  }
+}
+
+#promo .intro--rectifier {
+  position: relative;
+  min-height: 764px;
+  background-image: url("/media/up/promo/sense-iq/intro-rectifier-bg-desktop.jpg");
+  background-size: cover;
+  background-color: #edd6d0;
+}
+
+
+#promo .intro--styler {
+  position: relative;
+  min-height: 829px;
+  background-image: url("/media/up/promo/sense-iq/P-8638/intro-styler-bf_desktop.png");
+  background-size: cover;
+  background-color: #edd6d0;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro--rectifier {
+    background-image: url("/media/up/promo/sense-iq/intro-rectifier-bg-desktop@2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .intro--rectifier {
+    min-height: 750px;
+    background-image: url("/media/up/promo/sense-iq/intro-rectifier-bg-tablet.jpg");
+  }
+
+  #promo .intro--styler {
+    position: relative;
+    min-height: 764px;
+    background-image: url("/media/up/promo/sense-iq/P-8638/intro-styler-bf_tablet.png");
+
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .intro--rectifier {
+    background-image: url("/media/up/promo/sense-iq/intro-rectifier-bg-tablet@2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro--rectifier {
+    background-position: top right;
+    background-image: url("/media/up/promo/sense-iq/intro-rectifier-bg-mobile.jpg");
+    background-size: auto 275px;
+  }
+
+  #promo .intro--styler {
+    position: relative;
+    min-height: 912px;
+    background-image: url("/media/up/promo/sense-iq/P-8638/intro-styler-bf_mobile.png");
+
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .intro--rectifier {
+    background-image: url("/media/up/promo/sense-iq/intro-rectifier-bg-mobile@2x.jpg");
+    background-size: auto 275px;
+  }
+}
+
+#promo .intro__inner {
+  max-width: 1004px;
+  padding: 0 20px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  #promo .intro__inner {
+    position: relative;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__inner {
+    position: static;
+    padding: 0 10px;
+  }
+}
+
+#promo .intro__title {
+  margin: 0 0 5px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 42px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .intro__title {
+    max-width: 390px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__title {
+    margin: 0;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+#promo .intro__caption {
+  margin: 0 0 21px;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 30px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .intro__caption {
+    margin: 0 0 15px;
+    font-size: 18px;
+    line-height: 24px;
+    max-width: 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__caption {
+    margin: 0 0 10px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+#promo .intro__reviews {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 0 0 30px;
+}
+
+@media (max-width: 991px) {
+  #promo .intro__reviews {
+    margin-bottom: 34px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__reviews {
+    margin-bottom: 2px;
+  }
+}
+
+#promo .intro__reviews-rating {
+  margin: 0 20px 0 0;
+  padding: 42px 0 0;
+  min-width: 150px;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  color: #421460;
+  background-image: url(/media/up/promo/sense-iq/stars.svg);
+  background-size: auto 24px;
+  background-repeat: no-repeat;
+  background-position: top 5px left;
+}
+
+@media (max-width: 991px) {
+  #promo .intro__reviews-rating {
+    min-width: 120px;
+    padding: 26px 0 0;
+    margin: 0 30px 0 0;
+    background-size: auto 20px;
+    background-position: top left;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__reviews-rating {
+    padding: 34px 0 0;
+    margin: 0 12px 0 0;
+    font-size: 14px;
+    line-height: 16px;
+    background-size: auto 17px;
+    background-position: top 8px left;
+  }
+}
+
+#promo .intro__reviews-btn {
+  color: #fff;
+  background-color: #421460;
+}
+
+#promo .intro__reviews-btn:hover {
+  background-color: #5a1b85;
+}
+
+#promo .intro__adv-list {
+  margin: 0 0 22px;
+  padding: 0;
+  max-width: 435px;
+  list-style: none;
+}
+
+@media (max-width: 991px) {
+  #promo .intro__adv-list {
+    margin: 0;
+    max-width: 380px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__adv-list {
+    margin-bottom: 24px;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    max-width: none;
+  }
+}
+
+#promo .intro__adv-item {
+  margin: 0 0 13px;
+  padding: 0 0 0 65px;
+  min-height: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+@media (max-width: 991px) {
+  #promo .intro__adv-item {
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__adv-item {
+    margin-bottom: 11px;
+  }
+}
+
+#promo .intro__adv-item--scan {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-scan@1x.png");
+  background-size: 51px auto;
+}
+
+/*
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+    #promo .intro__adv-item--scan {
+        background-image: url("/media/up/promo/sense-iq/icon-intro-scan@2x.png");
+        background-size: 51px auto;
+    }
+} */
+
+#promo .intro__adv-item--temp {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-temp@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--temp {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-temp@2x.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--overheat {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-overheat@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--overheat {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-overheat@2x.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--overheat2 {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-overheat2@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--overheat2 {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-overheat2@2x.png");
+    background-size: 50px auto;
+  }
+}
+
+#promo .intro__adv-item--stack {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-stack@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--stack {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-stack@2x.png");
+    background-size: 50px auto;
+  }
+}
+
+#promo .intro__adv-item--slabs {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-slabs@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--slabs {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-slabs@2x.png");
+    background-size: 50px auto;
+  }
+}
+
+#promo .intro__adv-item--flow {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-flow@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--flow {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-flow@2x.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--ion {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-ion@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--ion {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-ion@2x.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--drying {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-drying@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--drying {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-drying@2x.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--nozzle {
+  background-image: url("/media/up/promo/sense-iq/icon-intro-nozzle@1x.png");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--nozzle {
+    background-image: url("/media/up/promo/sense-iq/icon-intro-nozzle@2x.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--pin1 {
+  background-image: url("/media/up/promo/sense-iq/P-8638/pin-1.png");
+  background-size: 51px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--pin1 {
+    background-image: url("/media/up/promo/sense-iq/P-8638/pin-1.png");
+    background-size: 51px auto;
+
+  }
+}
+
+#promo .intro__adv-item--pin2 {
+  background-image: url("/media/up/promo/sense-iq/P-8638/pin-2.png");
+  background-size: 51px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--pin2 {
+    background-image: url("/media/up/promo/sense-iq/P-8638/pin-2.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--pin3 {
+  background-image: url("/media/up/promo/sense-iq/P-8638/pin-3.png");
+  background-size: 51px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--pin3 {
+    background-image: url("/media/up/promo/sense-iq/P-8638/pin-3.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--pin4 {
+  background-image: url("/media/up/promo/sense-iq/P-8638/pin-4.png");
+  background-size: 51px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--pin4 {
+    background-image: url("/media/up/promo/sense-iq/P-8638/pin-4.png");
+    background-size: 51px auto;
+  }
+}
+
+
+#promo .intro__adv-item--pin5 {
+  background-image: url("/media/up/promo/sense-iq/P-8638/pin-5.png");
+  background-size: 51px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--pin5 {
+    background-image: url("/media/up/promo/sense-iq/P-8638/pin-5.png");
+    background-size: 51px auto;
+  }
+}
+
+#promo .intro__adv-item--pin6 {
+  background-image: url("/media/up/promo/sense-iq/P-8638/pin-6.png");
+  background-size: 51px auto;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .intro__adv-item--pin6 {
+    background-image: url("/media/up/promo/sense-iq/P-8638/pin-6.png");
+    background-size: 51px auto;
+  }
+}
+
+
+#promo .intro__adv-item-text {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #421460;
+}
+
+@media (max-width: 640px) {
+  #promo .intro__adv-item-text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+#promo .intro__order-item {
+  margin-left: 65px;
+}
+
+@media (max-width: 991px) {
+  #promo .intro__order-item {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__order-item {
+    margin-bottom: 20px;
+  }
+}
+
+#promo .intro__buble {
+  position: absolute;
+  top: 60px;
+  left: calc(100vw - 650px / 2);
+  width: 128px;
+  height: 128px;
+  background-image: url(/media/up/promo/sense-iq/buble.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#promo .intro__buble-gift {
+  position: absolute;
+  top: 198px;
+  left: calc(100vw - 650px / 2);
+  width: 125px;
+  height: 125px;
+  background-image: url(/media/up/promo/sense-iq/buble-gift.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#promo .intro--rectifier .intro__buble-gift {
+  position: absolute;
+  top: 75px;
+  left: calc(100vw - 30%);
+  width: 125px;
+  height: 125px;
+  background-image: url(/media/up/promo/sense-iq/buble-gift.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 991px) {
+  #promo .intro--rectifier .intro__buble-gift {
+    top: 50px;
+    left: unset;
+    right: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro--rectifier .intro__buble-gift {
+    width: 90px;
+    height: 90px;
+    top: 150px;
+    left: 35px;
+  }
+}
+
+#promo .intro--styler .intro__buble-gift {
+  position: absolute;
+  top: 121px;
+  left: unset;
+  right: 25%;
+  width: 125px;
+  height: 125px;
+  background-image: url(/media/up/promo/sense-iq/buble-gift.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 991px) {
+  #promo .intro--styler .intro__buble-gift {
+    top: 50px;
+    left: unset;
+    right: 50px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro--styler .intro__buble-gift {
+    width: 90px;
+    height: 90px;
+    top: 150px;
+    left: 35px;
+  }
+}
+
+/* #promo .intro__buble a,
+  #promo .intro__buble-gift a, */
+#promo .anchor-buble a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  #promo .intro__buble {
+    top: unset;
+    left: unset;
+    right: 33px;
+  }
+
+  #promo .intro__buble-gift {
+    top: 350px;
+    left: calc(100vw - 690px / 2);
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro__buble {
+    top: unset;
+    left: unset;
+    bottom: calc(100% - 114px);
+    right: 0;
+    width: 94px;
+    height: 94px;
+  }
+
+  #promo .intro__buble-gift {
+    top: 163px;
+    left: 15px;
+    right: 0;
+    width: 91px;
+    height: 91px;
+  }
+}
+
+#promo .order-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+
+@media (max-width: 640px) {
+  #promo .order-item {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+#promo .order-item__price {
+  margin-right: 35px;
+}
+
+@media (max-width: 991px) {
+  #promo .order-item__price {
+    margin: 0 20px 5px 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .order-item__price {
+    margin: 0 12px 0 0;
+    min-width: 120px;
+  }
+}
+
+#promo .order-item__btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 640px) {
+  #promo .order-item__btn-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#promo .product-item__buttons .button_in-stock,
+#promo .order-item__buy-btn {
+  margin-right: 10px;
+  min-width: 150px;
+  color: #fff;
+  background-color: #d3732b;
+  border-color: #d3732b;
+}
+
+@media (max-width: 991px) {
+
+  #promo .product-item__buttons .button_in-stock,
+  #promo .order-item__buy-btn {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product-item__buttons .button_in-stock,
+  #promo .order-item__buy-btn {
+    margin-right: 0;
+    margin-bottom: 7px;
+    min-width: 0;
+    width: 120px;
+  }
+}
+
+#promo .product-item__buttons .button_in-stock:hover,
+#promo .order-item__buy-btn:hover {
+  background-color: #c6680e;
+  border-color: #c6680e;
+}
+
+#promo .product-item__buttons .button_out-stock,
+#promo .order-item__more-btn {
+  margin-right: 10px;
+  min-width: 150px;
+  color: #323232;
+  background-color: #fff;
+  border-color: #d2d2d2;
+}
+
+@media (max-width: 991px) {
+  #promo .product-item__buttons .button_out-stock,
+  #promo .order-item__more-btn {
+    min-width: 120px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product-item__buttons .button_out-stock,
+  #promo .order-item__more-btn {
+    margin-right: 0;
+    margin-bottom: 7px;
+    min-width: none;
+    width: 120px;
+  }
+}
+
+#promo .product-item__buttons .button_out-stock:hover,
+#promo .order-item__more-btn:hover {
+  background-color: #f3f3f3;
+}
+
+#promo .order-item .old-price {
+  margin: 0;
+  padding: 0;
+}
+
+#promo .order-item .old-price .price {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", "Roboto Condensed", arial, sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #323232;
+  text-decoration: line-through;
+}
+
+@media (max-width: 991px) {
+  #promo .order-item .old-price .price {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+#promo .order-item .special-price,
+#promo .order-item .regular-price {
+  margin: 0;
+  padding: 0;
+}
+
+#promo .order-item .special-price .price,
+#promo .order-item .regular-price .price {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans XBold", "Roboto Condensed", arial, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #96107b;
+}
+
+@media (max-width: 991px) {
+
+  #promo .order-item .special-price .price,
+  #promo .order-item .regular-price .price {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
+#promo .features #hairdryer-features {
+  background-color: #351935;
+}
+
+#promo .features #rectifier-features {
+  background-color: #351935;
+}
+
+#promo .features__nav-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  width: 100%;
+  max-width: 1100px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width: 640px) {
+  #promo .features__nav-wrapper {
+    top: 105px;
+    left: auto;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+#promo .features__slide {
+  min-height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide {
+    min-height: 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide {
+    min-height: 0;
+    background-size: auto 200px;
+    background-position: center top;
+  }
+}
+
+#promo .features__slide.styler-version {
+  background-image: url("/media/up/promo/sense-iq/P-8638/features-banner-desktop.jpg");
+  min-height: 900px;
+}
+
+#promo .features__slide--sense {
+  background-image: url("/media/up/promo/sense-iq/features-slide-sense-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .features__slide--sense {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense-desktop@2x.jpg");
+    background-size: auto 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide--sense {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--sense {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense-tablet@2x.jpg");
+    background-size: auto 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide--sense {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--sense {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense-mobile@2x.jpg");
+    background-size: auto 200px;
+  }
+}
+
+#promo .features__slide--adopt {
+  background-image: url("/media/up/promo/sense-iq/features-slide-adopt-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .features__slide--adopt {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt-desktop@2x.jpg");
+    background-size: auto 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide--adopt {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--adopt {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt-tablet@2x.jpg");
+    background-size: auto 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide--adopt {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--adopt {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt-mobile@2x.jpg");
+    background-size: auto 200px;
+  }
+}
+
+#promo .features__slide--care {
+  background-image: url("/media/up/promo/sense-iq/features-slide-care-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .features__slide--care {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care-desktop@2x.jpg");
+    background-size: auto 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide--care {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--care {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care-tablet@2x.jpg");
+    background-size: auto 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide--care {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--care {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care-mobile@2x.jpg");
+    background-size: auto 200px;
+  }
+}
+
+#promo .features__slide--fast {
+  background-image: url("/media/up/promo/sense-iq/features-slide-fast-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .features__slide--fast {
+    background-image: url("/media/up/promo/sense-iq/features-slide-fast-desktop@2x.jpg");
+    background-size: auto 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide--fast {
+    background-image: url("/media/up/promo/sense-iq/features-slide-fast-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--fast {
+    background-image: url("/media/up/promo/sense-iq/features-slide-fast-tablet@2x.jpg");
+    background-size: auto 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide--fast {
+    background-image: url("/media/up/promo/sense-iq/features-slide-fast-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--fast {
+    background-image: url("/media/up/promo/sense-iq/features-slide-fast-mobile@2x.jpg");
+    background-size: auto 200px;
+  }
+}
+
+#promo .features__slide--sense2 {
+  background-image: url("/media/up/promo/sense-iq/features-slide-sense2-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .features__slide--sense2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense2-desktop@2x.jpg");
+    background-size: auto 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide--sense2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense2-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--sense2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense2-tablet@2x.jpg");
+    background-size: auto 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide--sense2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense2-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--sense2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-sense2-mobile@2x.jpg");
+    background-size: auto 200px;
+  }
+}
+
+#promo .features__slide--adopt2 {
+  background-image: url("/media/up/promo/sense-iq/features-slide-adopt2-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .features__slide--adopt2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt2-desktop@2x.jpg");
+    background-size: auto 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide--adopt2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt2-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--adopt2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt2-tablet@2x.jpg");
+    background-size: auto 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide--adopt2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt2-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--adopt2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-adopt2-mobile@2x.jpg");
+    background-size: auto 200px;
+  }
+}
+
+#promo .features__slide--care2 {
+  background-image: url("/media/up/promo/sense-iq/features-slide-care2-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .features__slide--care2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care2-desktop@2x.jpg");
+    background-size: auto 600px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide--care2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care2-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--care2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care2-tablet@2x.jpg");
+    background-size: auto 450px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide--care2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care2-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .features__slide--care2 {
+    background-image: url("/media/up/promo/sense-iq/features-slide-care2-mobile@2x.jpg");
+    background-size: auto 200px;
+  }
+}
+
+#promo .features__slide-inner {
+  width: 100%;
+  max-width: 880px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+#promo .features__slide-content {
+  max-width: 367px;
+}
+
+#promo .styler-version .features__slide-content {
+  max-width: 457px;
+}
+
+
+@media (max-width: 991px) {
+  #promo .features__slide-content {
+    max-width: 280px;
+    margin-right: 70px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__slide-content {
+    max-width: none;
+    margin-right: 0;
+    padding: 208px 20px 30px;
+  }
+}
+
+#promo .features__title {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  #promo .features__title {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__title {
+    margin-bottom: 8px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+#promo .features__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  #promo .features__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features__text {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+#promo .features__btn-prev,
+#promo .features__btn-next {
+  width: 58px;
+  height: 58px;
+  display: block;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+@media (max-width: 991px) {
+
+  #promo .features__btn-prev,
+  #promo .features__btn-next {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  #promo .features__btn-prev,
+  #promo .features__btn-next {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+#promo .features__btn-prev:hover,
+#promo .features__btn-next:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#promo .features__btn-prev::after,
+#promo .features__btn-next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 30px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("/media/up/promo/sense-iq/nav-arrow.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+
+  #promo .features__btn-prev::after,
+  #promo .features__btn-next::after {
+    width: 12px;
+    height: 24px;
+    background-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  #promo .features__btn-prev::after,
+  #promo .features__btn-next::after {
+    width: 9px;
+    height: 18px;
+    background-size: 9px;
+  }
+}
+
+#promo .features__btn-prev::after {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+  -ms-transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#promo .features2 {
+  padding: 18px 0;
+  background-color: #ffe1e1;
+}
+
+@media (max-width: 640px) {
+  #promo .features2 {
+    padding: 0 0 18px;
+  }
+}
+
+@media (min-width: 641px) {
+  #promo .features2__wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+#promo .features2__slide-inner {
+  max-width: 964px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  #promo .features2__slide-inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+#promo .features2__content-wrapper {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0 45px 0 25px;
+}
+
+@media (max-width: 991px) {
+  #promo .features2__content-wrapper {
+    width: 46%;
+    padding: 0 28px 0 25px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features2__content-wrapper {
+    width: 100%;
+    padding: 10px 20px 0;
+  }
+}
+
+#promo .features2__image-wrapper {
+  width: 50%;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+@media (max-width: 991px) {
+  #promo .features2__image-wrapper {
+    width: 54%;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features2__image-wrapper {
+    width: 100%;
+  }
+}
+
+#promo .features2__title {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", "Roboto Condensed", arial, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .features2__title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features2__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+#promo .features2__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", "Roboto Condensed", arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .features2__text {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .features2__text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+#promo .features2__image {
+  display: block;
+}
+
+#promo .video-section {
+  padding: 20px 0 25px;
+  background: #feede4;
+  background: -o-linear-gradient(290deg, #feede4 10%, #e1b7cb 90%);
+  background: linear-gradient(160deg, #feede4 10%, #e1b7cb 90%);
+}
+
+@media (max-width: 991px) {
+  #promo .video-section {
+    padding-bottom: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .video-section {
+    padding: 12px 0 0;
+  }
+}
+
+#promo .video-section--purple {
+  background: #d6bfc7;
+}
+
+#promo .video-section__inner {
+  max-width: 940px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  #promo .video-section__inner {
+    max-width: 650px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .video-section__inner {
+    padding: 0;
+  }
+}
+
+#promo .video-section__title {
+  margin: 0 auto 15px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .video-section__title {
+    margin-bottom: 20px;
+    max-width: 650px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .video-section__title {
+    margin-bottom: 14px;
+    padding: 0 10px;
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .video-section__title--hdc {
+    max-width: 560px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .video-section__title--hdf {
+    margin-top: 18px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+#promo .hairdryer-modes {
+  padding: 30px 0 0;
+  background-color: #fcecee;
+  background-image: url("/media/up/promo/sense-iq/modes-bg-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+@media (max-width: 1100px) {
+  #promo .hairdryer-modes {
+    background-image: url("/media/up/promo/sense-iq/modes-bg-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .hairdryer-modes {
+    padding-top: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .hairdryer-modes {
+    padding-bottom: 330px;
+    background-image: url("/media/up/promo/sense-iq/modes-bg-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .hairdryer-modes {
+    padding-top: 18px;
+  }
+}
+
+#promo .hairdryer-modes__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+#promo .hairdryer-modes__title {
+  margin: 0 0 12px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #421460;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  #promo .hairdryer-modes__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 26px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .hairdryer-modes__title {
+    margin-bottom: 10px;
+    font-size: 21px;
+    line-height: 24px;
+    text-align: left;
+  }
+}
+
+#promo .hairdryer-modes__caption {
+  margin: 0 0 58px;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .hairdryer-modes__caption {
+    margin-bottom: 45px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .hairdryer-modes__caption {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+#promo .hairdryer-modes__hint {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .hairdryer-modes__hint {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .hairdryer-modes__hint {
+    display: none;
+  }
+}
+
+#promo .modes {
+  position: relative;
+  height: 570px;
+  margin: auto auto 0;
+  width: 100%;
+  overflow: visible;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes {
+    height: 400px;
+    width: 730px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+}
+
+#promo .modes__title {
+  position: absolute;
+  margin: 0;
+  padding: 8px 15px;
+  width: 213px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #421460;
+  background-color: #f1d5dd;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__title {
+    width: 155px;
+    padding: 7px 10px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__title {
+    position: static;
+    margin-bottom: 20px;
+    width: 200px;
+    font-size: 17px;
+    line-height: 25px;
+    background-color: #e49aa9;
+  }
+}
+
+#promo .modes__title.active {
+  background-color: #e49aa9;
+}
+
+#promo .modes__title--manual {
+  left: 70px;
+  top: 7px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__title--manual {
+    left: 70px;
+    top: 5px;
+  }
+}
+
+#promo .modes__title--careful {
+  left: 13px;
+  top: 101px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__title--careful {
+    left: 29px;
+    top: 71px;
+  }
+}
+
+#promo .modes__title--fast {
+  left: -34px;
+  top: 197px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__title--fast {
+    left: -4px;
+    top: 138px;
+  }
+}
+
+#promo .modes__title--stack {
+  right: 70px;
+  top: 7px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__title--stack {
+    right: 70px;
+    top: 5px;
+  }
+}
+
+#promo .modes__title--curl {
+  right: 13px;
+  top: 101px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__title--curl {
+    right: 29px;
+    top: 71px;
+  }
+}
+
+#promo .modes__title--massage {
+  right: -34px;
+  top: 197px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__title--massage {
+    right: -4px;
+    top: 138px;
+  }
+}
+
+#promo .modes__subtitle {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+@media (min-width: 768px) {
+  #promo .modes__subtitle {
+    display: none;
+  }
+}
+
+#promo .modes__desc {
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  max-width: 263px;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #000;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__desc {
+    max-width: 190px;
+    font-size: 13px;
+    line-height: 19px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__desc {
+    position: static;
+    width: 100%;
+    max-width: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: left;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+  }
+}
+
+#promo .modes__desc--manual {
+  top: 215px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__desc--manual {
+    top: 153px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__desc--manual {
+    top: 0;
+  }
+}
+
+#promo .modes__desc--careful {
+  top: 200px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__desc--careful {
+    top: 137px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__desc--careful {
+    top: 0;
+  }
+}
+
+#promo .modes__desc--fast {
+  top: 222px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__desc--fast {
+    top: 147px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__desc--fast {
+    top: 0;
+  }
+}
+
+#promo .modes__desc--stack {
+  top: 173px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__desc--stack {
+    top: 116px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__desc--stack {
+    top: 0;
+  }
+}
+
+#promo .modes__desc--curl {
+  top: 150px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__desc--curl {
+    top: 98px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__desc--curl {
+    top: 0;
+  }
+}
+
+#promo .modes__desc--massage {
+  top: 150px;
+}
+
+@media (max-width: 1100px) {
+  #promo .modes__desc--massage {
+    top: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes__desc--massage {
+    top: 0;
+  }
+}
+
+#promo .modes__btn-prev,
+#promo .modes__btn-next {
+  top: 4px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  display: block;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+
+  #promo .modes__btn-prev,
+  #promo .modes__btn-next {
+    display: none;
+  }
+}
+
+#promo .modes__btn-prev:hover,
+#promo .modes__btn-next:hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+#promo .modes__btn-prev::after,
+#promo .modes__btn-next::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 16px;
+  height: 30px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-image: url("/media/up/promo/sense-iq/nav-arrow.svg");
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+
+  #promo .modes__btn-prev::after,
+  #promo .modes__btn-next::after {
+    width: 12px;
+    height: 24px;
+    background-size: 12px;
+  }
+}
+
+@media (max-width: 640px) {
+
+  #promo .modes__btn-prev::after,
+  #promo .modes__btn-next::after {
+    width: 9px;
+    height: 18px;
+    background-size: 9px;
+  }
+}
+
+#promo .modes__btn-prev {
+  left: 0;
+  right: auto;
+}
+
+#promo .modes__btn-prev::after {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
+  -ms-transform: translate(-50%, -50%) rotate(180deg);
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  #promo .modes .swiper-slide {
+    all: initial;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .modes .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  #promo .modes .swiper-wrapper {
+    overflow: visible;
+  }
+}
+
+#promo .items-set {
+  padding: 31px 0 0;
+  background-color: #fce9ed;
+}
+
+@media (max-width: 991px) {
+  #promo .items-set {
+    padding: 43px 0 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .items-set {
+    padding-top: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .items-set--rectifier {
+    padding: 26px 0 0;
+  }
+}
+
+#promo .items-set__title {
+  margin: 0 0 -16px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  text-align: center;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .items-set__title {
+    margin-top: -20px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .items-set__title {
+    margin: 0 0 10px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+#promo .items-set__title--rectifier {
+  margin: 0 0 15px;
+}
+
+#promo .items-set__inner {
+  width: 100%;
+  max-width: 1260px;
+  margin: 0 auto;
+  background-image: url("/media/up/promo/sense-iq/items-set-bg.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  #promo .items-set__inner {
+    padding-bottom: 12px;
+    background-size: 516px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .items-set__inner {
+    padding-bottom: 35px;
+    background-position: bottom right -102px;
+    background-size: 322px;
+  }
+}
+
+#promo .items-set__inner--rectifier {
+  padding-bottom: 46px;
+  background-position: bottom right 90px;
+  background-size: 334px;
+}
+
+@media (max-width: 1100px) {
+  #promo .items-set__inner--rectifier {
+    background-position: bottom right;
+    background-size: 242px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .items-set__inner--rectifier {
+    padding-bottom: 88px;
+    background-size: 200px;
+    background-position: bottom right 48px;
+  }
+}
+
+#promo .items-set__options {
+  margin: 0 auto;
+  width: 960px;
+}
+
+@media (max-width: 991px) {
+  #promo .items-set__options {
+    width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .items-set__options {
+    width: 285px;
+  }
+}
+
+#promo .items-set__options--rectifier {
+  width: 1100px;
+}
+
+@media (max-width: 1100px) {
+  #promo .items-set__options--rectifier {
+    width: 768px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .items-set__options--rectifier {
+    width: 290px;
+  }
+}
+
+#promo .options {
+  position: relative;
+}
+
+#promo .options__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#promo .options__item {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  max-width: 145px;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .options__item {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item {
+    max-width: 120px;
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+#promo .options__item--diffuser {
+  left: 45px;
+  top: 263px;
+}
+
+@media (max-width: 991px) {
+  #promo .options__item--diffuser {
+    top: 220px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item--diffuser {
+    left: 6px;
+    top: 110px;
+  }
+}
+
+#promo .options__item--nozzle {
+  left: 248px;
+  top: 263px;
+}
+
+@media (max-width: 991px) {
+  #promo .options__item--nozzle {
+    top: 220px;
+    left: 197px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item--nozzle {
+    left: -15px;
+    top: 226px;
+  }
+}
+
+#promo .options__item--concentrator {
+  left: 466px;
+  top: 263px;
+}
+
+@media (max-width: 991px) {
+  #promo .options__item--concentrator {
+    top: 220px;
+    left: 383px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item--concentrator {
+    left: -3px;
+    top: 344px;
+  }
+}
+
+#promo .options__item--hairdryer {
+  left: 703px;
+  top: 263px;
+}
+
+@media (max-width: 991px) {
+  #promo .options__item--hairdryer {
+    top: 220px;
+    left: 570px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item--hairdryer {
+    left: 219px;
+    top: 191px;
+  }
+}
+
+#promo .options__item--case {
+  max-width: 245px;
+  left: 757px;
+  top: 227px;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  #promo .options__item--case {
+    top: 175px;
+    left: 545px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item--case {
+    left: 50px;
+    top: 230px;
+    max-width: 200px;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+  }
+}
+
+#promo .options__item--cap {
+  left: 758px;
+  top: 114px;
+  max-width: 260px;
+  text-align: left;
+}
+
+@media (max-width: 1100px) {
+  #promo .options__item--cap {
+    top: 88px;
+    left: 546px;
+    max-width: 190px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item--cap {
+    left: 111px;
+    top: 85px;
+    max-width: 170px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+#promo .options__item--rectifier {
+  left: 290px;
+  top: 115px;
+}
+
+@media (max-width: 1100px) {
+  #promo .options__item--rectifier {
+    top: 83px;
+    left: 197px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .options__item--rectifier {
+    left: 111px;
+    top: 51px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+#promo .options__image {
+  display: block;
+  margin: 0 auto;
+}
+
+#promo .reviews {
+  padding: 18px 0 46px;
+  background: #d6bfc7;
+}
+
+@media (max-width: 991px) {
+  #promo .reviews {
+    padding-bottom: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .reviews {
+    padding-bottom: 14px;
+  }
+}
+
+#promo .reviews--pink {
+  background: #ffe1e1;
+}
+
+#promo .reviews--purple {
+  background-color: #f5caca;
+}
+
+
+@media (max-width: 640px) {
+  #promo .reviews--pink .review__text::after {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #ffe1e1));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), #ffe1e1 50%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #ffe1e1 50%);
+  }
+}
+
+#promo .reviews__inner {
+  width: 100%;
+  max-width: 1004px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  #promo .reviews__inner {
+    padding: 0 15px;
+  }
+}
+
+#promo .reviews__title {
+  margin: 0 0 20px;
+  padding: 0;
+  max-width: 700px;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .reviews__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .reviews__title {
+    margin-bottom: 5px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+#promo .reviews__rating-image {
+  display: block;
+  margin-bottom: 13px;
+  height: 24px;
+  width: unset;
+}
+
+@media (max-width: 991px) {
+  #promo .reviews__rating-image {
+    height: 20px;
+    margin-bottom: 11px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .reviews__rating-image {
+    height: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+#promo .reviews__rating {
+  margin: 0 auto 28px;
+  padding: 0;
+  display: block;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .reviews__rating {
+    margin-bottom: 17px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .reviews__rating {
+    margin-bottom: 12px;
+  }
+}
+
+#promo .reviews__list {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+@media (max-width: 991px) {
+  #promo .reviews__list {
+    margin-bottom: 18px;
+  }
+}
+
+#promo .reviews__item {
+  padding: 25px 100px 25px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 991px) {
+  #promo .reviews__item {
+    padding: 18px 100px 20px 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .reviews__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 14px 12px 23px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .reviews__item:last-child {
+    display: none;
+  }
+}
+
+#promo .reviews__btn {
+  width: 150px;
+  display: block;
+  margin: 0 auto;
+  color: #721660;
+  background-color: #fff;
+  border-color: #fff;
+}
+
+@media (max-width: 640px) {
+  #promo .reviews__btn {
+    margin-bottom: 10px;
+    min-width: 0;
+  }
+}
+
+#promo .reviews__btn:hover {
+  background-color: #f3f3f3;
+  border-color: #f3f3f3;
+}
+
+#promo .review__rating-wrapper {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  width: 200px;
+}
+
+@media (max-width: 991px) {
+  #promo .review__rating-wrapper {
+    width: 118px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .review__rating-wrapper {
+    margin-bottom: 10px;
+  }
+}
+
+#promo .review__rating-image {
+  height: 20px;
+  margin-bottom: 13px;
+}
+
+@media (max-width: 991px) {
+  #promo .review__rating-image {
+    height: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+#promo .review__name {
+  margin: 0 0 6px;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .review__name {
+    margin-bottom: 2px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .review__name {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+#promo .review__date {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #421460;
+}
+
+#promo .review__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #323232;
+}
+
+@media (max-width: 991px) {
+  #promo .review__text {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .review__text {
+    position: relative;
+    height: 85px;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .review__text::after {
+    content: "";
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 70%;
+    height: 1.2em;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, #d6bfc7));
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0), #d6bfc7 50%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), #d6bfc7 50%);
+  }
+}
+
+#promo .review__summary {
+  margin: 9px 0 0;
+  padding: 0 0 0 28px;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #421460;
+  background-image: url("/media/up/promo/sense-iq/icon-check.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 991px) {
+  #promo .review__summary {
+    margin-top: 17px;
+    padding-left: 25px;
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .review__summary {
+    margin-top: 12px;
+    font-size: 11px;
+  }
+}
+
+#promo .product {
+  padding: 48px 0 64px;
+  background-color: #c49fbf;
+}
+
+@media (max-width: 991px) {
+  #promo .product {
+    padding: 27px 0 33px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product {
+    padding: 27px 0 25px;
+  }
+}
+
+#promo .product--pink {
+  background-color: #f5caca;
+}
+
+#promo .product--pink .product__inner {
+  min-height: 0;
+}
+
+#promo .product--pink .product__image {
+  top: 90px;
+}
+
+#promo .product--pink- {
+  background-color: #f5caca;
+  overflow: hidden;
+  min-height: 581px;
+}
+
+#promo .product--pink- .product__inner {
+  min-height: 0;
+}
+
+#promo .product--pink- .product__image {
+  top: 0px;
+  right: 0;
+  width: 123px;
+}
+
+@media (max-width: 991px) {
+  #promo .product--pink- .product__image {
+    top: unset;
+    bottom: -110px;
+    right: 100px;
+    width: 101px;
+  }
+}
+
+
+@media (max-width: 664px) {
+  #promo .product--pink- .product__image {
+    top: 0px;
+    right: 0;
+    width: unset;
+  }
+}
+
+#promo .product-pink-buble {
+  width: 125px;
+  position: absolute;
+  bottom: 30px;
+  right: 150px;
+}
+
+@media (max-width: 991px) {
+  #promo .product-pink-buble {
+    bottom: 54px;
+    right: 80px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product-pink-buble {
+    width: 85px;
+    bottom: 0;
+    right: 26px;
+    top: 90px;
+  }
+}
+
+@media (max-width: 350px) {
+  #promo .product-pink-buble {
+    top: 124px;
+  }
+}
+
+#promo .product-pink-buble- {
+  width: 125px;
+  position: absolute;
+  bottom: 0px;
+  right: 150px;
+  top: 120px;
+}
+
+@media (max-width: 991px) {
+  #promo .product-pink-buble- {
+    bottom: 54px;
+    right: 245px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product-pink-buble- {
+    width: 85px;
+    bottom: 0;
+    right: 26px;
+    top: 90px;
+  }
+}
+
+@media (max-width: 350px) {
+  #promo .product-pink-buble {
+    top: 124px;
+  }
+}
+
+
+#promo .product__inner {
+  position: relative;
+  width: 100%;
+  max-width: 1004px;
+  min-height: 467px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  #promo .product__inner {
+    min-height: 402px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product__inner {
+    min-height: 0;
+  }
+}
+
+#promo .product__title {
+  margin: 0 0 15px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #421460;
+}
+
+#promo .product__title span {
+  font-size: 24px;
+  line-height: 133.5%;
+}
+
+@media (max-width: 991px) {
+  #promo .product__title {
+    margin-bottom: 37px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product__title {
+    margin-bottom: 10px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+}
+
+#promo .product__image {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  width: unset;
+}
+
+@media (max-width: 640px) {
+  #promo .product__image {
+    position: static;
+    display: block;
+    margin: 0 auto 20px;
+  }
+}
+
+#promo .product__list {
+  margin: 0;
+  padding: 0;
+  max-width: 350px;
+  list-style: none;
+}
+
+@media (max-width: 991px) {
+  #promo .product__list {
+    max-width: 325px;
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product__list {
+    max-width: none;
+    margin-bottom: 15px;
+  }
+}
+
+#promo .product__list-item {
+  position: relative;
+  margin: 0 0 26px;
+  padding: 0 0 0 16px;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #323232;
+}
+
+@media (max-width: 991px) {
+  #promo .product__list-item {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product__list-item {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+#promo .product__list-item::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 4px;
+  height: 4px;
+  background-color: #421460;
+  border-radius: 50%;
+}
+
+#promo .product__buble {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 125px;
+  height: 125px;
+}
+
+#promo .product__buble img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  #promo .product__buble {
+    left: unset;
+    right: 190px;
+    -webkit-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    width: 99px;
+    height: 99px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product__buble {
+    left: unset;
+    top: 32px;
+    right: 5px;
+    -webkit-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+    width: 78px;
+    height: 78px;
+  }
+}
+
+#promo .series-product {
+  background-image: url("/media/up/promo/sense-iq/series-product-rectifier-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 592px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .series-product {
+    background-image: url("/media/up/promo/sense-iq/series-product-rectifier-desktop@2x.jpg");
+    background-size: auto 592px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .series-product {
+    height: 409px;
+    background-image: url("/media/up/promo/sense-iq/series-product-rectifier-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .series-product {
+    background-image: url("/media/up/promo/sense-iq/series-product-rectifier-tablet@2x.jpg");
+    background-size: auto 409px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .series-product {
+    height: 366px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    background-image: url("/media/up/promo/sense-iq/series-product-rectifier-mobile.jpg");
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .series-product {
+    background-image: url("/media/up/promo/sense-iq/series-product-rectifier-mobile@2x.jpg");
+    background-size: auto 366px;
+  }
+}
+
+#promo .series-product--rectifier {
+  background-color: #ffe1e1;
+  background-image: url("/media/up/promo/sense-iq/series-product-hairdryer-desktop.jpg");
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.5),
+(-o-min-device-pixel-ratio: 3/2),
+(min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
+  #promo .series-product--rectifier {
+    background-image: url("/media/up/promo/sense-iq/series-product-hairdryer-desktop@2x.jpg");
+    background-size: auto 592px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .series-product--rectifier {
+    height: 409px;
+    background-image: url("/media/up/promo/sense-iq/series-product-hairdryer-tablet.jpg");
+  }
+}
+
+@media (max-width: 991px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 991px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 991px) and (min-resolution: 144dpi),
+(max-width: 991px) and (min-resolution: 1.5dppx) {
+  #promo .series-product--rectifier {
+    background-image: url("/media/up/promo/sense-iq/series-product-hairdryer-tablet@2x.jpg");
+    background-size: auto 409px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .series-product--rectifier {
+    height: auto;
+    background-image: url("/media/up/promo/sense-iq/series-product-hairdryer-mobile.jpg");
+    background-position: top right;
+  }
+}
+
+@media (max-width: 640px) and (-webkit-min-device-pixel-ratio: 1.5),
+(max-width: 640px) and (-o-min-device-pixel-ratio: 3/2),
+(max-width: 640px) and (min-resolution: 144dpi),
+(max-width: 640px) and (min-resolution: 1.5dppx) {
+  #promo .series-product--rectifier {
+    background-image: url("/media/up/promo/sense-iq/series-product-hairdryer-mobile@2x.jpg");
+    background-size: auto 255px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .series-product--rectifier .series-product__inner {
+    padding-top: 280px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .series-product--rectifier .series-product__title {
+    max-width: none;
+  }
+}
+
+#promo .series-product__inner {
+  width: 100%;
+  max-width: 1004px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media (max-width: 640px) {
+  #promo .series-product__inner {
+    padding: 0 15px;
+  }
+}
+
+#promo .series-product__title {
+  margin: 0 0 15px;
+  padding: 0;
+  max-width: 625px;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .series-product__title {
+    max-width: 345px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .series-product__title {
+    max-width: 200px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+#promo .series-product__more-btn {
+  min-width: 170px;
+  display: inline-block;
+  color: #fff;
+  background-color: #7d0063;
+  border-color: #7d0063;
+}
+
+@media (max-width: 991px) {
+  #promo .series-product__more-btn {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .series-product__more-btn {
+    margin-right: 0;
+    margin-bottom: 15px;
+    min-width: 0;
+    width: 150px;
+  }
+}
+
+#promo .series-product__more-btn:hover {
+  background-color: #99027b;
+  border-color: #99027b;
+}
+
+#promo .test-drive {
+  background-image: url(/media/up/promo/sense-iq/test-drive.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 37px 0 19px;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive {
+    background-image: url(/media/up/promo/sense-iq/test-drive@tab.png);
+    background-position: left center;
+    padding: 40px 0 34px;
+    max-height: 443px;
+  }
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive {
+    background-image: url(/media/up/promo/sense-iq/test-drive@mob.png);
+    padding: 16px 0 34px;
+    background-position: center;
+    max-height: unset;
+  }
+}
+
+#promo .test-drive__wrapper {
+  max-width: 1004px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__wrapper {
+    position: relative;
+    padding: 0 10px 0 0;
+  }
+}
+
+#promo .test-drive__inner {
+  -ms-flex-preferred-size: 60%;
+  flex-basis: 60%;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__inner {
+    -ms-flex-preferred-size: 55%;
+    flex-basis: 55%;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__inner {
+    -ms-flex-preferred-size: 57%;
+    flex-basis: 57%;
+  }
+}
+
+#promo .test-drive__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#promo .test-drive__title {
+  margin: 0;
+  padding: 0;
+  max-width: 506px;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+  color: #421460;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__title {
+    font-size: 26px;
+    line-height: 32px;
+  }
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__title {
+    margin-left: -20px;
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+
+#promo .test-drive__buble {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 128px;
+  height: 128px;
+  background-image: url(/media/up/promo/sense-iq/buble-rotate.svg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__buble {
+    width: 116px;
+    height: 113px;
+  }
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__buble {
+    bottom: 70px;
+    position: absolute;
+    width: 95px;
+    left: 13px;
+    -webkit-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    transform: rotate(315deg);
+  }
+}
+
+#promo .test-drive__list {
+  margin: 0;
+  max-width: 481px;
+  padding: 0 0 0 20px;
+  list-style-position: outside;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__list {
+    margin: -20px 0 0;
+  }
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__list {
+    margin: 18px 0 0;
+    padding: 0;
+  }
+}
+
+#promo .test-drive__item {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 125%;
+  color: #323232;
+  margin-bottom: 14px;
+}
+
+#promo .test-drive__item sup {
+  line-height: 0;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__item {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 14px;
+  }
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__item {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+#promo .test-drive__item:last-child {
+  margin-bottom: 0px;
+}
+
+#promo .test-drive__omode {
+  margin: 10px 0 0;
+  padding: 0 0 0 20px;
+  list-style: none;
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__omode {
+    padding: 0;
+  }
+}
+
+#promo .test-drive__omode-item {
+  font-size: 14px;
+  line-height: 125%;
+  color: #323232;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__omode-item {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__omode-item {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+
+#promo .test-drive__omode-item:last-child {
+  margin-bottom: 0px;
+}
+
+#promo .test-drive__link {
+  padding: 0 0 0 20px;
+  font-size: 14px;
+  line-height: 125%;
+  color: #004eaa;
+  text-decoration: none;
+}
+
+@media (max-width: 991px) {
+  #promo .test-drive__link {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 681px) {
+  #promo .test-drive__link {
+    padding: 0;
+    font-size: 11px;
+    line-height: 14px;
+  }
+}
+
+#promo .legend {
+  width: 100%;
+  max-width: 1004px;
+  padding: 20px 20px 17px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  #promo .legend {
+    padding-top: 28px;
+  }
+}
+
+#promo .legend__list {
+  margin: 0;
+  padding-left: 10px;
+  list-style: none;
+  counter-reset: li;
+}
+
+#promo .legend__item {
+  position: relative;
+  counter-increment: li;
+  margin: 0 0 14px;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #323232;
+}
+
+#promo .legend__item::before {
+  content: counter(li);
+  position: absolute;
+  top: -4px;
+  left: 0;
+  display: inline-block;
+  width: 5px;
+  margin-left: -10px;
+  margin-right: 5px;
+  font-size: 10px;
+  line-height: 10px;
+  text-align: right;
+}
+
+#promo .product-item__buttons .button,
+#promo .cta-btn {
+  display: block;
+  padding: 9px 25px;
+  font-family: "Centrale Sans", "Roboto Condensed", arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 3px;
+}
+
+@media (max-width: 991px) {
+  #promo .product-item__buttons .button,
+  #promo .cta-btn {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .product-item__buttons .button,
+  #promo .cta-btn {
+    padding: 9px 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+#promo .text-bold {
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-weight: 700;
+}
+
+#promo .callout {
+  font-family: "Centrale Sans", "Roboto Condensed", arial, sans-serif;
+  font-weight: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  color: inherit;
+}
+
+#promo .video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  background-color: #000000;
+  /* Enabled */
+}
+
+#promo .video__link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#promo .video__media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#promo .video__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+  padding: 0;
+  width: 207px;
+  height: 40px;
+  border: none;
+  background-color: #ffddf8;
+  border-radius: 3px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+@media (max-width: 640px) {
+  #promo .video__button {
+    width: 177px;
+    height: 34px;
+  }
+}
+
+#promo .video__button--bottom {
+  top: auto;
+  bottom: 12%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+#promo .video__button-text {
+  margin: 0;
+  padding: 11px 5px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #421460;
+}
+
+@media (max-width: 640px) {
+  #promo .video__button-text {
+    padding: 10px 5px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .video__button-icon {
+    width: 38px;
+    height: 34px;
+  }
+}
+
+#promo .video__button-shape {
+  fill: #212121;
+  fill-opacity: 0.8;
+}
+
+#promo .video__button-icon {
+  fill: #ffffff;
+}
+
+#promo .video__button:focus {
+  outline: none;
+}
+
+#promo .video:hover .video__button {
+  background-color: #a880b1;
+}
+
+#promo .video:hover .video__button-play {
+  fill: #63004f;
+}
+
+#promo .video__button:focus {
+  background-color: #a880b1;
+}
+
+#promo .video__button:focus .video__button-play {
+  fill: #63004f;
+  fill-opacity: 1;
+}
+
+#promo .video--enabled {
+  cursor: pointer;
+}
+
+#promo .video--enabled .video__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#promo .gift {
+  padding-top: 36px;
+  background-image: url(/media/up/promo/sense-iq/gift-bg_v3.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 632px;
+}
+
+@media (max-width: 991px) {
+  #promo .gift {
+    background-image: url(/media/up/promo/sense-iq/gift-bg_tablet_v2.png);
+    height: 640px;
+    padding-top: 51px;
+  }
+}
+
+@media (max-width: 500px) {
+  #promo .gift {
+    background-image: url(/media/up/promo/sense-iq/gift-bg_mobile_v2.png);
+    background-position: top;
+    padding-top: 18px;
+    height: auto;
+  }
+}
+
+#promo .gift__container {
+  max-width: 964px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (max-width: 991px) {
+  #promo .gift__container {
+    padding: 0 15px;
+  }
+}
+
+#promo .gift__wrapper {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+@media (max-width: 500px) {
+  #promo .gift__wrapper {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
+
+#promo .gift__inner-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 640px) {
+  #promo .gift__inner-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  #promo .gift__inner-wrapper {
+    margin-top: 360px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 425px) {
+  #promo .gift__inner-wrapper {
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  #promo .gift__inner-wrapper {
+    margin-top: 258px;
+  }
+}
+
+@media (max-width: 320px) {
+  #promo .gift__inner-wrapper {
+    margin-top: 212px;
+  }
+}
+
+#promo .gift__mobile-btn {
+  width: 80px;
+  height: 20px;
+  color: #96107b;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: "centrale_sans_book", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 0;
+  margin: 17px 0 17px;
+  display: none;
+}
+
+@media (max-width: 500px) {
+  #promo .gift__mobile-btn {
+    display: block;
+  }
+}
+
+#promo .gift__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  #promo .gift__logo-wrapper {
+    width: 100%;
+  }
+}
+
+#promo .gift__text {
+  max-width: 255px;
+  color: #323232;
+}
+
+#promo .gift__text:first-of-type {
+  margin-right: 27px;
+}
+
+@media (max-width: 991px) {
+  #promo .gift__text:first-of-type {
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .gift__text:first-of-type {
+    margin: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  #promo .gift__text {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .gift__text {
+    max-width: 225px;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .gift__text {
+    max-width: 205px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .gift__text {
+    max-width: 290px;
+  }
+}
+
+#promo .gift__logo {
+  max-width: 208px;
+}
+
+@media (max-width: 991px) {
+  #promo .gift__logo {
+    max-width: 245px;
+    width: 245px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .gift__logo {
+    max-width: 155px;
+  }
+}
+
+#promo .gift__logo img {
+  width: 100%;
+}
+
+#promo .gift__subtitle {
+  font-family: "centrale_sans_bold", Arial, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 144%;
+  margin: 24px 0;
+}
+
+@media (max-width: 991px) {
+  #promo .gift__subtitle {
+    max-width: 405px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .gift__subtitle {
+    margin: 10px 0 10px;
+  }
+}
+
+#promo .gift__dsc {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150.5%;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 640px) {
+  #promo .gift__dsc {
+    margin-top: 175px;
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+}
+
+#promo .gift__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 991px) {
+  #promo .gift__list {
+    max-width: 420px;
+  }
+}
+
+#promo .gift__list span {
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+#promo span.gift__item-subtext {
+  margin-bottom: 0;
+}
+
+#promo span.gift__item-subtext:first-of-type {
+  margin-top: 32px;
+}
+
+@media (max-width: 991px) {
+  #promo span.gift__item-subtext {
+    font-size: 10px;
+    line-height: 13px;
+  }
+
+  #promo span.gift__item-subtext:first-of-type {
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  #promo span.gift__item-subtext:last-of-type {
+    margin-bottom: 26px;
+  }
+}
+
+#promo .gift__item {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 991px) {
+  #promo .gift__item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+#promo .gift__item::before {
+  content: "";
+  width: 3px;
+  height: 3px;
+  background-color: #323232;
+  border-radius: 50%;
+  margin-top: 10px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 10px;
+}
+
+#promo .gift__buble {
+  width: 125px;
+  position: absolute;
+  top: 10px;
+  right: 85px;
+}
+
+#promo .gift__buble img {
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  #promo .gift__buble {
+    top: 0px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .gift__buble {
+    width: 94px;
+    right: 0px;
+    left: 60px;
+    top: 50px;
+  }
+}
+
+/* #promo .expert {
+    background: linear-gradient(180deg, #FFEEF5 0%, rgba(255, 238, 245, 0) 100%);
+    background-repeat: no-repeat;
+  }
+
+  #promo .expert__inner {
+    max-width: 1004px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 991px) {
+    #promo .expert__inner {
+        padding: 0 0 0 20px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    #promo .expert__inner {
+        padding: 0 20px;
+    }
+  }
+
+  #promo .expert__left {
+    padding: 33px 38px 46px 0;
+    width: 51%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #promo .expert__right {
+    width: 49%;
+  }
+
+  #promo .expert__gift {
+    position: absolute;
+    top: 0;
+    right: 38px;
+    max-width: 114px;
+  }
+
+  #promo .expert__title {
+    font-family: "centrale_sans_light", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 38px;
+    color: #421460;
+    margin-bottom: 23px;
+    max-width: 343px;
+  }
+
+  #promo .expert__title b {
+    font-family: "centrale_sans_bold", Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  #promo .expert__subtitle {
+    font-family: "centrale_sans_light", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 27px;
+    padding-top: 6px;
+  }
+
+  #promo .expert__text {
+    font-family: "centrale_sans_bold", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #421460;
+    max-width: 393px;
+  }
+
+  #promo .expert__list {
+    margin: 13px 0 23px;
+    padding-left: 20px;
+    color: #323232;
+    font-size: 16px;
+    line-height: 25px;
+    list-style: disc;
+  }
+
+  #promo .expert .cta-btn {
+    background-color: #56225B;
+    color: #FFFFFF;
+    margin-top: 24px;
+    max-width: 205px;
+  }
+
+  #promo .expert__name {
+    font-family: "centrale_sans_light", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 22px 0 7px;
+  }
+
+  #promo .expert__name b {
+    font-family: "centrale_sans_bold", Arial, sans-serif;
+    font-weight: 700;
+  }
+
+  #promo .expert__details-list {
+    list-style: none;
+    padding-left: 0;
+    font-family: "centrale_sans_light", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    padding-right: 10px;
+  }
+
+  #promo .expert__left .expert__picture {
+    display: none;
+    width: unset;
+  }
+
+  @media (max-width: 991px) {
+    #promo .expert__left {
+        width: 54%;
+        padding: 28px 0 44px;
+    }
+
+    #promo .expert__right {
+        width: 46%;
+    }
+
+    #promo .expert__gift {
+        top: 7px;
+        right: 26px;
+        max-width: 95px;
+    }
+
+    #promo .expert__title {
+        font-size: 26px;
+        line-height: 31px;
+        margin-bottom: 19px;
+        max-width: 289px;
+        margin-right: 110px;
+    }
+
+    #promo .expert__text {
+        max-width: 330px;
+    }
+
+    #promo .expert__list {
+        margin: 11px 0;
+        padding-right: 10px;
+    }
+
+    #promo .expert .cta-btn {
+        margin-top: 22px;
+    }
+
+    #promo .expert__name {
+        font-size: 12px;
+        line-height: 19px;
+        margin: 19px 0 7px;
+    }
+
+    #promo .expert__details-list {
+        font-size: 12px;
+        line-height: 18px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    #promo .expert {
+        background-size: 768px 556px;
+    }
+
+    #promo .expert__inner {
+        flex-direction: column;
+    }
+
+    #promo .expert__left {
+        width: 100%;
+        padding: 15px 0 18px;
+    }
+
+    #promo .expert__right {
+        width: 100%;
+    }
+
+    #promo .expert__title {
+        font-size: 22px;
+        line-height: 26px;
+        max-width: unset;
+        margin-right: 0;
+        margin-bottom: 28px;
+        padding-right: 85px;
+    }
+
+    #promo .expert__subtitle {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    #promo .expert__gift {
+        top: 10px;
+        right: 0;
+        max-width: 75px;
+    }
+
+    #promo .expert__text {
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    #promo .expert__list {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #promo .expert .cta-btn {
+        margin-top: 16px;
+        width: 210px;
+    }
+
+    #promo .expert__right .expert__picture {
+        display: none;
+    }
+
+    #promo .expert__left .expert__picture {
+        display: block;
+        margin: 0 -20px 19px;
+        max-width: calc(100% + 40px);
+    }
+
+    #promo .expert__name {
+        margin: 0 0 7px;
+    }
+  }
+
+  @media (max-width: 453px) {
+    #promo .expert__gift {
+        top: 37px;
+    }
+  }
+
+  @media (max-width: 360px) {
+    #promo .expert__title {
+        padding-right: 0;
+    }
+  } */
+/*Popup*/
+.senseiq-modal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background: rgba(207, 158, 220, 0.5);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.senseiq-modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.senseiq-modal__close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.senseiq-modal__close::before,
+.senseiq-modal__close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -7px;
+  width: 14px;
+  height: 2px;
+  background: #9f9f9f;
+}
+
+.senseiq-modal__close::before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.senseiq-modal__close::after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.senseiq-modal__container {
+  position: relative;
+  max-width: 339px;
+  padding: 30px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.senseiq-modal__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0 0 14px !important;
+  padding: 0 !important;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+}
+
+.senseiq-modal__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0 0 10px !important;
+  padding: 0 !important;
+  text-align: center;
+}
+
+.senseiq-modal__text:last-of-type {
+  margin: 0 0 20px !important;
+}
+
+.senseiq-modal__link {
+  margin: 0 auto;
+  display: block;
+  max-width: 217px;
+  text-shadow: none;
+  border: 0;
+  background: #e26d00;
+  color: #fff;
+  padding: 8px 15px;
+  text-align: center;
+  -webkit-transition: 0.6s opacity;
+  -o-transition: 0.6s opacity;
+  transition: 0.6s opacity;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.senseiq-modal__link:hover {
+  opacity: 0.8;
+  text-decoration: none;
+  color: #fff;
+}
+
+.senseiq-modal__link:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.senseiq-modal__link:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.senseiq-modal-button {
+  cursor: pointer;
+}
+
+@media (max-width: 350px) {
+  .senseiq-modal__container {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 991px) {
+  #promo .desktop {
+    display: none;
+  }
+}
+
+#promo .tablet {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  #promo .tablet {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  #promo .tablet {
+    display: none;
+  }
+}
+
+#promo .ben {
+  padding: 43px 0 64px;
+}
+
+#promo .ben__container {
+  max-width: 1400px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (max-width: 1400px) {
+  #promo .ben__container {
+    padding: 0 15px;
+  }
+}
+
+#promo .ben__title {
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 133.5%;
+  text-align: center;
+  color: #421460;
+  max-width: 915px;
+  margin: 0 auto 45px;
+}
+
+#promo .ben__dsc {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 133.5%;
+  text-align: center;
+  color: #000000;
+  max-width: 915px;
+  margin: 0 auto;
+}
+
+#promo .ben__subtitle {
+  font-family: "centrale_sans_bold", Arial, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 133.5%;
+  text-align: center;
+  color: #421460;
+  max-width: 915px;
+  margin: 42px auto 62px;
+
+}
+
+#promo .ben__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  overflow: hidden;
+  margin: -25px;
+}
+
+#promo .ben__item {
+  width: calc(100% / 3 - 50px);
+  margin: 25px;
+}
+
+#promo .ben__item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+#promo .ben__item h3 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 133.5%;
+  color: #421460;
+  margin-bottom: 16px;
+}
+
+#promo .ben__item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 133.5%;
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+
+  #promo .ben {
+    padding: 23px 0 36px;
+  }
+
+  #promo .ben__title {
+    font-size: 24.3711px;
+    line-height: 133.5%;
+    max-width: 580px;
+    margin: 0 auto 24px;
+  }
+
+  #promo .ben__dsc {
+    font-size: 14px;
+    line-height: 135%;
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  #promo .ben__subtitle {
+    font-size: 17.7244px;
+    line-height: 133.5%;
+    max-width: 580px;
+    margin: 24px auto 34px;
+
+  }
+
+  #promo .ben__wrapper {
+    margin: -13px;
+  }
+
+  #promo .ben__item {
+    width: calc(100% / 3 - 26px);
+    margin: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #promo .ben__item img {
+    max-width: 225px;
+    margin-bottom: 16px;
+  }
+
+  #promo .ben__item h3 {
+    font-size: 16px;
+    line-height: 133.5%;
+    margin-bottom: 10px;
+  }
+
+  #promo .ben__item p {
+    font-size: 11px;
+    line-height: 133.5%;
+  }
+}
+
+@media (max-width: 640px) {
+
+  #promo .ben {
+    padding: 31px 0 40px;
+  }
+
+  #promo .ben__title {
+    font-size: 22px;
+    line-height: 133.5%;
+    max-width: 100%;
+    margin: 0 auto 15px;
+  }
+
+  #promo .ben__dsc {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  #promo .ben__subtitle {
+    max-width: 100%;
+    margin: 24px auto 34px;
+
+  }
+
+  #promo .ben__wrapper {
+    margin: -13px;
+  }
+
+  #promo .ben__item {
+    width: 100%;
+    margin: 13px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  #promo .ben__text {
+    width: calc(100% - 147px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #promo .ben__item img {
+    max-width: 147px;
+    margin-bottom: 0;
+  }
+
+  #promo .ben__item h3 {
+    font-size: 16px;
+    line-height: 133.5%;
+    margin-bottom: 10px;
+  }
+
+  #promo .ben__item p {
+    font-size: 11px;
+    line-height: 133.5%;
+  }
+}
+
+
+.flex-styler {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 991px) {
+  .flex-styler {
+    flex-direction: row;
+    max-width: 100% !important;
+    margin-top: 400px !important;
+  }
+
+  .flex-styler .column:first-child {
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flex-styler {
+    flex-direction: column;
+    max-width: 100% !important;
+    margin-top: 20px !important;
+  }
+
+  .flex-styler .column:first-child {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  #promo .intro--styler .intro__buble-gift {
+    width: 90px;
+    height: 90px;
+    top: 150px;
+    left: unset;
+  }
+}
+
+.bg-none {
+  background-image: none !important;
+  padding: 0 !important;
+}
+
+#promo .tab-links__item {
+  width: 310px;
+  height: auto;
+}
+
+#promo .tab-links__tab {
+  width: 100%;
+  height: 100%;
+  align-items: flex-end;
+  padding-top: 20px;
+}
+/*
+#promo .tab-links__item:nth-child(1) .tab-links__tab picture {
+  display: flex;
+}
+
+#promo .tab-links__item:nth-child(1) .tab-links__tab img {
+  width: 203px;
+}
+*/
+/*#promo .tab-links__item:nth-child(2) .tab-links__tab img {*/
+#promo .tab-links__item:nth-child(1) .tab-links__tab img {
+  width: 233px;
+}
+
+/*#promo .tab-links__item:nth-child(3) .tab-links__tab img {*/
+#promo .tab-links__item:nth-child(2) .tab-links__tab img {
+  width: 177px;
+}
+
+@media (max-width: 991px) {
+  #promo .tab-links__item {
+    width: 217px;
+  }
+
+  #promo .tab-links__tab {
+    padding-top: 13px;
+  }
+
+  /*#promo .tab-links__item:nth-child(1) .tab-links__tab img {
+    width: 141px;
+  }*/
+
+  /*#promo .tab-links__item:nth-child(2) .tab-links__tab img {*/
+  #promo .tab-links__item:nth-child(1) .tab-links__tab img {
+    width: 163px;
+  }
+
+  /*#promo .tab-links__item:nth-child(3) .tab-links__tab img {*/
+  #promo .tab-links__item:nth-child(2) .tab-links__tab img {
+    width: 123px;
+
+  }
+}
+
+@media (max-width: 661px) {
+
+  #promo .tab-links__tab {
+    padding-top: 11px;
+  }
+
+  #promo .tab-links__item:nth-child(1) .tab-links__tab img {
+    width: 64px;
+  }
+
+  #promo .tab-links__item:nth-child(2) .tab-links__tab img {
+    width: 64px;
+  }
+
+  #promo .tab-links__item:nth-child(3) .tab-links__tab img {
+    width: 64px;
+  }
+}
+
+
+
+
+
+.features__slide-content {}
+
+#promo .features__slide.styler-version .features__title {
+  margin: 0 0 20px;
+  padding: 0;
+  font-family: "Centrale Sans XBold", arial, sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 133.5%;
+  color: #fff;
+}
+
+#promo .features__slide.styler-version .features__text {
+  margin: 0;
+  padding: 0;
+  font-family: "Centrale Sans", arial, sans-serif;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 133.5%;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  #promo .features__slide.styler-version {
+    min-height: 477px;
+  }
+
+  #promo .features__slide.styler-version .features__title {
+    margin: 0 0 46px;
+    font-size: 23.7037px;
+    line-height: 133.5%;
+  }
+
+  #promo .features__slide.styler-version .features__text {
+    font-size: 16.2963px;
+    line-height: 133.5%;
+  }
+
+  #promo .styler-version .features__slide-content {
+    max-width: 325px;
+  }
+}
+
+@media (max-width: 661px) {
+  #promo .features__slide.styler-version {
+    min-height: 336px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  #promo .features__slide.styler-version .features__title {
+    margin: 0 0 16px;
+    font-size: 20px;
+    line-height: 133.5%;
+  }
+
+  #promo .features__slide.styler-version .features__text {
+    font-size: 14px;
+    line-height: 128.5%;
+  }
+
+  #promo .styler-version .features__slide-content {
+    max-width: 215px;
+    padding: 20px 20px 30px;
+  }
+}
+
+.all-sku {
+  background-image: url("/media/up/promo/sense-iq/P-8638/all-bg-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 960px;
+  padding: 67px 0 110px;
+}
+
+.all-sku__container {
+  max-width: 1140px;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.all-sku__title {
+  font-family: Centrale Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 133.5%;
+  text-align: center;
+  color: #421460;
+}
+
+.all-sku__wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.all-sku__item {
+  position: absolute;
+  bottom: 0%;
+  width: 170px;
+}
+
+.all-sku__subtitle {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 123%;
+  color: #421460;
+}
+
+.all-sku__dsc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 123%;
+  color: #421460;
+  margin-bottom: 18px;
+}
+
+.all-sku__btn {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  color: #721660;
+  border: 0;
+  border-radius: 3px;
+  outline: transparent;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.all-sku__btn a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.all-sku__item.-hairdryer {
+  left: 10px;
+
+}
+
+.all-sku__item.-rectifier {
+  left: 400px;
+}
+
+.all-sku__item.-stayler {
+  right: 270px;
+}
+
+@media (max-width: 1024px) {
+
+  .all-sku {
+    background-image: url("/media/up/promo/sense-iq/P-8638/all-bg-tablet.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 596px;
+    padding: 42px 0 68px;
+  }
+
+  .all-sku__title {
+    font-size: 32px;
+    line-height: 133.5%;
+  }
+
+  .all-sku__btn {
+    width: 104px;
+    height: 27px;
+    font-size: 10.425px;
+    line-height: 12px;
+  }
+
+  .all-sku__item.-hairdryer {
+    left: 90px;
+  }
+
+  .all-sku__item.-rectifier {
+    left: 370px;
+  }
+
+  .all-sku__item.-stayler {
+    right: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+
+  .all-sku__item {
+    position: absolute;
+    bottom: 0%;
+    width: 107px;
+  }
+
+
+  .all-sku__subtitle {
+    font-size: 12.5099px;
+    line-height: 123%;
+  }
+
+  .all-sku__dsc {
+    font-size: 12.5099px;
+    line-height: 123%;
+    margin-bottom: 12px;
+  }
+
+  .all-sku__item.-hairdryer {
+    left: 40px;
+  }
+
+  .all-sku__item.-rectifier {
+    left: 270px;
+  }
+
+  .all-sku__item.-stayler {
+    right: 195px;
+  }
+}
+
+
+.all-mob {
+  display: none;
+}
+
+.all-mob__container {}
+
+.all-mob__head {
+  background-image: url("/media/up/promo/sense-iq/P-8638/all-bg-mobile.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 334px;
+  padding: 20px 16px;
+  margin-bottom: 28px;
+}
+
+.all-mob-title {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 133.5%;
+  text-align: left;
+  color: #421460;
+}
+
+.all-mob__wrapper {
+  padding: 0 15px;
+}
+
+.all-mob__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+  width: 261px;
+}
+
+.all-mob__text {
+  width: 170px;
+}
+
+.all-mob__subtitle {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 123%;
+  color: #421460;
+}
+
+
+.all-mob__dsc {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 123%;
+  color: #421460;
+  margin-bottom: 18px;
+}
+
+.all-mob__btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  color: #721660;
+  background: #DBC0D8;
+  border-radius: 3px;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.all-mob__btn a,
+.all-sku__btn a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.all-mob__img {
+  width: 63px;
+}
+
+.all-mob__img img {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .all-sku {
+    display: none;
+  }
+
+  .all-mob {
+    display: block;
+  }
+}
+
+
+
+.abouts {
+  background-image: url("/media/up/promo/sense-iq/P-8638/bg-abouts-desktop.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 958px;
+}
+
+.abouts__contanier {
+  max-width: 1250px;
+  padding: 0;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.abouts__wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.abouts__item {
+  cursor: pointer;
+  position: absolute;
+  width: 350px;
+  display: flex;
+}
+
+.abouts__item span {
+  opacity: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 143%;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 27px 34px;
+  width: 301px;
+  transition: opacity .22s ease;
+}
+
+.abouts__item:hover>span {
+  opacity: 1;
+}
+
+.abouts__item small {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 143%;
+}
+
+.abouts__item:nth-child(1) {
+  left: 30px;
+  top: 300px;
+}
+
+.abouts__item:nth-child(2) {
+  top: 450px;
+  left: 30px;
+}
+
+.abouts__item:nth-child(3) {
+  top: 645px;
+  left: 30px;
+}
+
+.abouts__item:nth-child(4) {
+  right: -15px;
+  justify-content: flex-end;
+  top: 40px;
+}
+
+
+.abouts__item:nth-child(5) {
+  justify-content: flex-end;
+  right: -15px;
+  top: 370px;
+}
+
+.abouts__item:nth-child(6) {
+  justify-content: flex-end;
+  right: -25px;
+  top: 552px;
+}
+
+.abouts__item:nth-child(7) {
+  justify-content: flex-end;
+  top: 712px;
+  right: -27px;
+}
+
+@media (max-width: 1024px) {
+  .abouts {
+    display: none;
+  }
+
+  /* .abouts__wrapper {
+        display: none;
+    } */
+}
+
+.styler-version .features__slide-inner {
+  align-items: unset !important;
+}
+
+.styler-version .features__slide-content {
+  margin-top: 170px;
+}
+
+@media (max-width:991px) {
+  .styler-version .features__slide-content {
+    margin-top: 98px;
+  }
+}
+
+@media (max-width: 661px) {
+  .styler-version .features__slide-content {
+    margin-top: 20px;
+  }
+}
+.rules__block{
+  margin-top: 24px;
+}
+@media (min-width: 768px) {
+  .rules__block{
+    margin-top: 15px;
+  }
+}
+@media (min-width: 1024px) {
+  .rules__block {
+    margin-top: 33px;
+  }
+}

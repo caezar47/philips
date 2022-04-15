@@ -19,7 +19,8 @@
 		"trimmery":"p-8410-trimmery.css",
 		"valentine":"P-8478-valentine.css",
 		"pustyshki":"P-8647-pustyshki.css",
-		"sanitizer":"P-8766-sanitizer.css"
+		"sanitizer":"P-8766-sanitizer.css",
+		"senseiq":"P-8895-senseiq.css"
 	},
 	"js":{
 		"scrollto":"scrollto.js",
@@ -28,6 +29,7 @@
 		"button":"button.js",
 		"trimmery":"p-8410-trimmery.js",
 		"valentine":"P-8478-valentine.js",
+		"senseiq":"p-8895-senseiq.js",
 		"pustyshki":"P-8647-pustyshki.js"
 	},
 	"img":{
@@ -54,6 +56,8 @@
 		"valentine":"valentine"
 	},
 	"path":{
+		"base":"//www.shop.philips.ru/",
+		"base":"",
 		"css":"./css",
 		"img":"./img",
 		"img":"/media/up",

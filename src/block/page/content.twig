@@ -36,6 +36,11 @@
 				{% if content.view == "footnotes" %}
 				{% include "../common/footnotes/footnotes.twig"%}
 				{% endif %}
+				{% if content.view == "test" %}
+				{% include "../common/test/test.twig" with {
+					view: content.view_page
+				}%}
+				{% endif %}
 				{% endfor %}
 			</div>
 		</div>
