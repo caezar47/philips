@@ -13,14 +13,18 @@
 		"trimmery":"./p-8410-trimmery.html",
 		"valentine":"./P-8478-valentine.html",
 		"pustyshki":"./P-8647-pustyshki.html",
-		"sanitizer":"./P-8766-sanitizer.html"
+		"sanitizer":"./P-8766-sanitizer.html",
+		"avent":"./P-9054-avent.html",
+		"dpd":"./P-9068-dpd.html"
 	},
 	"css":{
 		"trimmery":"p-8410-trimmery.css",
 		"valentine":"P-8478-valentine.css",
 		"pustyshki":"P-8647-pustyshki.css",
 		"sanitizer":"P-8766-sanitizer.css",
-		"senseiq":"P-8895-senseiq.css"
+		"senseiq":"P-8895-senseiq.css",
+		"avent":"P-9054-avent.css",
+		"dpd":"P-9068-dpd.css"
 	},
 	"js":{
 		"scrollto":"scrollto.js",
@@ -30,13 +34,16 @@
 		"trimmery":"p-8410-trimmery.js",
 		"valentine":"P-8478-valentine.js",
 		"senseiq":"p-8895-senseiq.js",
-		"pustyshki":"P-8647-pustyshki.js"
+		"pustyshki":"P-8647-pustyshki.js",
+		"avent":"P-9054-avent.js"
 	},
 	"img":{
 		"trimmery":"/promo/2022/P-8410",
 		"valentine":"/promo/2022/P-8478",
 		"pustyshki":"/promo/2022/P-8647",
-		"sanitizer":"/promo/2022/P-8766"
+		"sanitizer":"/promo/2022/P-8766",
+		"avent":"/promo/2022/P-9054",
+		"dpd":"/promo/2022/P-9068"
 	},
 	"prefix":{
 		"page":"page",

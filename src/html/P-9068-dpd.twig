@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+    <head>
+        {% include "../block/common/head/head.twig" with {
+            title:"Клуб Мастеров",
+            style:[
+                {
+                    name: css.dpd,
+                }
+            ],
+        }  %}
+    </head>
+    <body class="cms-page-view">
+        {% include "../block/page/content.twig" with {
+            path_img:   img.dpd,
+            mod:        '',
+            content: [
+                {
+                    view:       'banner',
+                    prefix:     prefix.banner,
+                    title_tag:  'h1',
+                    title:      'Philips и DPD дарят скидку 5% на всё!',
+                    text:       'Скидка&nbsp;5% на&nbsp;все товары и&nbsp;бесплатная доставка при&nbsp;заказе от&nbsp;5&nbsp;000&nbsp;рублей!*',
+                    img:        'main-banner',
+                    img_xs:     '574px',
+                    img_md:     '1023px',
+                    img_pos:    'unwrap',
+                },
+                {
+                    view:       'content',
+                    prefix:     'content-header',
+                    text:       '<h2>Используйте промокод для получения <span>скидки 5%</span></h2><div class="promocode">DPD</div>',
+                },
+                {
+                    view:       'content',
+                    prefix:     'content',
+                    text:       '<h2>Оформить заказ очень просто:</h2><ul><li class="step1">Выберите товары и положите их в корзину</li><li class="step2">Используйте промокод DPD</li><li class="step3">При оформлении заказа выберите курьерскую службу DPD</li><li class="step4">Оплатите заказ и совсем скоро он будет у Вас!</li></ul><a href="/">Перейти к выбору товаров</a>',
+                },
+                {
+                    view:       'content',
+                    prefix:     'content-footer',
+                    text:       ['<div class="picture"><img src="',path.img,img.dpd,'/dpd.svg" alt="DPD"></div><h2>Стабильная и надежная доставка</h2><p>*Акция действует с 27.07.2022 по 10.07.2022 только при условии полной предоплаты товара. Акция "Бесплатная доставка" не распространяется на заказы, содержащие в себе любые товары из категорий "Мобильные телефоны", "Смартфоны", "Планшеты" и "Телевизоры". Акция "Бесплатная доставка" не распространяется на регионы исключения: Республика Коми, Республика Саха (Якутия), Камчатский край, Магаданская область, Сахалинская область, Еврейская автономная область, Ненецкий автономный округ, Чукотский автономный округ, Ямало-Ненецкий автономный округ, г. Норильск.</p>'].join(""),
+                },
+            ],
+        } %}
+
+
+
+
+    {% include "../block/common/script/script.twig" with {
+
+    }
+    %}
+    </body>
+</html>

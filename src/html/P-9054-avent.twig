@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+    <head>
+        {% include "../block/common/head/head.twig" with {
+            title:"Клуб Мастеров",
+            style:[
+                {
+                    name: css.avent,
+                }
+            ],
+        }  %}
+    </head>
+    <body class="cms-page-view">
+        {% include "../block/page/content.twig" with {
+            path_img:   img.avent,
+            mod:        '',
+            content: [
+                {
+                    view:       'banner',
+                    prefix:     prefix.banner,
+                    title_tag:  'h1',
+                    title:      'Philips Avent 6 м+',
+                    text:       'Для тех,кто слегка подрос',
+                    img:        'banner',
+                    img_xs:     '574px',
+                    img_md:     '1023px',
+                    img_pos:    'unwrap',
+                },
+                {
+                    view:   'sku',
+                    prefix: [prefix.valentine,"-card"].join(""),
+                    btn:    'Смотреть все товары категории',
+                    filter_reduced: 'false',
+                    filter: [
+                        {
+                            id:     'pustyshki',
+                            group:  'sale_1',
+                            name:   'Пустышки',
+                            widget: 'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                        },
+                        {
+                            id:     'soski',
+                            group:  'sale_2',
+                            name:   'Соски для бутылочек',
+                            widget: 'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                        },
+                        {
+                            id:     'molokootsosy',
+                            group:  'sale_3',
+                            name:   'Молокоотсосы',
+                            widget: 'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                        },
+                        {
+                            id:     'podogrevateli',
+                            group:  'sale_4',
+                            name:   'Подогреватели бутылочек',
+                            widget: 'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                        },
+                        {
+                            id:     'parovarki-blendery',
+                            group:  'sale_5',
+                            name:   'Пароварки-блендеры',
+                            widget: 'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                        },
+                        {
+                            id:     'poilniki',
+                            group:  'sale_6',
+                            name:   'Поильники',
+                            widget: 'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                        },
+                        {
+                            id:     'aksessuary-dlya-grudnogo-vskarmlivaniya',
+                            group:  'sale_7',
+                            name:   'Аксессуары',
+                            widget: 'type="aristos_widgets/widget_base" sku_products="SCF194/01, SCF194/02, SCF222/01, SCF222/02, SCF376/22, SCF376/11, SCF085/01, SCF085/02, SCF080/06, SCF080/05, SCF522/01, SCF527/01, SCF544/10, SCF545/10, SCF345/20, SCF343/20, SCF080/13," limit="60" page_size="60" col_count="5" slider="false" template="catalog/product/list.phtml" visibility="4" availability_status="0,2" cache_lifetime="86400" conditions="YTo0OntzOjQ6InR5cGUiO3M6MzQ6ImNhdGFsb2dydWxlL3J1bGVfY29uZGl0aW9uX2NvbWJpbmUiO3M6MTA6ImFnZ3JlZ2F0b3IiO3M6MzoiYWxsIjtzOjU6InZhbHVlIjtzOjE6IjEiO3M6OToibmV3X2NoaWxkIjtzOjA6IiI7fQ=="',
+                        },
+                    ],
+                },
+            ],
+        } %}
+
+    {% include "../block/common/script/script.twig" with {
+        js:[
+            {
+                name: js.avent,
+            }
+        ],
+    }
+    %}
+    </body>
+</html>

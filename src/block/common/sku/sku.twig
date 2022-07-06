@@ -1,0 +1,32 @@
+
+				<div class="promo-content">
+					<div class="container">
+						<div class="content">
+							<div class="filter">
+								<div class="manage_filters">Фильтры</div>
+								<div class="filter_wrapper">
+									<div class="sales">
+										<span class="filter__name">Категории</span>
+										{% for filter in content.filter %}
+										<label class="checkbox__text">
+											<input class="filter__checkbox" id="{{ filter.group }}" type="checkbox"> {{filter.name}}
+										</label>
+										{% endfor %}
+									</div>
+								</div>
+							</div>
+							<div class="goods">
+								<div class="container_widgets">
+									{% for filter in content.filter %}
+									<div class="{{ filter.group }} all_categories" id="{{ filter.id }}" data-reduced="{{ content.filter_reduced }}">
+										<div class="category__title">{{ filter.name }}</div>
+										{{  '{{widget '}}{{ filter.widget }}{{ ' }} '}}
+
+										<button class="widget-show__more">Смотреть все товары категории</button>
+									</div>
+									{% endfor %}
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>

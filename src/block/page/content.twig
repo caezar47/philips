@@ -9,6 +9,9 @@
 				{% if content.view == "feature" %}
 				{% include "../common/feature/feature.twig"%}
 				{% endif %}
+				{% if content.view == "sku" %}
+				{% include "../common/sku/sku.twig"%}
+				{% endif %}
 				{% if content.view == "description" %}
 				{% include "../common/description/description.twig"%}
 				{% endif %}
@@ -40,6 +43,9 @@
 				{% include "../common/test/test.twig" with {
 					view: content.view_page
 				}%}
+				{% endif %}
+				{% if content.view == "content" %}
+					{% include "../common/content/content.twig"%}
 				{% endif %}
 				{% endfor %}
 			</div>

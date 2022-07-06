@@ -43,11 +43,11 @@
 												<div>
 
 													{% for filter in content.filter %}
-														<label class="{{ content.prefix }}__filter-item">
-															<input class="{{ content.prefix }}__filter-input  filter__checkbox sale mob" for="{{ filter.id }}" type="checkbox" data-sale-link="#{{ filter.id }}" />
-															{{filter.name}}
-															<span class="{{ content.prefix }}__filter-checkbox"></span>
-														</label>
+													<label class="{{ content.prefix }}__filter-item">
+														<input class="{{ content.prefix }}__filter-input  filter__checkbox sale mob" for="{{ filter.id }}" type="checkbox" data-sale-link="#{{ filter.id }}" />
+														{{filter.name}}
+														<span class="{{ content.prefix }}__filter-checkbox"></span>
+													</label>
 													{% endfor %}
 
 												</div>
@@ -80,23 +80,25 @@
 								</div>
 							</div>
 							<div>
+								{% if content.sku_tab %}
 								<div class="{{ content.prefix }}__category-wrap">
-									<label class="{{ content.prefix }}__category">
-										<input class="{{ content.prefix }}__category-input filter__checkbox cat  is-active" for="for-woman" type="checkbox" data-link="#for-woman">
-										<span class="{{ content.prefix }}__category-btn">Для нее</span>
+										<label class="{{ content.prefix }}__category">
+											<input class="{{ content.prefix }}__category-input filter__checkbox cat  is-active" for="for-woman" type="checkbox" data-link="#for-woman">
+											<span class="{{ content.prefix }}__category-btn">Для нее</span>
 
-									</label>
-									<label class="{{ content.prefix }}__category">
-										<input class="{{ content.prefix }}__category-input  filter__checkbox cat" for="for-men" type="checkbox" data-link="#for-men">
-										<span class="{{ content.prefix }}__category-btn">Для него</span>
-									</label>
-								</div>
-
-
+										</label>
+										<label class="{{ content.prefix }}__category">
+											<input class="{{ content.prefix }}__category-input  filter__checkbox cat" for="for-men" type="checkbox" data-link="#for-men">
+											<span class="{{ content.prefix }}__category-btn">Для него</span>
+										</label>
+									</div>
+								{% endif %}
 								<div class="{{ content.prefix }}__category-widgets  container_widgets">
 									{% for sku in content.sku %}
 									<div id="{{ sku.id }}" class="cat-{{ sku.id }} all_categories cat-block  {{ sku.hide }}">
+										{% if sku.name %}
 										<h3 class="{{ content.prefix }}__category-heading">{{ sku.name }}</h3>
+										{% endif %}
 										{% for card in sku.card %}
 										<div class="sale-block all_categories" data-reduced="true" id="{{ card.id }}">
 											<h4 class="{{ content.prefix }}__category-widgets-name">{{ card.name }}</h4>
