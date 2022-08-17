@@ -1,0 +1,77 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ content.prefix }}__container  container">
+						{% if content.title %}
+						<{{ content.title_tag }} class="{{ content.prefix }}__title">
+							{{ content.title }}
+						</{{ content.title_tag }}>
+						{% endif %}
+						<div class="{{ content.prefix }}__table">
+							{% for row in content.list %}
+								<div class="{{ content.prefix }}__row{{ row.mod }}">
+									{% for item in row.list %}
+									<div class="{{ content.prefix }}__col">
+										{% if item.label %}
+										<div class="{{ content.prefix }}__card-label">
+											{{ item.label }}
+										</div>
+										{% endif %}
+										{% if item.check %}
+										<div class="{{ content.prefix }}__card-check">&nbsp;</div>
+										{% endif %}
+										{% if item.img %}
+										<div class="{{ content.prefix }}__card-img">
+											<img src="{{ path.img }}{{ content.img_path }}/{{ item.img }}" alt="{{ item.title }}">
+										</div>
+										{% endif %}
+										{% if item.title %}
+										<div class="{{ content.prefix }}__card-title">
+											{{ item.title }}
+										</div>
+										{% endif %}
+										{% if item.text %}
+										<div class="{{ content.prefix }}__card-text">
+											{{ item.text }}
+										</div>
+										{% endif %}
+										{% if item.price %}
+										<div class="{{ content.prefix }}__card-price">
+											{% if status.name == 'prod' %}
+											{{  '{{widget type="aristos_widgets/widget_price" sku="'}}{{ item.sku }}{{ '" cache_lifetime="86400"}} '}}
+											{% else %}
+											<div class="price-box">
+												<p class="old-price">
+												<span class="price">
+													{{ item.price_old }}₽
+												</span>
+												</p>
+												<p class="special-price">
+												<span class="price">
+													{{ item.price }}₽
+												</span>
+												</p>
+											</div>
+											{% endif %}
+										</div>
+										{% endif %}
+										{% if item.btn %}
+										<div class="{{ content.prefix }}__card-btn">
+											{% if status.name == 'prod' %}
+											{{  '{{widget type="aristos_widgets/widget_addToCart" sku="'}}{{ item.sku }}{{ '" cache_lifetime="86400"}} '}}
+											{{  '{{widget '}}{{ item.more }}{{ ' }} '}}
+											{% else %}
+											<form class="product-item__buttons addtocart-form">
+
+												<button type="submit" class="button button_in-stock">Добавить в корзину</button>
+											</form>
+											<span class="widget widget-product-link-inline"><a href=""><span>Подробнее</span></a></span>
+											{% endif %}
+										</div>
+										{% endif %}
+									</div>
+									{% endfor %}
+								</div>
+							{% endfor %}
+						</div>
+					</div>
+				</section>

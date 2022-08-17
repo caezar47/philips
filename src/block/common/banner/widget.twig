@@ -1,0 +1,46 @@
+
+
+				{% if status.name == 'prod' and content.widget_v %}
+					{{  '{{widget '}}{{ content.widget }}{{ ' }} '}}
+				{% else %}
+				<div class="{{ content.prefix }}">
+					<div class="{{ content.prefix }}__wrapper">
+						<picture>
+							{% if content.img %}
+							<source type="image/jpeg" media="(min-width: 992px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img }}">
+							{% endif %}
+							{% if content.img_md %}
+							<source type="image/jpeg" media="(min-width: 569px) and (max-width: 991px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img_md }}">
+							{% endif %}
+							{% if content.img_xs %}
+							<source type="image/jpeg" media="(max-width: 568px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img_xs }}">
+							{% endif %}
+
+							<img src="{{ path.img }}{{ content.img_path }}/{{ content.img }}" class="{{ content.prefix }}__picture" alt="" loading="lazy">
+						</picture>
+						<div class="container center-left">
+							<div class="{{ content.prefix }}__description" style="color: #fff">
+
+								<h1>{{ content.title }}</h1>
+								<p>{{ content.text }}</p>
+								{% if content.sku %}
+									<div class="{{ content.prefix }}__btn">
+										{% if status.name == 'prod' %}
+										{{  '{{widget type="aristos_widgets/widget_addToCart" sku="'}}{{ content.sku }}{{ '" cache_lifetime="86400"}} '}}
+										{% else %}
+										<form class="product-item__buttons addtocart-form">
+
+											<button type="submit" class="button button_in-stock">Добавить в корзину</button>
+										</form>
+										{% endif %}
+									</div>
+								{% endif %}
+								{% if content.footnote %}
+								<div class="footnote">{{ content.footnote }}</div>
+								{% endif %}
+							</div>
+						</div>
+
+					</div>
+				</div>
+				{% endif %}

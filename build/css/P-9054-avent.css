@@ -195,6 +195,7 @@
 @media (min-width: 1024px) {
   .cms-page-view #promo #to-top::after_wrapper {
     padding-top: 63px;
+    display: block!important;
   }
 }
 .cms-page-view #promo #to-top:hover {
@@ -392,6 +393,7 @@
 @media (min-width: 1024px) {
   .cms-page-view #promo .filter_wrapper {
     padding-top: 63px;
+    display: block!important;
   }
 }
 .cms-page-view #promo .checkbox__text {

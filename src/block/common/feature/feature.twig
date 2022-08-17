@@ -13,34 +13,83 @@
 							</div>
 							{% endif %}
 						</div>
+						{% if content.img %}
+						{% set ext = 'jpg' %}
+						{% if content.img_ext %}
+							{% set ext = content.img_ext %}
+						{% endif %}
+						{% set picture_path = path_img %}
+						{% if content.img_path %}
+							{% set picture_path = content.img_path %}
+						{% endif %}
+						<picture class="{{ content.prefix }}__img">
+							{% if content.img_xs %}
+							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.webp" media="(max-width: {{ content.img_xs }})">
+							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-320.{{ ext }}" media="(max-width: {{ content.img_xs }})">
+							{% endif %}
+							{% if content.img_md %}
+							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.webp" media="(max-width: {{ content.img_md }})">
+							<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}-768.{{ ext }}" media="(max-width: {{ content.img_md }})">
+							{% endif %}
+							<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.img }}.webp">
+							<img src="{{ path.img }}{{ picture_path }}/{{ content.img }}.{{ ext }}" alt="{{ content.title }}">
+						</picture>
+						{% endif %}
 						{% if content.list %}
-						<ul class="{{ content.prefix }}__list">
-							{% for item in content.list %}
-							<li class="{{ content.prefix }}__item">
-								{% if item.img %}
-								{% set ext = 'jpg' %}
-								{% if item.ext %}
-									{% set ext = item.ext %}
-								{% endif %}
-								{% set pth = path_img %}
-								{% if item.path %}
-									{% set pth = item.path %}
-								{% endif %}
-								<picture class="{{ content.prefix }}__item-img">
-									{% if item.img_xs == "true" %}
-									<source type="image/webp" srcset="{{ path.img }}{{ pth }}/{{ item.img }}-320.webp" media="(max-width: 575px)">
-									<source type="image/jpeg" srcset="{{ path.img }}{{ pth }}/{{ item.img }}-320.{{ ext }}" media="(max-width: 575px)">
+						<div class="{{ content.prefix }}__list-wrap">
+							<ul class="{{ content.prefix }}__list">
+								{% for item in content.list %}
+								<li class="{{ content.prefix }}__item">
+									{% if item.img %}
+									{% set ext = 'jpg' %}
+									{% if item.ext %}
+										{% set ext = item.ext %}
 									{% endif %}
-									<source type="image/webp" srcset="{{ path.img }}{{ pth }}/{{ item.img }}.webp">
-									<img src="{{ path.img }}{{ pth }}/{{ item.img }}.{{ ext }}" alt="{{ item.title }}">
-								</picture>
+									{% set pth = path_img %}
+									{% if item.path %}
+										{% set pth = item.path %}
+									{% endif %}
+									<picture class="{{ content.prefix }}__item-img">
+										{% if item.img_xs == "true" %}
+										<source type="image/webp" srcset="{{ path.img }}{{ pth }}/{{ item.img }}-320.webp" media="(max-width: 575px)">
+										<source type="image/jpeg" srcset="{{ path.img }}{{ pth }}/{{ item.img }}-320.{{ ext }}" media="(max-width: 575px)">
+										{% endif %}
+										<source type="image/webp" srcset="{{ path.img }}{{ pth }}/{{ item.img }}.webp">
+										<img src="{{ path.img }}{{ pth }}/{{ item.img }}.{{ ext }}" alt="{{ item.title }}">
+									</picture>
+									{% endif %}
+									{% if item.title %}
+									<div class="{{ content.prefix }}__item-title">{{ item.title }}</div>
+									{% endif %}
+								</li>
+								{% endfor %}
+
+								{% if content.bg %}
+									{% set ext = 'jpg' %}
+									{% if content.bg_ext %}
+										{% set ext = content.bg_ext %}
+									{% endif %}
+									{% set picture_path = path_img %}
+									{% if content.img_path %}
+										{% set picture_path = content.img_path %}
+									{% endif %}
+									<li class="{{ content.prefix }}__bg">
+										<picture>
+											{% if content.bg_xs %}
+											<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.bg }}-320.webp" media="(max-width: {{ content.bg_xs }})">
+											<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.bg }}-320.{{ ext }}" media="(max-width: {{ content.bg_xs }})">
+											{% endif %}
+											{% if content.bg_md %}
+											<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.bg }}-768.webp" media="(max-width: {{ content.bg_md }})">
+											<source type="image/jpeg" srcset="{{ path.img }}{{ picture_path }}/{{ content.bg }}-768.{{ ext }}" media="(max-width: {{ content.bg_md }})">
+											{% endif %}
+											<source type="image/webp" srcset="{{ path.img }}{{ picture_path }}/{{ content.bg }}.webp">
+											<img src="{{ path.img }}{{ picture_path }}/{{ content.bg }}.{{ ext }}" alt="">
+										</picture>
+									</li>
 								{% endif %}
-								{% if item.title %}
-								<div class="{{ content.prefix }}__item-title">{{ item.title }}</div>
-								{% endif %}
-							</li>
-							{% endfor %}
-						</ul>
+							</ul>
+						</div>
 						{% endif %}
 					</div>
 				</section>

@@ -1,0 +1,100 @@
+
+				{% if status.name == 'prod' %}
+					{{  '{{widget '}}{{ content.widget }}{{ ' }} '}}
+				{% else %}
+				<div class="{{ content.prefix }}{{ content.mod }}">
+					<div class="container">
+						<div class="{{ content.prefix }}__block left-center">
+							<div class="{{ content.prefix }}__content">
+								<h4 class="{{ content.prefix }}__product-title">
+									{{ content.title }}
+								</h4>
+
+								<div class="{{ content.prefix }}__rating-wrapper">
+									<div class="{{ content.prefix }}__rating">
+										<span class="rating">
+											<div class="rating__stars">
+												<span class="rating__star rating__star_active"></span>
+												<span class="rating__star rating__star_active"></span>
+												<span class="rating__star rating__star_active"></span>
+												<span class="rating__star rating__star_active"></span>
+												<span class="rating__star rating__star_active"></span>
+											</div>
+
+											<span class="rating__count">
+												<a class="rating__count-link js-toggle-link" href="#" id="to-review" data-tab="#tab-reviews"> 89 <span>отзывов</span>
+												</a>
+											</span>
+										</span>
+									</div>
+									<a class="{{ content.prefix }}__rating-link" href="#">Отзывы</a>
+								</div>
+								<div class="{{ content.prefix }}__picture {{ content.prefix }}__picture_mobile">
+									<picture>
+										{% if content.img_xs %}
+										<source type="image/jpeg" media="(max-width: 575px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img_xs }}">
+										{% endif %}
+										{% if content.img_md %}
+										<source type="image/jpeg" media="(min-width: 576px) and (max-width: 992px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img_md }}">
+										{% endif %}
+										{% if content.img %}
+										<source type="image/jpeg" media="(min-width: 993px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img }}">
+										{% endif %}
+										<img src="{{ path.img }}{{ content.img_path }}/{{ content.img }}" alt="{{ content.title }}">
+									</picture>
+								</div>
+								{% if content.subtitle %}
+								<h5 class="{{ content.prefix }}__title">
+									{{ content.subtitle }}
+								</h5>
+								{% endif %}
+								{% if content.text %}
+								<div class="{{ content.prefix }}__text">
+									{{ content.text }}
+								</div>
+								{% endif %}
+								<div class="{{ content.prefix }}__bottom">
+									<div class="{{ content.prefix }}__price">
+
+										<div class="price">
+											<span class="special">3&nbsp;510&nbsp;₽</span>
+											<del class="old">4&nbsp;650&nbsp;₽</del>
+										</div>
+										<span class="savings">
+											<span class="savings__label">Экономия: 1&nbsp;140&nbsp;₽</span>
+										</span>
+									</div>
+									<div class="{{ content.prefix }}__links">
+										<div class="{{ content.prefix }}__buy">
+											<form class="product-item__buttons addtocart-form" action="" method="post" data-atc-binded="1">
+												<input name="form_key" type="hidden" value="nnahRkyJWK2tgYnV">
+
+												<button type="submit" class="btn-add-to-cart btn btn-default btn-in-stock" data-sku="SCF330/20">
+													В корзину            </button>
+
+											</form>
+										</div>
+										<a class="{{ content.prefix }}__link" target="_blank" href="">
+											Подробнее                            </a>
+									</div>
+								</div>
+
+							</div>
+							<div class="{{ content.prefix }}__picture">
+								<picture>
+									{% if content.img_xs %}
+										<source type="image/jpeg" media="(max-width: 575px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img_xs }}">
+									{% endif %}
+									{% if content.img_md %}
+										<source type="image/jpeg" media="(min-width: 576px) and (max-width: 992px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img_md }}">
+									{% endif %}
+									{% if content.img %}
+										<source type="image/jpeg" media="(min-width: 993px)" srcset="{{ path.img }}{{ content.img_path }}/{{ content.img }}">
+									{% endif %}
+									<img src="{{ path.img }}{{ content.img_path }}/{{ content.img }}" alt="{{ content.title }}">
+								</picture>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endif %}

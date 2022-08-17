@@ -6,8 +6,23 @@
 				{% if content.view == "banner" %}
 				{% include "../common/banner/banner.twig"%}
 				{% endif %}
+				{% if content.view == "banner_widget" %}
+				{% include "../common/banner/widget.twig"%}
+				{% endif %}
 				{% if content.view == "feature" %}
 				{% include "../common/feature/feature.twig"%}
+				{% endif %}
+				{% if content.view == "compare" %}
+				{% include "../common/compare/compare.twig"%}
+				{% endif %}
+				{% if content.view == "characteristics" %}
+				{% include "../common/feature/characteristics.twig"%}
+				{% endif %}
+				{% if content.view == "product_extended" %}
+				{% include "../common/products/extended.twig"%}
+				{% endif %}
+				{% if content.view == "products_card" %}
+				{% include "../common/products/card.twig"%}
 				{% endif %}
 				{% if content.view == "sku" %}
 				{% include "../common/sku/sku.twig"%}
@@ -18,6 +33,9 @@
 				{% if content.view == "tech" %}
 				{% include "../common/tech/tech.twig"%}
 				{% endif %}
+				{% if content.view == "tech_cols" %}
+				{% include "../common/tech/tech-cols.twig"%}
+				{% endif %}
 				{% if content.view == "lineup" %}
 				{% include "../common/lineup/lineup.twig"%}
 				{% endif %}
@@ -26,6 +44,9 @@
 				{% endif %}
 				{% if content.view == "reviews" %}
 				{% include "../common/reviews/reviews.twig"%}
+				{% endif %}
+				{% if content.view == "reviews_widget" %}
+				{% include "../common/reviews/widget.twig"%}
 				{% endif %}
 				{% if content.view == "products" %}
 				{% include "../common/products/products.twig"%}

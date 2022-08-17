@@ -1,0 +1,75 @@
+
+				<section class="{{ content.prefix }}">
+					<div class="{{ content.prefix }}__container">
+						<div class="{{ content.prefix }}__slider  swiper js-slider" data-options='{{ content.slider_attr }}'>
+							{% if content.widget %}
+								{{ ' {{widget ' }}{{ content.widget }}{{ ' }} ' }}
+							{% endif %}
+							{% if content.slider_list %}
+							<div class="swiper-wrapper">
+								{% for item in content.slider_list %}
+									<div class="{{ content.prefix }}__item  swiper-slide{{ item.mod }}  js-card">
+										<div class="{{ content.prefix }}__item-header">
+											<a href="{{ item.link }}" target="_blank" class="js-card-link">
+												<picture class="{{ content.prefix }}__item-img">
+													<source type="image/webp" srcset="{{ path.img }}{{ path_img }}/{{ item.img|replace({".jpg":"",".png": ""}) }}.webp">
+													<img src="{{ path.img }}{{ path_img }}/{{ item.img }}" alt="{{ item.title }}">
+												</picture>
+											</a>
+
+											<div class="{{ content.prefix }}__item-title">
+												<a href="{{ item.link }}" target="_blank" class="js-card-link">{{ item.title }}</a>
+											</div>
+											<div class="{{ content.prefix }}__item-text">
+												{{ item.text }}
+											</div>
+										</div>
+										<div class="{{ content.prefix }}__item-footer js-tab-wrap">
+											{% if item.label %}
+											<ul class="{{ content.prefix }}__item-label">
+												{% for label in item.label %}
+												<li class="{{ content.prefix }}__item-label-btn  js-tab-trigger{{ label.status }}" data-tab="{{ label.sku }}" data-link="{{ label.link }}">
+													<span>{{ label.title }}</span>
+												</li>
+												{% endfor %}
+											</ul>
+											{% for label in item.label %}
+											<div class="{{ content.prefix }}__item-label-tab js-tab-content{{ label.status }}" data-tab="{{ label.sku }}">
+												<div class="{{ content.prefix }}__item-btn">
+													{% if status.name == 'prod' %}
+													{{  '{{widget type="aristos_widgets/widget_addToCart" sku="'}}{{ label.sku }}{{ '" cache_lifetime="86400"}} '}}
+													{% else %}
+													<a href="#{{ label.sku }}" target="_blank" class="button button_in-stock">Купить</a>
+				{#									<a href="#{{ label.sku }}" target="_blank" class="button button_out-stock">Сообщить о поступлении</a>#}
+													{% endif %}
+													<a class="button  js-card-link" href="{{ item.link }}" target="_blank">{{ item.collection_name }}</a>
+												</div>
+											</div>
+											{% endfor %}
+											{% else %}
+											<div class="{{ content.prefix }}__item-btn">
+												{% if status.name == 'prod' %}
+													{{  '{{widget type="aristos_widgets/widget_addToCart" sku="'}}{{ item.sku }}{{ '" cache_lifetime="86400"}} '}}
+												{% else %}
+												<a href="{{ card.bay }}" target="_blank" class="button button_in-stock">Купить</a>
+				{#								<a href="{{ card.bay }}" target="_blank" class="button button_out-stock">Сообщить о поступлении</a>#}
+												{% endif %}
+												<a class="button" href="{{ item.link }}" target="_blank">{{ item.collection_name }}</a>
+											</div>
+											{% endif %}
+										</div>
+									</div>
+								{% endfor %}
+							</div>
+							{% endif %}
+							{% if content.slider_pagin %}
+							<div class="{{ content.prefix }}__slider-pagination  js-slider-pagination"></div>
+							{% endif %}
+						</div>
+
+						{% if content.slider_btn %}
+						<button class="{{ content.prefix }}__slider-btn  js-slider-btn js-slider-btn_prev" type="button"></button>
+						<button class="{{ content.prefix }}__slider-btn  js-slider-btn js-slider-btn_next" type="button"></button>
+						{% endif %}
+					</div>
+				</section>

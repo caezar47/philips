@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ru-RU"> 
+    <head>
+        {% include "../block/common/head/head.twig" with {
+            title:"P-9135 :: Ручной молокоотсос Philips AVENT",
+            style:[
+                {
+                    name: css.milk,
+                }
+            ],
+        }  %}
+    </head>
+    <body class="cms-page-view">
+        {% include "../block/page/content.twig" with {
+            path_img:   img.milk,
+            mod:        '',
+            content: [
+                {
+                    view:       'banner_widget',
+                    prefix:     prefix.banner_widget,
+                    title_tag:  'h1',
+                    title:      'Ручной молокоотсос Philips AVENT',
+                    text:       'Естественное и&nbsp;бережное сцеживание, с&nbsp;заботой о&nbsp;маме и малыше.',
+                    img:        'main-banner.jpg',
+                    img_xs:     'main-banner-320.jpg',
+                    img_md:     'main-banner-768.jpg',
+                    img_path:   img.milk,
+                    widget:     'type="aristos_widgets/widget_banners" placeholder_id="26" group_id="1" text="<h1>Электронный молокоотсос Philips&nbsp;AVENT</h1><p>Естественное и&nbsp;бережное сцеживание&#specialComma; с&nbsp;заботой о&nbsp;маме и&nbsp;малыше.</p>" text_position="center-left" text_color="#fff" uniq_value="piGw2" replace_comma="1" file_upload="1" source="/media/banner/1662_piGw2_widget_banners_source_1.jpg" source_tablet="/media/banner/1662_piGw2_widget_banners_source_tablet_1.jpg" source_phone="/media/banner/1662_piGw2_widget_banners_source_phone_1.jpg"',
+                    sku:        'SCF330/20',
+                    footnote:   '*По&nbsp;результатам исследования «Baby Index −2018» компании ООО «Ипсос Комкон» в&nbsp;категориях молокоотсосов и&nbsp;приспособлений для кормления<br/>
+ **По&nbsp;результатам исследования «MEDI-Q-2018» компании ООО «Ипсос Комкон» в&nbsp;категориях молокоотсосов и&nbsp;приспособлений для кормления',
+                },
+                {
+                    view:       'product_extended',
+                    prefix:     prefix.extended,
+                    mod:        ['  ',prefix.extended,'_full'].join(''),
+                    title_tag:  'h1',
+                    title:      'Ручной молокоотсос SCF441/01',
+                    text:       "<ul><li class='item1'>Natural motion technology: естественное и бережное сцеживание</li><li class='item2'>Компактный и легкий, удобно брать с собой</li><li class='item3'>Легко мыть и собирать</li><li  class='item4'>Новая насадка адаптируется к 99,98% сосков разной формы и размеров* для бережной стимуляции</li><li class='item5' data-after='*Диаметром до 30 мм'>Удобная позиция при сцеживании: не надо наклоняться вперед</li></ul>",
+                    img:        'product-extended.jpg',
+                    img_xs:     'product-extended-320.jpg',
+                    img_md:     'product-extended-768.jpg',
+                    img_path:   img.milk,
+                    widget:     'type="aristos_widgets/widget_productCardExtended" uniq_value="WS4Wa" sku_products="SCF330/20" page_size="60" sources="/media/cms_widgets/1664_WS4Wa_widget_productCardExtended_sources.jpg" sources_tablet="/media/cms_widgets/1664_WS4Wa_widget_productCardExtended_sources_tablet.jpg" sources_mobile="/media/cms_widgets/1664_WS4Wa_widget_productCardExtended_sources_mobile.jpg" file_upload="1" content_position="left-center" text="&lt;ul&gt;&lt;li class=item1&gt;Natural motion technology: естественное и бережное сцеживание&lt;/li&gt;&lt;li class=item2&gt;Компактный и легкий, удобно брать с собой&lt;/li&gt;&lt;li class=item3&gt;Легко мыть и собирать&lt;/li&gt;&lt;li class=item4&gt;Новая насадка адаптируется к 99,98% сосков разной формы и размеров* для бережной стимуляции&lt;/li&gt;&lt;li class=item5 data-after=*Диаметром&amp;nbsp;до&amp;nbsp;30&amp;nbsp;мм&gt;Удобная позиция при сцеживании: не надо наклоняться вперед&lt;/li&gt;&lt;/ul&gt;"',
+                },
+                {
+                    view:       'tech_cols',
+                    prefix:     prefix.tech,
+                    img_path:   img.milk,
+                    title_tag:  'h2',
+                    title:      'Технология Natural&nbsp;Motion',
+                    text:       ['<div class="item1"><img src="',path.img,img.milk,'/tech-item1.png" alt="" /></div><div><h3>Естественное, бережное и&nbsp;более эффективное сцеживание</h3><p class="text">Благодаря технологии Natural Motion новый молокоотсос Philips Avent комбинирует процесс стимуляции соска и&nbsp;сосания, точно так&nbsp;же, как это делает малыш, для более комфортного и&nbsp;быстрого сцеживания.</p><p class="item2"><img src="',path.img,img.milk,'/tech-item2.png" alt="" /></p></div>'].join(''),
+                    picture:    'tech-item3.jpg',
+                },
+                {
+                    view:       'tech_cols',
+                    prefix:     [prefix.tech, '-comfort'].join(''),
+                    img_path:   img.milk,
+                    text:       ['<div class="item1"><img src="',path.img,img.milk,'/comfort-item1.png" alt="" /></div><div><h3>Комфорт и&nbsp;свобода в&nbsp;грудном вскармливании</h3><p class="text">Наш ручной молокоотсос удобно брать с&nbsp;собой благодаря небольшим размерам и&nbsp;легкому весу. Сцеживайтесь когда удобно, где удобно и&nbsp;как удобно.</p></div>'].join(''),
+                    picture:    'comfort-item2.jpg',
+                },
+                {
+                    view:       'compare',
+                    prefix:     prefix.compare,
+                    title_tag:  'h2',
+                    title:      'Сравнение моделей и комплектаций молокоотсосов',
+                    img_path:   img.milk,
+                    list:   [
+                        {
+                            mod:   '  table--head',
+                            list:   [
+                            {
+                            },
+                                {
+                                    img:    'compare-item1.jpg',
+                                    title:   'SCF441/01',
+                                },
+                                {
+                                    img:    'compare-item2.jpg',
+                                    title:   'SCF430/10',
+                                },
+                                {
+                                    img:    'compare-item3.jpg',
+                                    title:   'SCF430/13',
+                                },
+                            ],
+                        },
+                        {
+                            list:   [
+                            {
+                                label: 'Технология Natural motion с&nbsp;мягкой и&nbsp;адаптируемой к&nbsp;размеру и&nbsp;форме сосков насадкой',
+                            },
+                            {check:  'true',},
+                            {check:  'true',},
+                            {check:  'true',},
+                        ],
+                        },
+                        {
+                            list:   [
+                            {
+                                label: 'Особая конструкция, не требующая наклона вперед',
+                            },
+                            {check:  'true',},
+                            {check:  'true',},
+                            {check:  'true',},
+                        ],
+                        },
+                        {
+                            list:   [
+                            {
+                                label: 'Компактный и удобный',
+                            },
+                            {check:  'true',},
+                            {check:  'true',},
+                            {check:  'true',},
+                        ],
+                        },
+                        {
+                            list:   [
+                                {
+                                    label: 'Бутылочка и соска 0+ в комплекте',
+                                },
+                                {text:  'Нет соски',},
+                                {check:  'true',},
+                                {text:  'Нет бутылочки',},
+                            ],
+                        },
+                        {
+                            list:   [
+                                {label: 'Контейнер  для хранения молока в комплекте',},
+                                {},
+                                {},
+                                {check:  'true',},
+                            ],
+                        },
+                        {
+                            list:   [
+                                {label: 'Вкладыши, крышка для транспортировки',},
+                                {},
+                                {check:  'true',},
+                                {check:  'true',},
+                            ],
+                        },
+                        {
+                            mod:   '  table--footer',
+                            list:   [
+                                {},
+                                {
+                                    sku:        'SCF330/20',
+                                    btn:        'true',
+                                    more:       'type="catalog/product_widget_link" anchor_text="Подробнее" template="catalog/product/widget/link/link_inline.phtml" id_path="product/4142"',
+                                    price:      '00 000 ',
+                                    price_old:  '00 000 ',
+                                },
+                                {
+                                    sku:        'SCF330/20',
+                                    btn:        'true',
+                                    more:       'type="catalog/product_widget_link" anchor_text="Подробнее" template="catalog/product/widget/link/link_inline.phtml" id_path="product/12259"',
+                                    price:      '00 000 ',
+                                    price_old:  '00 000 ',
+                                },
+                                {
+                                    sku:        'SCF330/20',
+                                    btn:        'true',
+                                    more:       'type="catalog/product_widget_link" anchor_text="Подробнее" template="catalog/product/widget/link/link_inline.phtml" id_path="product/12259"',
+                                    price:      '00 000 ',
+                                    price_old:  '00 000 ',
+                                },
+                            ],
+                        },
+                    ],
+                },
+                {
+                    view:       'reviews_widget',
+                    prefix:     prefix.reviews,
+                    title_tag:  'h2',
+                    bg_color:   '#FDF2FB',
+                    title:      'Отзывы о ручном молокоотсосе SCF441/01',
+                    img_path:   img.molokootsosy,
+                    widget:     'type="aristos_widgets/widget_productReviews" page_size="60" sku_products="SCF330/20" reviews_quantity="2" background_color="#FDF2FB"',
+                    list:       [
+                        {
+                            user:   'Оксана',
+                            date:   '26.05.2020',
+                            text:   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ',
+                            recommend:    'Оксана рекомендует этот продукт',
+                        },
+                        {
+                            user:   'Людмила',
+                            date:   '26.05.2020',
+                            text:   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                            recommend:    'Оксана рекомендует этот продукт',
+                        },
+                    ],
+                },
+                {
+                    view:       'tech_cols',
+                    prefix:     [prefix.tech, '-eureka'].join(''),
+                    img_path:   img.milk,
+                    text:       ['<p>Вам приходится часто сцеживаться и&nbsp;вы&nbsp;ищите более удобное решение?</p><p>Обратите внимание на&nbsp;<b>электронные молокоотсосы Philips Avent.</b></p>'].join(''),
+                    picture:    'tech-eureka.png',
+                    btn:        'Узнать больше',
+                    btn_link:   '/eureka.html',
+                },
+                {
+                    view:       'products',
+                    prefix:     prefix.limited,
+                    title:      'Вам также могут пригодиться',
+                    list:       [
+                        {
+                            title:  'Бутылочки',
+                            img:    'limited-item1',
+                            link:   '/dlya-materi-i-rebenka-1/kormlenie-iz-butylochki/butylochki.html',
+                        },
+                        {
+                            title:  'Соски',
+                            img:    'limited-item2',
+                            link:   '/dlya-materi-i-rebenka-1/kormlenie-iz-butylochki/soski.html',
+                        },
+                        {
+                            title:  'Пустышки',
+                            img:    'limited-item3',
+                            link:   '/pustyshki.html',
+                        },
+                        {
+                            title:  'Аксессуары',
+                            img:    'limited-item4',
+                            link:   '/dlya-materi-i-rebenka-1/aksessuary.html',
+                        },
+                    ]
+                },
+                {
+                    view:       'footnotes',
+                    prefix:     prefix.footnotes,
+                    text:      '<p>РУ № РЗН 2022/17376 от 27.05.2022<br>Имеются противопоказания. Проконсультируйтесь со специалистом.</p>',
+                },
+            ],
+        } %}
+
+
+
+
+        {% include "../block/common/script/script.twig" with {
+            js:[
+                {name: js.molokootsosy}
+            ],
+        }
+    %}
+    </body>
+</html>

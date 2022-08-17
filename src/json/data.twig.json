@@ -15,7 +15,10 @@
 		"pustyshki":"./P-8647-pustyshki.html",
 		"sanitizer":"./P-8766-sanitizer.html",
 		"avent":"./P-9054-avent.html",
-		"dpd":"./P-9068-dpd.html"
+		"dpd":"./P-9068-dpd.html",
+		"molokootsosy":"./P-9082-molokootsosy.html",
+		"vodonagrevateli":"./P-9086-vodonagrevateli.html",
+		"milk":"./P-9135-molokootsosy.html"
 	},
 	"css":{
 		"trimmery":"p-8410-trimmery.css",
@@ -24,18 +27,25 @@
 		"sanitizer":"P-8766-sanitizer.css",
 		"senseiq":"P-8895-senseiq.css",
 		"avent":"P-9054-avent.css",
-		"dpd":"P-9068-dpd.css"
+		"dpd":"P-9068-dpd.css",
+		"molokootsosy":"P-9082-molokootsosy.css",
+		"vodonagrevateli":"P-9086-vodonagrevateli.css",
+		"milk":"P-9135-molokootsosy.css"
 	},
 	"js":{
 		"scrollto":"scrollto.js",
 		"slide_toggle":"slide-toggle.js",
 		"slider":"slider.js",
+		"swiper":"swiper.js",
 		"button":"button.js",
+		"label_tabs":"label-tabs.js",
 		"trimmery":"p-8410-trimmery.js",
 		"valentine":"P-8478-valentine.js",
 		"senseiq":"p-8895-senseiq.js",
 		"pustyshki":"P-8647-pustyshki.js",
-		"avent":"P-9054-avent.js"
+		"avent":"P-9054-avent.js",
+		"molokootsosy":"P-9082.js",
+		"milk":"P-9135.js"
 	},
 	"img":{
 		"trimmery":"/promo/2022/P-8410",
@@ -43,19 +53,27 @@
 		"pustyshki":"/promo/2022/P-8647",
 		"sanitizer":"/promo/2022/P-8766",
 		"avent":"/promo/2022/P-9054",
-		"dpd":"/promo/2022/P-9068"
+		"dpd":"/promo/2022/P-9068",
+		"molokootsosy":"/promo/2022/P-9082",
+		"vodonagrevateli":"/promo/2022/P-9086",
+		"milk":"/promo/2022/P-9135"
 	},
 	"prefix":{
 		"page":"page",
 		"banner":"main-banner",
+		"banner_widget":"banners",
+		"extended":"product-extended",
 		"feature":"feature",
 		"app":"app",
 		"plus":"plus",
+		"reviews":"reviews",
 		"limited":"limited",
 		"lineup":"lineup",
 		"description":"description",
+		"characteristics":"characteristics",
 		"tech":"tech",
 		"chess":"chess",
+		"compare":"compare",
 		"trimmery":"trimmery",
 		"products":"catalog-products",
 		"products_card":"products",

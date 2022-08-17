@@ -1,0 +1,81 @@
+
+                {% if status.name == 'prod' %}
+					{{  '{{widget '}}{{ content.widget }}{{ ' }} '}}
+				{% else %}
+                    <div class="{{ content.prefix }}" style="background-color:{{ content.bg_color }}">
+                        <div class="container">
+                            <h3 class="{{ content.prefix }}__title">{{ content.title }}</h3>
+                            <div class="{{ content.prefix }}__content">
+                                <div class="review-summary">
+                                    <div class="review-summary__item">
+                                        <div class="review-summary__total">
+                                            <div class="review-summary__stats">
+                                                <span class="review-summary__stats-number">4.84</span>
+                                                <span class="review-summary__stats-text">из 5 звёзд</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-item rating-item_summary">
+                                            <div class="rating-item__stars">
+
+                                                <span class="rating-item__star rating-item__star_big "></span>
+
+                                                <span class="rating-item__star rating-item__star_big "></span>
+
+                                                <span class="rating-item__star rating-item__star_big "></span>
+
+                                                <span class="rating-item__star rating-item__star_big "></span>
+
+                                                <span class="rating-item__star rating-item__star_big rating-item__star_half"></span>
+                                            </div>
+                                        </div>
+                                        <a class="review-summary__button" href="#" target="_blank">Оставить свой отзыв</a>
+                                    </div>
+                                    <div class="review-summary__item">
+                                        <div class="review-summary__stats">
+                                            <span class="review-summary__stats-number">89</span>
+                                            <span class="review-summary__stats-text">отзывов</span>
+                                        </div>
+                                    </div>
+                                    <div class="review-summary__item">
+                                        <div class="review-summary__stats">
+                                            <span class="review-summary__stats-number">100%</span>
+                                            <span class="review-summary__stats-text">пользователей рекомендуют этот товар</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <ul class="{{ content.prefix }}-list">
+                                    {% for item in content.list %}
+
+                                    <li class="{{ content.prefix }}-list__item review-item">
+                                        <div class="review-item__left">
+                                            <div class="rating-item rating-item_main">
+                                                <div class="rating-item__stars">
+                                                    <i class="rating-item__star rating-item__star_full"></i><i class="rating-item__star rating-item__star_full"></i><i class="rating-item__star rating-item__star_full"></i><i class="rating-item__star rating-item__star_full"></i><i class="rating-item__star rating-item__star_full"></i>                </div>
+                                            </div>
+                                            <span class="review-item__date">
+                                                {{ item.date }}
+                                            </span>
+                                            <p class="review-item__user-name">
+                                                {{ item.user }}
+                                            </p>
+                                            <div class="review-item__recommend">
+                                                {{ item.recommend }}
+                                            </div>
+                                        </div>
+                                        <div class="review-item__right">
+                                            <div class="review-item__container">
+                                                <p class="review-item__detail">{{ item.text }}</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+
+                                <div class="{{ content.prefix }}__show-more">
+                                    <a href="#" target="_blank" class="{{ content.prefix }}__show-more-btn">Показать ещё</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				{% endif %}
